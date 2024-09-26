@@ -1,1 +1,1 @@
-# FaQuran https://faquran.fakrulafif.web.id/FaQuran/ By Fakrul Afif
+# FaQuran By Fakrul Afif
