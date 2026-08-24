@@ -1966,5 +1966,149 @@
       "latin": "Bismillahilladzi la yadhurru ma'asmihi syai'un fil-ardhi wa la fis-sama'i wa huwas-sami'ul 'alim.",
       "translation": "Dengan nama Allah yang dengan nama-Nya tidak ada sesuatu pun di bumi dan di langit yang dapat mendatangkan kemudaratan, dan Dia Maha Mendengar lagi Maha Mengetahui."
     }
+  ],
+  "hadiths": [
+    {
+      "no": 1,
+      "title": "Niat dan Keikhlasan",
+      "narrator": "Umar bin Al-Khattab r.a.",
+      "arabic": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+      "translation": "Sesungguhnya setiap amalan itu bergantung kepada niat, dan sesungguhnya bagi setiap orang apa yang dia niatkan.",
+      "lesson": "Ikhlas adalah syarat utama diterimanya setiap amal ibadah di sisi Allah SWT."
+    },
+    {
+      "no": 2,
+      "title": "Islam, Iman dan Ihsan",
+      "narrator": "Umar bin Al-Khattab r.a.",
+      "arabic": "أَنْ تَعْبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ",
+      "translation": "Ihsan itu ialah bahawa engkau menyembah Allah seolah-olah engkau melihat-Nya. Sekiranya engkau tidak dapat melihat-Nya, maka sesungguhnya Dia melihat engkau.",
+      "lesson": "Merasakan pengawasan Allah (muraqabah) dalam setiap detik kehidupan."
+    },
+    {
+      "no": 3,
+      "title": "Meninggalkan yang Meragukan",
+      "narrator": "Al-Hasan bin Ali r.a.",
+      "arabic": "دَعْ مَا يَرِيبُكَ إِلَى مَا لاَ يَرِيبُكَ",
+      "translation": "Tinggalkanlah apa yang meragukanmu kepada apa yang tidak meragukanmu.",
+      "lesson": "Wara' dan menjauhi perkara syubhat membawa ketenteraman jiwa."
+    },
+    {
+      "no": 4,
+      "title": "Mencintai Saudara Seiman",
+      "narrator": "Anas bin Malik r.a.",
+      "arabic": "لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+      "translation": "Tidak sempurna iman seseorang daripada kamu sehinggalah dia mencintai untuk saudaranya apa yang dia cintai untuk dirinya sendiri.",
+      "lesson": "Persaudaraan Islam menuntut rasa kasih sayang, empati dan saling menyokong."
+    },
+    {
+      "no": 5,
+      "title": "Berkata Baik atau Diam",
+      "narrator": "Abu Hurairah r.a.",
+      "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+      "translation": "Sesiapa yang beriman kepada Allah dan Hari Akhirat, maka hendaklah dia berkata yang baik atau diam.",
+      "lesson": "Menjaga lisan adalah tanda kesempurnaan iman dan perisai daripada dosa."
+    },
+    {
+      "no": 6,
+      "title": "Jangan Marah",
+      "narrator": "Abu Hurairah r.a.",
+      "arabic": "لاَ تَغْضَبْ، فَرَدَّدَ مِرَارًا، قَالَ: لاَ تَغْضَبْ",
+      "translation": "Janganlah engkau marah. Beliau mengulanginya beberapa kali: 'Janganlah engkau marah.'",
+      "lesson": "Mengawal emosi dan kemarahan adalah tanda kekuatan jiwa yang sebenar."
+    },
+    {
+      "no": 7,
+      "title": "Agama Adalah Nasihat",
+      "narrator": "Tamim Ad-Dari r.a.",
+      "arabic": "الدِّينُ النَّصِيحَةُ",
+      "translation": "Agama itu adalah nasihat (kesetiaan dan keikhlasan kepada Allah, Kitab-Nya, Rasul-Nya, para pemimpin, dan umat Islam).",
+      "lesson": "Saling menasihati dengan penuh hikmah adalah nadi keharmonian ummah."
+    },
+    {
+      "no": 8,
+      "title": "Taqwa di Mana Sahaja Berada",
+      "narrator": "Abu Dzar & Mu'adz bin Jabal r.a.",
+      "arabic": "اتَّقِ اللَّهَ حَيْثُمَا كُنْتَ، وَأَتْبِعِ السَّيِّئَةَ الْحَسَنَةَ تَمْحُهَا، وَخَالِقِ النَّاسَ بِخُلُقٍ حَسَنٍ",
+      "translation": "Bertaqwalah kepada Allah di mana sahaja engkau berada, dan ikutilah kejahatan dengan kebaikan nescaya ia memadamkannya, serta pergaulilah manusia dengan akhlak yang mulia.",
+      "lesson": "Integriti takwa yang berterusan dan akhlak terpuji terhadap sesama manusia."
+    }
+  ],
+  "mathurat": [
+    {
+      "title": "Ayat Al-Kursi (Pelindung Agung)",
+      "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+      "translation": "Allah, tiada Tuhan selain Dia, Yang Maha Hidup, Yang terus-menerus mengurus (makhluk-Nya). Tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan di bumi...",
+      "repeat": "1 kali pagi & petang"
+    },
+    {
+      "title": "Doa Perlindungan Pagi (3x)",
+      "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+      "translation": "Dengan nama Allah yang dengan nama-Nya tidak ada sesuatu pun di bumi dan di langit yang dapat mendatangkan kemudaratan, dan Dia Maha Mendengar lagi Maha Mengetahui.",
+      "repeat": "3 kali pagi & petang"
+    },
+    {
+      "title": "Keredhaan Iman (3x)",
+      "arabic": "رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا وَرَسُولًا",
+      "translation": "Aku redha Allah sebagai Tuhanku, Islam sebagai agamaku, dan Muhammad s.a.w. sebagai Nabi dan Rasulku.",
+      "repeat": "3 kali pagi & petang"
+    },
+    {
+      "title": "Tasbih Keagungan Allah (3x)",
+      "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
+      "translation": "Maha Suci Allah dan dengan segala puji-Nya; sebanyak bilangan makhluk-Nya, mengikut keredhaan diri-Nya, seberat timbangan Arasy-Nya, dan sebanyak dakwat kalimat-kalimat-Nya.",
+      "repeat": "3 kali pagi"
+    }
+  ],
+  "islamic_events": [
+    {
+      "name": "Awal Muharram (Tahun Baharu Hijrah)",
+      "date": "1 Muharram",
+      "desc": "Penghijrahan Rasulullah SAW dan permulaan takwim Islam."
+    },
+    {
+      "name": "Hari Asyura",
+      "date": "10 Muharram",
+      "desc": "Sunnah berpuasa dan hari diselamatkan Nabi Musa a.s."
+    },
+    {
+      "name": "Maulidur Rasul SAW",
+      "date": "12 Rabiulawal",
+      "desc": "Memperingati kelahiran baginda junjungan mulia Nabi Muhammad SAW."
+    },
+    {
+      "name": "Israk dan Mikraj",
+      "date": "27 Rejab",
+      "desc": "Perjalanan malam Rasulullah SAW dan penerimaan perintah solat lima waktu."
+    },
+    {
+      "name": "Nisfu Syaaban",
+      "date": "15 Syaaban",
+      "desc": "Malam keampunan dan persiapan menyambut bulan Ramadan."
+    },
+    {
+      "name": "Awal Ramadan",
+      "date": "1 Ramadan",
+      "desc": "Bulan pensyariatan ibadah puasa dan keberkatan melimpah."
+    },
+    {
+      "name": "Nuzul Al-Quran",
+      "date": "17 Ramadan",
+      "desc": "Peristiwa penurunan ayat-ayat pertama Al-Quran kepada baginda Nabi SAW."
+    },
+    {
+      "name": "Hari Raya Aidilfitri",
+      "date": "1 Syawal",
+      "desc": "Hari kemenangan umat Islam setelah sebulan berpuasa."
+    },
+    {
+      "name": "Hari Arafah",
+      "date": "9 Zulhijjah",
+      "desc": "Kemuncak ibadah Haji dan sunnah berpuasa bagi yang tidak menunaikan haji."
+    },
+    {
+      "name": "Hari Raya Aidiladha",
+      "date": "10 Zulhijjah",
+      "desc": "Hari Raya Korban memperingati keikhlasan Nabi Ibrahim dan Nabi Ismail a.s."
+    }
   ]
 }

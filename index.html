@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FaQuran • Al-Quran Digital & Inspirasi Kehidupan | by Fakrul</title>
-  <meta name="description" content="FaQuran - Aplikasi Al-Quran Digital, Tadabbur & Quotes Kehidupan, Waktu Solat, Tasbih Digital dan Asmaul Husna. Dicipta oleh Fakrul (fakruldev).">
+  <title>FaQuran Pro • Al-Quran Digital, Nasihat Kehidupan & Ibadah | by Fakrul</title>
+  <meta name="description" content="FaQuran Pro - Aplikasi Al-Quran Digital Lengkap 114 Surah, Tadabbur Kehidupan 30s dengan Suara, Waktu Solat JAKIM, Tasbih Digital, Hadis 40, Al-Mathurat dan Tracker Khatam. Dicipta oleh Fakrul (fakruldev).">
   <meta name="author" content="Fakrul (fakruldev)">
   <meta name="theme-color" content="#064e3b">
   <link rel="manifest" href="manifest.json">
@@ -47,102 +47,65 @@
             darkcard: '#08231c'
           },
           fontFamily: {
-            quran: ['Amiri', 'Lateef', 'Scheherazade New', 'serif'],
+            quran: ['Amiri', 'Lateef', 'Scheherazade New', 'Tajawal', 'serif'],
             sans: ['Plus Jakarta Sans', 'Segoe UI', 'Roboto', 'sans-serif'],
-          },
-          animation: {
-            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'float': 'float 6s ease-in-out infinite',
-            'glow': 'glow 2s ease-in-out infinite alternate',
-          },
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-10px)' },
-            },
-            glow: {
-              '0%': { boxShadow: '0 0 15px rgba(245, 158, 11, 0.2)' },
-              '100%': { boxShadow: '0 0 30px rgba(245, 158, 11, 0.6)' },
-            }
           }
         }
       }
     }
   </script>
 
-  <!-- Google Fonts & Font Awesome Icons -->
+  <!-- Google Fonts & Font Awesome 6 Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lateef:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Scheherazade+New:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-    
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       background-color: #031410;
       color: #f3f4f6;
       overflow-x: hidden;
     }
-
     .font-quran {
-      font-family: 'Amiri', 'Scheherazade New', serif;
+      font-family: 'Amiri', 'Scheherazade New', 'Lateef', serif;
       line-height: 2.3;
     }
-
-    /* Custom Glassmorphism & Borders */
     .glass-card {
-      background: rgba(8, 35, 28, 0.75);
+      background: rgba(8, 35, 28, 0.78);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(245, 158, 11, 0.18);
+      border: 1px solid rgba(245, 158, 11, 0.2);
     }
-
     .glass-card:hover {
-      border-color: rgba(245, 158, 11, 0.4);
+      border-color: rgba(245, 158, 11, 0.45);
     }
-
     .glass-nav {
-      background: rgba(3, 20, 16, 0.85);
+      background: rgba(3, 20, 16, 0.88);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+      border-bottom: 1px solid rgba(245, 158, 11, 0.18);
     }
-
     .gold-gradient-text {
       background: linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #d97706 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-    .emerald-gradient-btn {
-      background: linear-gradient(135deg, #059669 0%, #047857 50%, #064e3b 100%);
-    }
-
     .gold-gradient-btn {
       background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
       color: #031410;
     }
-
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
+    .emerald-gradient-btn {
+      background: linear-gradient(135deg, #059669 0%, #047857 50%, #064e3b 100%);
     }
-    ::-webkit-scrollbar-track {
-      background: #031410;
+    .progress-bar-transition {
+      transition: width 0.1s linear;
     }
-    ::-webkit-scrollbar-thumb {
-      background: #064e3b;
-      border-radius: 4px;
-      border: 1px solid rgba(245, 158, 11, 0.2);
+    .ayah-active {
+      background: rgba(245, 158, 11, 0.14) !important;
+      border-left: 4px solid #f59e0b !important;
     }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #047857;
-    }
-
-    /* Floating Particles Background */
     #particles-canvas {
       position: fixed;
       top: 0;
@@ -153,27 +116,6 @@
       z-index: 0;
       opacity: 0.6;
     }
-
-    /* Ayah Highlight when Playing */
-    .ayah-active {
-      background: rgba(245, 158, 11, 0.12) !important;
-      border-left: 4px solid #f59e0b !important;
-      transition: all 0.3s ease;
-    }
-
-    /* Progress bar smooth */
-    .progress-bar-transition {
-      transition: width 0.1s linear;
-    }
-
-    /* Arabesque Pattern Overlay */
-    .bg-islamic-pattern {
-      background-image: radial-gradient(rgba(245, 158, 11, 0.08) 1px, transparent 1px), radial-gradient(rgba(5, 150, 105, 0.08) 1px, transparent 1px);
-      background-size: 32px 32px;
-      background-position: 0 0, 16px 16px;
-    }
-
-    /* Wave visualizer */
     .audio-bar {
       display: inline-block;
       width: 3px;
@@ -186,163 +128,160 @@
     .audio-bar:nth-child(2) { animation-delay: 0.2s; }
     .audio-bar:nth-child(3) { animation-delay: 0.4s; }
     .audio-bar:nth-child(4) { animation-delay: 0.1s; }
-    .audio-bar:nth-child(5) { animation-delay: 0.3s; }
     @keyframes soundwave {
       0% { height: 4px; }
-      100% { height: 18px; }
+      100% { height: 16px; }
     }
   </style>
 </head>
-<body class="bg-midnight min-h-screen text-slate-100 relative bg-islamic-pattern antialiased selection:bg-gold-500 selection:text-midnight">
+<body class="bg-midnight min-h-screen text-slate-100 relative antialiased selection:bg-gold-500 selection:text-midnight">
 
-  <!-- Background Particle Animation Canvas -->
   <canvas id="particles-canvas"></canvas>
 
-  <!-- Persistent Floating Owner Watermark Badge -->
-  <div class="fixed bottom-24 right-4 z-40 hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/80 backdrop-blur-md border border-gold-500/30 text-xs text-gold-300 shadow-lg shadow-black/40 pointer-events-auto hover:border-gold-400 transition-all cursor-pointer" onclick="openAboutModal()">
+  <!-- Persistent Floating Owner Watermark -->
+  <div class="fixed bottom-24 right-4 z-40 hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/85 backdrop-blur-md border border-gold-500/35 text-xs text-gold-300 shadow-xl cursor-pointer hover:border-gold-400 transition-all" onclick="openAboutModal()">
     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-    <span class="font-medium">✦ FaQuran by <strong class="text-gold-400 font-bold">Fakrul</strong></span>
+    <span>✦ FaQuran by <strong class="text-gold-400">Fakrul</strong> (fakruldev)</span>
   </div>
 
-  <!-- MAIN HEADER / NAVBAR -->
-  <header class="sticky top-0 z-50 glass-nav transition-all duration-300">
+  <!-- HEADER NAVBAR -->
+  <header class="sticky top-0 z-50 glass-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 sm:h-20">
         
         <!-- Logo & Watermark Branding -->
         <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('home')">
-          <div class="relative flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-600 to-emerald-900 border border-gold-500/40 shadow-md shadow-emerald-900/50">
+          <div class="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-600 to-emerald-900 border border-gold-500/40 shadow-md">
             <i class="fa-solid fa-quran text-gold-400 text-xl"></i>
-            <span class="absolute -top-1 -right-1 w-3 h-3 bg-gold-400 rounded-full border-2 border-midnight"></span>
           </div>
           <div>
             <div class="flex items-center gap-2">
               <span class="text-xl sm:text-2xl font-bold tracking-tight gold-gradient-text font-serif">FaQuran</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold-500/20 text-gold-300 border border-gold-500/30 font-semibold uppercase tracking-wider">v2.5</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold-500/20 text-gold-300 border border-gold-500/30 font-semibold">PRO</span>
             </div>
-            <p class="text-[11px] text-emerald-300/80 flex items-center gap-1 font-medium">
-              <i class="fa-solid fa-shield-halved text-[9px] text-gold-400"></i>
-              Owner: <span class="text-gold-300 font-semibold underline decoration-gold-500/40">Fakrul</span> (fakruldev)
+            <p class="text-[11px] text-emerald-300/80 font-medium flex items-center gap-1">
+              <i class="fa-solid fa-certificate text-[9px] text-gold-400"></i>
+              Owner: <span class="text-gold-300 font-semibold">Fakrul</span> (fakruldev)
             </p>
           </div>
         </div>
 
-        <!-- Desktop Navigation Items -->
-        <nav class="hidden md:flex items-center gap-1 lg:gap-2">
-          <button onclick="switchTab('home')" class="nav-btn px-3 py-2 rounded-xl text-sm font-medium transition-all text-gold-400 bg-emerald-900/40 border border-gold-500/20 shadow-sm" data-tab="home">
-            <i class="fa-solid fa-house-chimney mr-1.5"></i> Laman Utama
+        <!-- Navigation Desktop -->
+        <nav class="hidden lg:flex items-center gap-1">
+          <button onclick="switchTab('home')" class="nav-btn px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all text-gold-400 bg-emerald-900/40 border border-gold-500/20" data-tab="home">
+            <i class="fa-solid fa-house-chimney mr-1"></i> Utama
           </button>
-          <button onclick="switchTab('surahs')" class="nav-btn px-3 py-2 rounded-xl text-sm font-medium transition-all text-slate-300 hover:text-gold-300 hover:bg-emerald-900/30" data-tab="surahs">
-            <i class="fa-solid fa-book-open mr-1.5"></i> 114 Surah
+          <button onclick="switchTab('surahs')" class="nav-btn px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all text-slate-300 hover:text-gold-300" data-tab="surahs">
+            <i class="fa-solid fa-book-open mr-1"></i> 114 Surah
           </button>
-          <button onclick="switchTab('prayer')" class="nav-btn px-3 py-2 rounded-xl text-sm font-medium transition-all text-slate-300 hover:text-gold-300 hover:bg-emerald-900/30" data-tab="prayer">
-            <i class="fa-solid fa-mosque mr-1.5"></i> Waktu Solat
+          <button onclick="switchTab('prayer')" class="nav-btn px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all text-slate-300 hover:text-gold-300" data-tab="prayer">
+            <i class="fa-solid fa-mosque mr-1"></i> Waktu Solat
           </button>
-          <button onclick="switchTab('tasbih')" class="nav-btn px-3 py-2 rounded-xl text-sm font-medium transition-all text-slate-300 hover:text-gold-300 hover:bg-emerald-900/30" data-tab="tasbih">
-            <i class="fa-solid fa-hand-dots mr-1.5"></i> Tasbih Digital
+          <button onclick="switchTab('tasbih')" class="nav-btn px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all text-slate-300 hover:text-gold-300" data-tab="tasbih">
+            <i class="fa-solid fa-hand-dots mr-1"></i> Tasbih
           </button>
-          <button onclick="switchTab('duas')" class="nav-btn px-3 py-2 rounded-xl text-sm font-medium transition-all text-slate-300 hover:text-gold-300 hover:bg-emerald-900/30" data-tab="duas">
-            <i class="fa-solid fa-hands-praying mr-1.5"></i> Doa & Zikir
+          <button onclick="switchTab('khatam')" class="nav-btn px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all text-slate-300 hover:text-gold-300" data-tab="khatam">
+            <i class="fa-solid fa-trophy mr-1"></i> Tracker Khatam
           </button>
-          <button onclick="switchTab('asmaul')" class="nav-btn px-3 py-2 rounded-xl text-sm font-medium transition-all text-slate-300 hover:text-gold-300 hover:bg-emerald-900/30" data-tab="asmaul">
-            <i class="fa-solid fa-star-and-crescent mr-1.5"></i> Asmaul Husna
+          <button onclick="switchTab('hadith')" class="nav-btn px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all text-slate-300 hover:text-gold-300" data-tab="hadith">
+            <i class="fa-solid fa-scroll mr-1"></i> Hadis 40
           </button>
-          <button onclick="switchTab('bookmarks')" class="nav-btn px-3 py-2 rounded-xl text-sm font-medium transition-all text-slate-300 hover:text-gold-300 hover:bg-emerald-900/30" data-tab="bookmarks">
-            <i class="fa-solid fa-bookmark mr-1.5"></i> Penanda
+          <button onclick="switchTab('mathurat')" class="nav-btn px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all text-slate-300 hover:text-gold-300" data-tab="mathurat">
+            <i class="fa-solid fa-shield-halved mr-1"></i> Al-Mathurat
+          </button>
+          <button onclick="switchTab('asmaul')" class="nav-btn px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all text-slate-300 hover:text-gold-300" data-tab="asmaul">
+            <i class="fa-solid fa-star-and-crescent mr-1"></i> Asmaul Husna
           </button>
         </nav>
 
-        <!-- Right Quick Actions -->
+        <!-- Right Quick Action Bar -->
         <div class="flex items-center gap-2">
-          <!-- Voice Quotes Toggle Shortcut -->
-          <button id="header-tts-btn" onclick="toggleQuotesVoice()" title="Suara Nasihat Kehidupan" class="w-10 h-10 rounded-xl bg-emerald-950/70 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20 transition-all">
+          <!-- Voice Toggle -->
+          <button id="header-tts-btn" onclick="toggleQuotesVoice()" title="Suara Nasihat" class="w-10 h-10 rounded-xl bg-emerald-950/70 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20">
             <i id="header-tts-icon" class="fa-solid fa-volume-high"></i>
           </button>
-
           <!-- Settings Modal Button -->
-          <button onclick="openSettingsModal()" title="Tetapan Bacaan & Font" class="w-10 h-10 rounded-xl bg-emerald-950/70 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20 transition-all">
+          <button onclick="openSettingsModal()" title="Tetapan & Tema" class="w-10 h-10 rounded-xl bg-emerald-950/70 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20">
             <i class="fa-solid fa-sliders"></i>
           </button>
-
-          <!-- Info / About Modal Button -->
-          <button onclick="openAboutModal()" title="Tentang FaQuran & Fakrul" class="w-10 h-10 rounded-xl bg-emerald-950/70 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20 transition-all">
-            <i class="fa-solid fa-circle-info"></i>
-          </button>
-
-          <!-- Mobile Hamburger Toggle -->
-          <button onclick="toggleMobileNav()" class="md:hidden w-10 h-10 rounded-xl bg-emerald-950/80 border border-gold-500/30 text-gold-400 flex items-center justify-center">
-            <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
+          <!-- Mobile Menu Button -->
+          <button onclick="toggleMobileNav()" class="lg:hidden w-10 h-10 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-400 flex items-center justify-center">
+            <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Mobile Dropdown Navigation -->
-    <div id="mobile-nav" class="hidden md:hidden px-4 pt-2 pb-4 space-y-1.5 bg-midnight/95 border-b border-gold-500/20 backdrop-blur-xl">
+    <!-- Mobile Dropdown -->
+    <div id="mobile-nav" class="hidden lg:hidden px-4 pt-2 pb-4 space-y-1.5 bg-midnight/95 border-b border-gold-500/20 backdrop-blur-xl">
       <button onclick="switchTab('home'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-gold-300 bg-emerald-900/40">
         <i class="fa-solid fa-house-chimney w-5 text-gold-400"></i> Laman Utama (Quotes 30s)
       </button>
-      <button onclick="switchTab('surahs'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300 hover:text-gold-300">
-        <i class="fa-solid fa-book-open w-5 text-gold-400"></i> Senarai 114 Surah Al-Quran
+      <button onclick="switchTab('surahs'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
+        <i class="fa-solid fa-book-open w-5 text-gold-400"></i> 114 Surah Al-Quran
       </button>
-      <button onclick="switchTab('prayer'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300 hover:text-gold-300">
+      <button onclick="switchTab('prayer'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
         <i class="fa-solid fa-mosque w-5 text-gold-400"></i> Waktu Solat & Kiblat
       </button>
-      <button onclick="switchTab('tasbih'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300 hover:text-gold-300">
+      <button onclick="switchTab('tasbih'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
         <i class="fa-solid fa-hand-dots w-5 text-gold-400"></i> Tasbih Digital
       </button>
-      <button onclick="switchTab('duas'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300 hover:text-gold-300">
-        <i class="fa-solid fa-hands-praying w-5 text-gold-400"></i> Doa Harian & Khatam
+      <button onclick="switchTab('khatam'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
+        <i class="fa-solid fa-trophy w-5 text-gold-400"></i> Tracker Khatam Quran
       </button>
-      <button onclick="switchTab('asmaul'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300 hover:text-gold-300">
+      <button onclick="switchTab('hadith'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
+        <i class="fa-solid fa-scroll w-5 text-gold-400"></i> Hadis 40 Imam Nawawi
+      </button>
+      <button onclick="switchTab('mathurat'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
+        <i class="fa-solid fa-shield-halved w-5 text-gold-400"></i> Al-Mathurat (Pagi & Petang)
+      </button>
+      <button onclick="switchTab('asmaul'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
         <i class="fa-solid fa-star-and-crescent w-5 text-gold-400"></i> 99 Asmaul Husna
       </button>
-      <button onclick="switchTab('bookmarks'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300 hover:text-gold-300">
+      <button onclick="switchTab('duas'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
+        <i class="fa-solid fa-hands-praying w-5 text-gold-400"></i> Doa Harian & Khatam
+      </button>
+      <button onclick="switchTab('bookmarks'); toggleMobileNav();" class="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-300">
         <i class="fa-solid fa-bookmark w-5 text-gold-400"></i> Penanda & Terakhir Baca
       </button>
     </div>
   </header>
 
-  <!-- MAIN APP CONTAINER -->
-  <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 mb-24">
+  <!-- MAIN CONTAINER -->
+  <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 mb-24">
 
     <!-- ========================================================================= -->
-    <!-- TAB 1: FIRST PAGE (INTRO & 30s AUTO-VOICE QUOTES ON LIFE) -->
+    <!-- TAB 1: FIRST PAGE (INTRO & 30s ROTATING QUOTES WITH DEDICATED STOP BUTTON) -->
     <!-- ========================================================================= -->
     <section id="tab-home" class="tab-content block space-y-8">
       
-      <!-- HERO WELCOME & BISMILLAH BANNER -->
-      <div class="relative overflow-hidden rounded-3xl glass-card p-6 sm:p-10 border border-gold-500/30 text-center shadow-2xl">
-        <div class="absolute top-0 right-0 -mt-12 -mr-12 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 -mb-12 -ml-12 w-64 h-64 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <!-- Verified Owner Watermark Tag -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/90 border border-gold-500/40 text-xs text-gold-300 mb-5 shadow-inner">
+      <!-- Welcome Hero Banner -->
+      <div class="relative overflow-hidden rounded-3xl glass-card p-6 sm:p-10 text-center shadow-2xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/90 border border-gold-500/40 text-xs text-gold-300 mb-5">
           <i class="fa-solid fa-certificate text-gold-400 text-xs"></i>
-          <span>Aplikasi Rasmi FaQuran • Dicipta oleh <strong class="text-gold-300">Fakrul</strong></span>
+          <span>FaQuran Digital Platform • Dicipta oleh <strong class="text-gold-300">Fakrul</strong></span>
         </div>
 
-        <!-- Bismillah Calligraphy -->
         <div class="my-3">
-          <p class="font-quran text-3xl sm:text-5xl text-gold-300 font-bold tracking-wide select-none drop-shadow-md">
+          <p class="font-quran text-3xl sm:text-5xl text-gold-300 font-bold select-none drop-shadow-md">
             بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
           </p>
           <p class="text-xs sm:text-sm text-emerald-200/70 mt-2 font-light">"Dengan nama Allah Yang Maha Pengasih, Maha Penyayang"</p>
         </div>
 
         <h1 class="text-2xl sm:text-4xl font-extrabold mt-4 tracking-tight">
-          Pusat Pembacaan Al-Quran & <span class="gold-gradient-text">Tadabbur Kehidupan</span>
+          Pusat Al-Quran & <span class="gold-gradient-text">Tadabbur Kehidupan</span>
         </h1>
         <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mt-2 leading-relaxed">
-          Dekatkan hati dengan kalam Ilahi. Nikmati paparan Al-Quran rasmi yang sahih, audio qari antarabangsa, hikmah kehidupan, dan waktu solat berpandukan JAKIM.
+          Dekatkan hati dengan kalam Ilahi. Nikmati paparan ayat suci Mushaf Uthmani yang sahih, audio qari rasmi, mutiara kehidupan bersuara, dan jadual waktu solat berpandukan JAKIM.
         </p>
 
-        <!-- Quick Jump Buttons -->
+        <!-- Quick Actions -->
         <div class="flex flex-wrap items-center justify-center gap-3 mt-6">
-          <button onclick="switchTab('surahs')" class="gold-gradient-btn px-5 py-2.5 rounded-xl font-semibold text-sm shadow-lg shadow-gold-600/30 hover:scale-105 transition-transform flex items-center gap-2">
+          <button onclick="switchTab('surahs')" class="gold-gradient-btn px-5 py-2.5 rounded-xl font-semibold text-sm shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
             <i class="fa-solid fa-book-quran"></i> Buka 114 Surah
           </button>
-          <button onclick="resumeLastRead()" class="emerald-gradient-btn text-white px-5 py-2.5 rounded-xl font-semibold text-sm border border-emerald-400/30 shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
+          <button onclick="resumeLastRead()" class="emerald-gradient-btn text-white px-5 py-2.5 rounded-xl font-semibold text-sm border border-emerald-400/30 hover:scale-105 transition-transform flex items-center gap-2">
             <i class="fa-solid fa-bookmark text-gold-400"></i> Sambung Bacaan Terakhir
           </button>
           <button onclick="switchTab('prayer')" class="px-4 py-2.5 rounded-xl bg-emerald-950/80 text-gold-300 border border-gold-500/30 text-sm font-medium hover:bg-emerald-900/60 transition-all flex items-center gap-2">
@@ -352,11 +291,11 @@
       </div>
 
       <!-- ===================================================================== -->
-      <!-- 30-SECOND DYNAMIC ROTATING QUOTES ON LIFE WITH AUTO VOICE NARRATION -->
+      <!-- 30-SECOND DYNAMIC ROTATING QUOTES WITH DEDICATED STOP / PLAY BUTTON -->
       <!-- ===================================================================== -->
-      <div class="relative rounded-3xl glass-card p-6 sm:p-8 border border-gold-500/40 shadow-xl overflow-hidden">
+      <div class="rounded-3xl glass-card p-6 sm:p-8 border border-gold-500/40 shadow-xl overflow-hidden">
         
-        <!-- Header with 30s Timer & Auto-Voice Status -->
+        <!-- Header Toolbar with STOP / RESUME Toggle Button -->
         <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-gold-500/20">
           <div class="flex items-center gap-2.5">
             <div class="w-9 h-9 rounded-xl bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-gold-400">
@@ -365,63 +304,65 @@
             <div>
               <h2 class="text-base sm:text-lg font-bold text-gold-300 flex items-center gap-2">
                 Inspirasi & Mutiara Nasihat Kehidupan
-                <span id="voice-indicator" class="hidden text-xs px-2 py-0.5 rounded-full bg-emerald-900/70 border border-emerald-400/40 text-emerald-300 items-center gap-1">
+                <span id="voice-indicator" class="hidden text-[10px] px-2 py-0.5 rounded-full bg-emerald-900/70 border border-emerald-400/40 text-emerald-300 items-center gap-1">
                   <span class="audio-bar"></span>
                   <span class="audio-bar"></span>
                   <span class="audio-bar"></span>
-                  Suara Aktif
+                  Suara Membaca
                 </span>
               </h2>
-              <p class="text-xs text-slate-400">Tukar secara automatik setiap 30 saat bersama bacaan suara teks</p>
+              <p class="text-xs text-slate-400">Tukar automatik setiap 30 saat bersama bacaan suara mengikut teks dipapar</p>
             </div>
           </div>
 
-          <!-- Timer & Voice Controls Toolbar -->
-          <div class="flex items-center gap-2">
-            <!-- 30s Countdown Indicator -->
+          <!-- Controls including STOP/PAUSE Button -->
+          <div class="flex flex-wrap items-center gap-2">
+            
+            <!-- DEDICATED STOP / PLAY (PAUSE/RESUME) QUOTES BUTTON -->
+            <button id="quotes-pause-btn" onclick="toggleQuotesPause()" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-800 text-white border border-gold-400/60 text-xs font-bold shadow-md hover:scale-105 transition-all flex items-center gap-1.5" title="Hentikan / Sambung Pertukaran Quotes 30s">
+              <i id="quotes-pause-icon" class="fa-solid fa-pause"></i>
+              <span id="quotes-pause-label">Hentikan (Stop)</span>
+            </button>
+
+            <!-- 30s Timer Display -->
             <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-950/80 border border-gold-500/30 text-xs font-mono text-gold-300">
-              <i class="fa-solid fa-stopwatch text-gold-400 animate-pulse"></i>
-              <span>Tukar: <strong id="quote-timer-text" class="text-gold-400">30s</strong></span>
+              <i id="timer-icon" class="fa-solid fa-stopwatch text-gold-400 animate-pulse"></i>
+              <span id="quote-timer-text-container">Masa: <strong id="quote-timer-text" class="text-gold-400">30s</strong></span>
             </div>
 
-            <!-- Auto Voice Toggle -->
-            <button id="toggle-voice-btn" onclick="toggleQuotesVoice()" class="px-3 py-1.5 rounded-xl bg-emerald-900/60 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20 transition-all flex items-center gap-1.5" title="Buka/Tutup Suara Automatik">
+            <!-- Voice Toggle Button -->
+            <button id="toggle-voice-btn" onclick="toggleQuotesVoice()" class="px-3 py-1.5 rounded-xl bg-emerald-900/60 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20 flex items-center gap-1.5" title="Buka / Tutup Suara">
               <i id="quote-voice-btn-icon" class="fa-solid fa-volume-high text-gold-400"></i>
               <span id="quote-voice-btn-label">Suara: ON</span>
             </button>
 
             <!-- Replay Voice Button -->
-            <button onclick="speakCurrentQuote()" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20 transition-all" title="Main Semula Suara Nasihat">
+            <button onclick="speakCurrentQuote()" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20" title="Main Semula Suara">
               <i class="fa-solid fa-rotate-right text-xs"></i>
             </button>
           </div>
         </div>
 
-        <!-- 30s Smooth Animated Progress Bar -->
+        <!-- 30s Progress Bar -->
         <div class="w-full bg-emerald-950/70 h-1.5 rounded-full overflow-hidden mt-3 mb-6">
           <div id="quote-progress-bar" class="bg-gradient-to-r from-emerald-400 via-gold-400 to-gold-500 h-full w-0 progress-bar-transition"></div>
         </div>
 
-        <!-- QUOTE CONTENT BOX -->
+        <!-- Quotes Display Card -->
         <div id="quote-display-box" class="transition-opacity duration-500 min-h-[190px] flex flex-col justify-between space-y-4">
-          <!-- Theme Badge & Number -->
           <div class="flex items-center justify-between">
             <span id="quote-theme" class="px-3 py-1 rounded-full bg-gold-500/15 border border-gold-500/30 text-xs font-semibold text-gold-300">
               Ujian & Kekuatan Jiwa
             </span>
-            <span id="quote-counter" class="text-xs text-slate-400 font-mono">
-              1 / 20
-            </span>
+            <span id="quote-counter" class="text-xs text-slate-400 font-mono">1 / 20</span>
           </div>
 
-          <!-- Arabic Calligraphy Text -->
           <div class="text-center my-2">
             <p id="quote-arabic" class="font-quran text-2xl sm:text-4xl text-gold-300 font-bold leading-relaxed select-text">
               لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا
             </p>
           </div>
 
-          <!-- Malay Text / Meaning -->
           <div class="text-center px-2 sm:px-6">
             <p id="quote-text" class="text-base sm:text-xl font-semibold text-slate-100 italic leading-relaxed select-text">
               "Allah tidak membebani seseorang melainkan sesuai dengan kesanggupannya."
@@ -431,7 +372,6 @@
             </p>
           </div>
 
-          <!-- Tadabbur / Reflection -->
           <div class="p-3.5 rounded-2xl bg-emerald-950/60 border border-emerald-500/20 text-xs sm:text-sm text-emerald-200/90 leading-relaxed flex items-start gap-2.5">
             <i class="fa-solid fa-lightbulb text-gold-400 mt-0.5"></i>
             <div>
@@ -441,76 +381,49 @@
           </div>
         </div>
 
-        <!-- Bottom Controls (Next, Prev, Copy, Share, Watermark) -->
+        <!-- Navigation Buttons -->
         <div class="flex flex-wrap items-center justify-between gap-3 pt-5 mt-4 border-t border-gold-500/20">
           <div class="flex items-center gap-2">
-            <button onclick="prevQuote()" class="px-3.5 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-300 text-xs font-semibold hover:bg-gold-500/20 transition-all flex items-center gap-1.5">
+            <button onclick="prevQuote()" class="px-3.5 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-300 text-xs font-semibold hover:bg-gold-500/20">
               <i class="fa-solid fa-chevron-left text-[10px]"></i> Sebelumnya
             </button>
-            <button onclick="nextQuote()" class="px-3.5 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-300 text-xs font-semibold hover:bg-gold-500/20 transition-all flex items-center gap-1.5">
+            <button onclick="nextQuote()" class="px-3.5 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-300 text-xs font-semibold hover:bg-gold-500/20">
               Seterusnya <i class="fa-solid fa-chevron-right text-[10px]"></i>
             </button>
           </div>
 
           <div class="flex items-center gap-2">
-            <button onclick="copyQuoteToClipboard()" class="px-3 py-1.5 rounded-xl bg-emerald-950/80 border border-gold-500/30 text-xs text-slate-300 hover:text-gold-300 hover:bg-emerald-900 transition-all flex items-center gap-1.5" title="Salin Nasihat Ini">
+            <button onclick="copyQuoteToClipboard()" class="px-3 py-1.5 rounded-xl bg-emerald-950/80 border border-gold-500/30 text-xs text-slate-300 hover:text-gold-300">
               <i class="fa-solid fa-copy text-gold-400"></i> Salin
             </button>
-            <button onclick="shareQuote()" class="px-3 py-1.5 rounded-xl bg-emerald-950/80 border border-gold-500/30 text-xs text-slate-300 hover:text-gold-300 hover:bg-emerald-900 transition-all flex items-center gap-1.5" title="Kongsi">
+            <button onclick="shareQuote()" class="px-3 py-1.5 rounded-xl bg-emerald-950/80 border border-gold-500/30 text-xs text-slate-300 hover:text-gold-300">
               <i class="fa-solid fa-share-nodes text-gold-400"></i> Kongsi
             </button>
           </div>
         </div>
       </div>
 
-      <!-- QUICK SURAH SHORTCUTS & FEATURED PILLARS -->
+      <!-- Quick Featured Surah Shortcuts -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-        <!-- Surah Yasin -->
         <div onclick="openSurah(36)" class="glass-card p-4 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm">
-            36
-          </div>
-          <div>
-            <h3 class="font-bold text-sm text-slate-100">Surah Yasin</h3>
-            <p class="text-xs text-emerald-300/80">83 Ayat • Jantung Quran</p>
-          </div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm">36</div>
+          <div><h3 class="font-bold text-sm text-slate-100">Surah Yasin</h3><p class="text-xs text-emerald-300/80">83 Ayat • Jantung Quran</p></div>
         </div>
-
-        <!-- Surah Al-Kahf -->
         <div onclick="openSurah(18)" class="glass-card p-4 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm">
-            18
-          </div>
-          <div>
-            <h3 class="font-bold text-sm text-slate-100">Surah Al-Kahf</h3>
-            <p class="text-xs text-emerald-300/80">110 Ayat • Sunnah Jumaat</p>
-          </div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm">18</div>
+          <div><h3 class="font-bold text-sm text-slate-100">Surah Al-Kahf</h3><p class="text-xs text-emerald-300/80">110 Ayat • Sunnah Jumaat</p></div>
         </div>
-
-        <!-- Surah Al-Mulk -->
         <div onclick="openSurah(67)" class="glass-card p-4 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm">
-            67
-          </div>
-          <div>
-            <h3 class="font-bold text-sm text-slate-100">Surah Al-Mulk</h3>
-            <p class="text-xs text-emerald-300/80">30 Ayat • Pelindung Kubur</p>
-          </div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm">67</div>
+          <div><h3 class="font-bold text-sm text-slate-100">Surah Al-Mulk</h3><p class="text-xs text-emerald-300/80">30 Ayat • Pelindung Kubur</p></div>
         </div>
-
-        <!-- Surah Al-Waqi'ah -->
         <div onclick="openSurah(56)" class="glass-card p-4 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm">
-            56
-          </div>
-          <div>
-            <h3 class="font-bold text-sm text-slate-100">Al-Waqi'ah</h3>
-            <p class="text-xs text-emerald-300/80">96 Ayat • Pembuka Rezeki</p>
-          </div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm">56</div>
+          <div><h3 class="font-bold text-sm text-slate-100">Al-Waqi'ah</h3><p class="text-xs text-emerald-300/80">96 Ayat • Pembuka Rezeki</p></div>
         </div>
       </div>
 
-      <!-- TODAY'S PRAYER TIMES SUMMARY WIDGET -->
+      <!-- Waktu Solat Ringkas Widget -->
       <div class="glass-card p-6 rounded-3xl border border-gold-500/30 shadow-lg">
         <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-emerald-900/60">
           <div class="flex items-center gap-3">
@@ -518,82 +431,57 @@
               <i class="fa-solid fa-compass-drafting"></i>
             </div>
             <div>
-              <h3 class="font-bold text-slate-100 text-base">Waktu Solat Hari Ini</h3>
+              <h3 class="font-bold text-slate-100 text-base">Waktu Solat Wilayah / Negeri</h3>
               <p id="today-hijri-date" class="text-xs text-gold-300/90 font-medium">Memuatkan tarikh Hijrah...</p>
             </div>
           </div>
           <div class="flex items-center gap-2">
-            <span id="next-prayer-countdown-badge" class="px-3 py-1 rounded-full bg-emerald-900/80 border border-gold-500/30 text-xs font-mono text-gold-300">
+            <span class="px-3 py-1 rounded-full bg-emerald-900/80 border border-gold-500/30 text-xs font-mono text-gold-300">
               Solat Seterusnya: <strong id="next-prayer-name">Subuh</strong> (<span id="next-prayer-timer">--:--:--</span>)
             </span>
             <button onclick="switchTab('prayer')" class="px-3 py-1 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20">
-              Lihat Penuh <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Penuh <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- 6 Prayer Times Pillars -->
         <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3 mt-4 text-center">
-          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20">
-            <span class="text-xs text-slate-400">Subuh</span>
-            <p id="time-subuh" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">06:05</p>
-          </div>
-          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20">
-            <span class="text-xs text-slate-400">Syuruk</span>
-            <p id="time-syuruk" class="text-sm sm:text-base font-bold text-slate-200 mt-1 font-mono">07:18</p>
-          </div>
-          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20">
-            <span class="text-xs text-slate-400">Zohor</span>
-            <p id="time-zohor" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">13:22</p>
-          </div>
-          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20">
-            <span class="text-xs text-slate-400">Asar</span>
-            <p id="time-asar" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">16:35</p>
-          </div>
-          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20">
-            <span class="text-xs text-slate-400">Maghrib</span>
-            <p id="time-maghrib" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">19:28</p>
-          </div>
-          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20">
-            <span class="text-xs text-slate-400">Isyak</span>
-            <p id="time-isyak" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">20:38</p>
-          </div>
+          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20"><span class="text-xs text-slate-400">Subuh</span><p id="time-subuh" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">06:05</p></div>
+          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20"><span class="text-xs text-slate-400">Syuruk</span><p id="time-syuruk" class="text-sm sm:text-base font-bold text-slate-200 mt-1 font-mono">07:18</p></div>
+          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20"><span class="text-xs text-slate-400">Zohor</span><p id="time-zohor" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">13:22</p></div>
+          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20"><span class="text-xs text-slate-400">Asar</span><p id="time-asar" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">16:35</p></div>
+          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20"><span class="text-xs text-slate-400">Maghrib</span><p id="time-maghrib" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">19:28</p></div>
+          <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/20"><span class="text-xs text-slate-400">Isyak</span><p id="time-isyak" class="text-sm sm:text-base font-bold text-gold-300 mt-1 font-mono">20:38</p></div>
         </div>
       </div>
 
     </section>
 
-
     <!-- ========================================================================= -->
-    <!-- TAB 2: SENARAI 114 SURAH AL-QURAN (VERIFIED & AUTHENTIC) -->
+    <!-- TAB 2: SENARAI 114 SURAH (KEKAL ADA & TIDAK PADAM) -->
     <!-- ========================================================================= -->
     <section id="tab-surahs" class="tab-content hidden space-y-6">
       
-      <!-- Top Search & Filter Bar -->
       <div class="glass-card p-5 rounded-3xl border border-gold-500/30 space-y-4">
         <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
           <div>
             <h2 class="text-xl sm:text-2xl font-bold gold-gradient-text flex items-center gap-2">
-              <i class="fa-solid fa-book-quran"></i> Senarai 114 Surah Al-Quran
+              <i class="fa-solid fa-book-quran"></i> Senarai 114 Surah Al-Quran Lengkap
             </h2>
-            <p class="text-xs text-emerald-200/70">Disemak & disahkan mengikut susunan rasmi Mushaf Uthmani & Terjemahan Bahasa Melayu</p>
+            <p class="text-xs text-emerald-200/70">Disemak mengikut susunan rasmi Mushaf Uthmani & Terjemahan Sahih</p>
           </div>
-          <div class="flex items-center gap-2 w-full sm:w-auto">
-            <span id="surah-total-badge" class="px-3 py-1 rounded-full bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 font-semibold">
-              114 Surah Lengkap
-            </span>
-          </div>
+          <span class="px-3 py-1 rounded-full bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 font-semibold">
+            114 Surah Sentiasa Tersedia
+          </span>
         </div>
 
-        <!-- Search Input & Type Filter -->
         <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 pt-2">
           <div class="sm:col-span-8 relative">
             <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gold-400/80"></i>
-            <input type="text" id="surah-search-input" onkeyup="filterSurahs()" placeholder="Cari nama surah (cth: Al-Baqarah, Yasin, 36, Rezeki, Lembu)..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-midnight/90 border border-gold-500/30 text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400 transition-all">
+            <input type="text" id="surah-search-input" onkeyup="filterSurahs()" placeholder="Cari nama surah (cth: Al-Baqarah, Yasin, 36, Rezeki)..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-midnight/90 border border-gold-500/30 text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-gold-400">
           </div>
-
           <div class="sm:col-span-4 flex gap-2">
-            <select id="surah-type-filter" onchange="filterSurahs()" class="w-full px-3 py-3 rounded-2xl bg-midnight/90 border border-gold-500/30 text-sm text-gold-300 focus:outline-none focus:border-gold-400">
+            <select id="surah-type-filter" onchange="filterSurahs()" class="w-full px-3 py-3 rounded-2xl bg-midnight/90 border border-gold-500/30 text-sm text-gold-300 focus:outline-none">
               <option value="ALL">Semua Surah (114)</option>
               <option value="Makkiyah">Makkiyah (86)</option>
               <option value="Madaniyah">Madaniyah (28)</option>
@@ -605,70 +493,54 @@
         </div>
       </div>
 
-      <!-- SURAH GRID CARDS CONTAINER -->
-      <div id="surahs-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
-        <!-- Javascript dynamically populates all 114 surahs here -->
-      </div>
+      <!-- PERSISTENT SURAH GRID -->
+      <div id="surahs-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4"></div>
 
-      <!-- Empty State If Not Found -->
       <div id="surahs-not-found" class="hidden text-center py-16 space-y-3">
         <i class="fa-solid fa-magnifying-glass text-4xl text-slate-500"></i>
         <p class="text-lg font-semibold text-slate-300">Tiada surah dijumpai</p>
-        <p class="text-xs text-slate-400">Sila semak semula ejaan atau kata kunci pencarian anda.</p>
       </div>
 
     </section>
 
-
     <!-- ========================================================================= -->
-    <!-- TAB 3: SURAH READER (FULL ARABIC UTHMANI, TRANSLATION, AUDIO RECITATION) -->
+    <!-- TAB 3: SURAH READER -->
     <!-- ========================================================================= -->
     <section id="tab-reader" class="tab-content hidden space-y-6">
       
-      <!-- Back Button & Quick Reader Navigation -->
       <div class="flex flex-wrap items-center justify-between gap-3">
-        <button onclick="switchTab('surahs')" class="px-4 py-2 rounded-2xl bg-emerald-950/80 border border-gold-500/30 text-xs font-semibold text-gold-300 hover:bg-gold-500/20 transition-all flex items-center gap-2">
-          <i class="fa-solid fa-arrow-left"></i> Kembali ke Senarai Surah
+        <button onclick="switchTab('surahs')" class="px-4 py-2 rounded-2xl bg-emerald-950/90 border border-gold-500/30 text-xs font-semibold text-gold-300 hover:bg-gold-500/20 flex items-center gap-2">
+          <i class="fa-solid fa-arrow-left"></i> Kembali ke 114 Surah
         </button>
 
         <div class="flex items-center gap-2">
-          <button onclick="prevSurahReader()" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20 flex items-center gap-1">
-            <i class="fa-solid fa-chevron-left text-[10px]"></i> Surah Sebelum
+          <button onclick="prevSurahReader()" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20">
+            <i class="fa-solid fa-chevron-left text-[10px]"></i> Sebelum
           </button>
-          <select id="reader-surah-select" onchange="openSurah(this.value)" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 font-medium focus:outline-none">
-            <!-- Populated via JS -->
+          <select id="reader-surah-select" onchange="openSurah(this.value)" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 focus:outline-none">
           </select>
-          <button onclick="nextSurahReader()" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20 flex items-center gap-1">
-            Surah Seterusnya <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          <button onclick="nextSurahReader()" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20">
+            Seterusnya <i class="fa-solid fa-chevron-right text-[10px]"></i>
           </button>
         </div>
       </div>
 
-      <!-- SURAH HEADER CARD -->
-      <div id="reader-surah-header" class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/40 text-center relative overflow-hidden shadow-2xl">
-        <div class="absolute top-0 right-0 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
+      <!-- Surah Banner -->
+      <div id="reader-surah-header" class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/40 text-center shadow-2xl relative overflow-hidden">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/90 border border-gold-500/30 text-xs text-gold-300 mb-3">
           <span id="reader-surah-type">Makkiyah</span> • <span id="reader-surah-verses-count">7 Ayat</span>
         </div>
 
-        <h1 id="reader-surah-arabic-title" class="font-quran text-4xl sm:text-6xl text-gold-300 font-bold tracking-wide my-2">
-          الفاتحة
-        </h1>
-        <h2 id="reader-surah-latin-title" class="text-xl sm:text-2xl font-bold text-slate-100 tracking-tight">
-          Surah Al-Fatihah
-        </h2>
-        <p id="reader-surah-meaning" class="text-sm text-emerald-200/80 italic mt-1">
-          "Pembukaan"
-        </p>
+        <h1 id="reader-surah-arabic-title" class="font-quran text-4xl sm:text-6xl text-gold-300 font-bold my-2">الفاتحة</h1>
+        <h2 id="reader-surah-latin-title" class="text-xl sm:text-2xl font-bold text-slate-100">Surah Al-Fatihah</h2>
+        <p id="reader-surah-meaning" class="text-sm text-emerald-200/80 italic mt-1">"Pembukaan"</p>
 
-        <!-- Audio Reciter Selection & Full Play Controls -->
         <div class="flex flex-wrap items-center justify-center gap-3 mt-6 pt-5 border-t border-gold-500/20">
-          <button id="btn-play-full-surah" onclick="togglePlayFullSurah()" class="gold-gradient-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md hover:scale-105 transition-transform flex items-center gap-2">
+          <button id="btn-play-full-surah" onclick="togglePlayFullSurah()" class="gold-gradient-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2">
             <i id="icon-play-full-surah" class="fa-solid fa-play"></i> Mainkan Seluruh Surah
           </button>
           
-          <select id="reader-reciter-select" onchange="changeReciter(this.value)" class="px-3 py-2 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 focus:outline-none">
+          <select id="reader-reciter-select" onchange="changeReciter(this.value)" class="px-3 py-2 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300">
             <option value="ar.alafasy">Qari: Mishary Rashid Alafasy</option>
             <option value="ar.abdurrahmaansudais">Qari: Abdurrahman As-Sudais</option>
             <option value="ar.saadalghamidi">Qari: Saad Al-Ghamidi</option>
@@ -676,9 +548,8 @@
             <option value="ar.abdulbasitmurattal">Qari: Abdul Basit Murattal</option>
           </select>
 
-          <!-- Jump to Ayah Button -->
           <div class="flex items-center gap-1.5">
-            <input type="number" id="jump-ayah-input" min="1" placeholder="Ayat" class="w-16 px-2.5 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-center text-gold-300 focus:outline-none">
+            <input type="number" id="jump-ayah-input" min="1" placeholder="No Ayat" class="w-20 px-2.5 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-center text-gold-300 focus:outline-none">
             <button onclick="jumpToAyah()" class="px-3 py-1.5 rounded-xl bg-emerald-900 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20">
               Lompat
             </button>
@@ -686,7 +557,7 @@
         </div>
       </div>
 
-      <!-- BISMILLAH BANNER FOR SURAHS (EXCEPT SURAH 9) -->
+      <!-- Bismillah Banner -->
       <div id="reader-bismillah-banner" class="glass-card py-5 px-4 rounded-3xl text-center border border-gold-500/20 shadow-md">
         <p class="font-quran text-2xl sm:text-4xl text-gold-300 font-bold select-none">
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
@@ -694,25 +565,89 @@
         <p class="text-xs text-emerald-200/70 mt-1">Dengan nama Allah Yang Maha Pengasih, Maha Penyayang</p>
       </div>
 
-      <!-- LOADING SPINNER -->
+      <!-- Loader -->
       <div id="reader-loading" class="hidden text-center py-20 space-y-4">
         <i class="fa-solid fa-spinner fa-spin text-4xl text-gold-400"></i>
-        <p class="text-base text-gold-300 font-medium">Sedang memuatkan ayat-ayat suci Al-Quran yang sahih...</p>
+        <p class="text-base text-gold-300 font-medium">Memuatkan ayat-ayat suci Al-Quran...</p>
       </div>
 
-      <!-- AYAHS LIST CONTAINER -->
-      <div id="reader-ayahs-container" class="space-y-4">
-        <!-- Javascript dynamically renders verses here -->
-      </div>
+      <!-- Verses Container -->
+      <div id="reader-ayahs-container" class="space-y-4"></div>
 
     </section>
 
+    <!-- ========================================================================= -->
+    <!-- TAB 4: TRACKER KHATAM AL-QURAN & PERANCANG TILAWAH (NEW FEATURE!) -->
+    <!-- ========================================================================= -->
+    <section id="tab-khatam" class="tab-content hidden space-y-6">
+      <div class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/40 shadow-xl space-y-6">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div>
+            <h2 class="text-xl sm:text-2xl font-bold gold-gradient-text flex items-center gap-2">
+              <i class="fa-solid fa-trophy text-gold-400"></i> Perancang & Tracker Khatam Al-Quran
+            </h2>
+            <p class="text-xs text-slate-300">Pantau kemajuan tilawah harian anda menuju sasaran 30 Juzuk (604 Halaman)</p>
+          </div>
+          <button onclick="resetKhatamTracker()" class="px-3 py-1.5 rounded-xl bg-red-950/80 border border-red-500/30 text-red-300 text-xs">
+            <i class="fa-solid fa-rotate-left"></i> Reset Tracker
+          </button>
+        </div>
+
+        <!-- Overall Progress Circle / Bar -->
+        <div class="p-6 rounded-2xl bg-emerald-950/80 border border-gold-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="text-center sm:text-left space-y-1">
+            <span class="text-xs text-gold-300 font-semibold uppercase tracking-wider">Kemajuan Khatam Semasa</span>
+            <h3 class="text-3xl font-extrabold text-slate-100"><span id="khatam-juz-completed">0</span> / 30 <span class="text-lg font-medium text-gold-400">Juzuk Selesai</span></h3>
+            <p class="text-xs text-slate-400">Peratusan: <strong id="khatam-percentage" class="text-gold-400">0%</strong> • Baki: <span id="khatam-remaining-juz">30</span> Juzuk</p>
+          </div>
+
+          <div class="w-full sm:w-64 bg-midnight h-4 rounded-full border border-gold-500/30 overflow-hidden">
+            <div id="khatam-progress-bar-fill" class="h-full bg-gradient-to-r from-emerald-500 via-gold-400 to-gold-500 w-0 transition-all duration-500"></div>
+          </div>
+        </div>
+
+        <!-- 30 Juz Checklist Grid -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-sm text-gold-300">Tandakan Juzuk yang Telah Selesai Dibaca:</h4>
+          <div id="khatam-juz-grid" class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 gap-2.5">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ========================================================================= -->
-    <!-- TAB 4: WAKTU SOLAT & ARAH KIBLAT (ACCURATE JAKIM / ISLAMIC CALCULATION) -->
+    <!-- TAB 5: HADIS 40 IMAM NAWAWI (NEW FEATURE!) -->
+    <!-- ========================================================================= -->
+    <section id="tab-hadith" class="tab-content hidden space-y-6">
+      <div class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/30 space-y-4">
+        <h2 class="text-xl sm:text-2xl font-bold gold-gradient-text flex items-center gap-2">
+          <i class="fa-solid fa-scroll text-gold-400"></i> Himpunan Hadis 40 Imam An-Nawawi
+        </h2>
+        <p class="text-xs text-slate-300">Koleksi hadis sahih pokok pegangan akidah, syariah, dan akhlak seorang Muslim</p>
+      </div>
+
+      <div id="hadiths-list-container" class="space-y-4"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 6: AL-MATHURAT (ZIKIR PAGI & PETANG - NEW FEATURE!) -->
+    <!-- ========================================================================= -->
+    <section id="tab-mathurat" class="tab-content hidden space-y-6">
+      <div class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/30 space-y-4">
+        <h2 class="text-xl sm:text-2xl font-bold gold-gradient-text flex items-center gap-2">
+          <i class="fa-solid fa-shield-halved text-gold-400"></i> Al-Mathurat Sughra (Zikir Pagi & Petang)
+        </h2>
+        <p class="text-xs text-slate-300">Benteng perlindungan rohani harian bersumberkan amalan baginda Rasulullah SAW</p>
+      </div>
+
+      <div id="mathurat-list-container" class="space-y-4"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 7: WAKTU SOLAT & KIBLAT -->
     <!-- ========================================================================= -->
     <section id="tab-prayer" class="tab-content hidden space-y-6">
-      
       <div class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/40 text-center relative overflow-hidden shadow-2xl">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/90 border border-gold-500/30 text-xs text-gold-300 mb-4">
           <i class="fa-solid fa-kaaba text-gold-400"></i>
@@ -722,97 +657,60 @@
         <h2 class="text-2xl sm:text-3xl font-extrabold gold-gradient-text">
           Waktu Solat Wilayah / Negeri
         </h2>
-        <p id="prayer-zone-display" class="text-sm text-slate-300 mt-1">
-          Kawasan: <strong id="current-zone-label" class="text-gold-300">Kuala Lumpur & Putrajaya (WLY01)</strong>
+        <p class="text-sm text-slate-300 mt-1">
+          Kawasan Semasa: <strong id="current-zone-label" class="text-gold-300">Kuala Lumpur & Putrajaya (WLY01)</strong>
         </p>
 
-        <!-- Zone Selector Dropdown -->
+        <!-- Zone Selector -->
         <div class="max-w-md mx-auto mt-4">
           <select id="prayer-zone-select" onchange="changePrayerZone(this.value)" class="w-full px-4 py-2.5 rounded-2xl bg-midnight border border-gold-500/30 text-xs sm:text-sm text-gold-300 font-medium focus:outline-none">
             <optgroup label="Malaysia - Wilayah Persekutuan">
               <option value="WLY01" selected>Kuala Lumpur, Putrajaya</option>
               <option value="WLY02">Labuan</option>
             </optgroup>
-            <optgroup label="Malaysia - Selangor">
-              <option value="SGR01">Gombak, Petaling, Sepang, Hulu Langat, Hulu Selangor</option>
-              <option value="SGR02">Klang, Kuala Langat</option>
-              <option value="SGR03">Kuala Selangor, Sabak Bernam</option>
-            </optgroup>
             <optgroup label="Malaysia - Negeri Sembilan">
+              <option value="NGS02">Mantin, Seremban, Port Dickson, Rembau, Jelebu</option>
               <option value="NGS01">Jempol, Tampin</option>
-              <option value="NGS02">Port Dickson, Seremban, Rembau, Jelebu</option>
+            </optgroup>
+            <optgroup label="Malaysia - Selangor">
+              <option value="SGR01">Gombak, Petaling, Sepang, Hulu Langat</option>
+              <option value="SGR02">Klang, Kuala Langat</option>
             </optgroup>
             <optgroup label="Malaysia - Johor">
-              <option value="JHR01">Pulau Aur dan Pulau Pemanggil</option>
               <option value="JHR02">Johor Bahru, Kota Tinggi, Kulai</option>
               <option value="JHR03">Kluang, Pontian</option>
-              <option value="JHR04">Batu Pahat, Muar, Segamat, Tangkak</option>
             </optgroup>
             <optgroup label="Malaysia - Pulau Pinang">
               <option value="PNG01">Seluruh Negeri Pulau Pinang</option>
             </optgroup>
-            <optgroup label="Malaysia - Perak">
-              <option value="PRK01">Tapah, Slim River, Tanjung Malim</option>
-              <option value="PRK02">Ipoh, Batu Gajah, Kampar, Sg Siput, K. Kangsar</option>
+            <optgroup label="Malaysia - Perak & Kedah">
+              <option value="PRK02">Ipoh, Batu Gajah, Kampar, K. Kangsar</option>
+              <option value="KDH01">Kota Setar, Kubang Pasu, Pokok Sena</option>
             </optgroup>
             <optgroup label="Malaysia - Kelantan & Terengganu">
-              <option value="KTN01">Kota Bharu, Bachok, Pasir Puteh, Tumpat</option>
-              <option value="TRG01">Kuala Terengganu, Marang, Kuala Nerus</option>
-            </optgroup>
-            <optgroup label="Malaysia - Kedah & Perlis">
-              <option value="KDH01">Kota Setar, Kubang Pasu, Pokok Sena</option>
-              <option value="PLS01">Seluruh Negeri Perlis</option>
+              <option value="KTN01">Kota Bharu, Bachok, Pasir Puteh</option>
+              <option value="TRG01">Kuala Terengganu, Marang</option>
             </optgroup>
             <optgroup label="Malaysia - Sabah & Sarawak">
-              <option value="SBH01">Kota Kinabalu, Penampang, Tuaran</option>
-              <option value="SWK01">Kuching, Bau, Lundu, Sematan</option>
-            </optgroup>
-            <optgroup label="Global / Indonesia / Singapura">
-              <option value="JKT">Jakarta, Indonesia</option>
-              <option value="SGP">Singapura</option>
+              <option value="SBH01">Kota Kinabalu, Penampang</option>
+              <option value="SWK01">Kuching, Bau, Lundu</option>
             </optgroup>
           </select>
         </div>
 
-        <!-- Prayer Grid Detail Cards -->
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mt-8">
-          <div class="p-4 rounded-2xl glass-card text-center border border-gold-500/20">
-            <i class="fa-solid fa-moon text-gold-400 text-lg mb-2"></i>
-            <span class="block text-xs text-slate-400 font-medium">Subuh</span>
-            <p id="pz-subuh" class="text-xl font-bold text-gold-300 font-mono mt-1">06:05</p>
-          </div>
-          <div class="p-4 rounded-2xl glass-card text-center border border-gold-500/20">
-            <i class="fa-solid fa-sun text-yellow-300 text-lg mb-2"></i>
-            <span class="block text-xs text-slate-400 font-medium">Syuruk</span>
-            <p id="pz-syuruk" class="text-xl font-bold text-slate-200 font-mono mt-1">07:18</p>
-          </div>
-          <div class="p-4 rounded-2xl glass-card text-center border border-gold-500/20">
-            <i class="fa-solid fa-sun text-gold-400 text-lg mb-2"></i>
-            <span class="block text-xs text-slate-400 font-medium">Zohor</span>
-            <p id="pz-zohor" class="text-xl font-bold text-gold-300 font-mono mt-1">13:22</p>
-          </div>
-          <div class="p-4 rounded-2xl glass-card text-center border border-gold-500/20">
-            <i class="fa-solid fa-cloud-sun text-gold-400 text-lg mb-2"></i>
-            <span class="block text-xs text-slate-400 font-medium">Asar</span>
-            <p id="pz-asar" class="text-xl font-bold text-gold-300 font-mono mt-1">16:35</p>
-          </div>
-          <div class="p-4 rounded-2xl glass-card text-center border border-gold-500/20">
-            <i class="fa-solid fa-cloud-sun text-amber-500 text-lg mb-2"></i>
-            <span class="block text-xs text-slate-400 font-medium">Maghrib</span>
-            <p id="pz-maghrib" class="text-xl font-bold text-gold-300 font-mono mt-1">19:28</p>
-          </div>
-          <div class="p-4 rounded-2xl glass-card text-center border border-gold-500/20">
-            <i class="fa-solid fa-star-and-crescent text-indigo-300 text-lg mb-2"></i>
-            <span class="block text-xs text-slate-400 font-medium">Isyak</span>
-            <p id="pz-isyak" class="text-xl font-bold text-gold-300 font-mono mt-1">20:38</p>
-          </div>
+          <div class="p-4 rounded-2xl glass-card text-center"><i class="fa-solid fa-moon text-gold-400 text-lg mb-2"></i><span class="block text-xs text-slate-400">Subuh</span><p id="pz-subuh" class="text-xl font-bold text-gold-300 font-mono mt-1">06:05</p></div>
+          <div class="p-4 rounded-2xl glass-card text-center"><i class="fa-solid fa-sun text-yellow-300 text-lg mb-2"></i><span class="block text-xs text-slate-400">Syuruk</span><p id="pz-syuruk" class="text-xl font-bold text-slate-200 font-mono mt-1">07:18</p></div>
+          <div class="p-4 rounded-2xl glass-card text-center"><i class="fa-solid fa-sun text-gold-400 text-lg mb-2"></i><span class="block text-xs text-slate-400">Zohor</span><p id="pz-zohor" class="text-xl font-bold text-gold-300 font-mono mt-1">13:22</p></div>
+          <div class="p-4 rounded-2xl glass-card text-center"><i class="fa-solid fa-cloud-sun text-gold-400 text-lg mb-2"></i><span class="block text-xs text-slate-400">Asar</span><p id="pz-asar" class="text-xl font-bold text-gold-300 font-mono mt-1">16:35</p></div>
+          <div class="p-4 rounded-2xl glass-card text-center"><i class="fa-solid fa-cloud-sun text-amber-500 text-lg mb-2"></i><span class="block text-xs text-slate-400">Maghrib</span><p id="pz-maghrib" class="text-xl font-bold text-gold-300 font-mono mt-1">19:28</p></div>
+          <div class="p-4 rounded-2xl glass-card text-center"><i class="fa-solid fa-star-and-crescent text-indigo-300 text-lg mb-2"></i><span class="block text-xs text-slate-400">Isyak</span><p id="pz-isyak" class="text-xl font-bold text-gold-300 font-mono mt-1">20:38</p></div>
         </div>
 
-        <!-- Qibla Compass Card -->
         <div class="mt-8 p-6 rounded-2xl bg-emerald-950/70 border border-gold-500/30 max-w-lg mx-auto flex items-center justify-between gap-4">
           <div class="text-left">
             <h4 class="font-bold text-sm text-gold-300">Arah Kiblat (Makkah)</h4>
-            <p class="text-xs text-slate-300 mt-0.5">Sudut Kiblat Malaysia: <strong class="text-gold-400">292° Barat Laut</strong></p>
+            <p class="text-xs text-slate-300 mt-0.5">Sudut Kiblat: <strong class="text-gold-400">292° Barat Laut</strong></p>
             <p class="text-[11px] text-emerald-300/70 mt-1">Jarak ke Kaabah: ~7,100 km</p>
           </div>
           <div class="w-16 h-16 rounded-full bg-emerald-900 border-2 border-gold-400 flex items-center justify-center shadow-lg relative">
@@ -820,15 +718,12 @@
           </div>
         </div>
       </div>
-
     </section>
 
-
     <!-- ========================================================================= -->
-    <!-- TAB 5: TASBIH DIGITAL & ZIKIR -->
+    <!-- TAB 8: TASBIH DIGITAL -->
     <!-- ========================================================================= -->
     <section id="tab-tasbih" class="tab-content hidden space-y-6">
-      
       <div class="max-w-xl mx-auto glass-card p-6 sm:p-10 rounded-3xl border border-gold-500/40 text-center shadow-2xl space-y-6">
         
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/90 border border-gold-500/30 text-xs text-gold-300">
@@ -836,9 +731,7 @@
           <span>Tasbih Digital Interaktif • Bergetar & Berbunyi</span>
         </div>
 
-        <!-- Zikir Selector Dropdown -->
         <div>
-          <label class="block text-xs text-slate-400 mb-1.5 font-medium">Pilih Lafaz Zikir:</label>
           <select id="tasbih-zikir-select" onchange="changeZikirPreset(this.value)" class="w-full px-4 py-2.5 rounded-2xl bg-midnight border border-gold-500/30 text-sm text-gold-300 focus:outline-none">
             <option value="Subhanallah">سُبْحَانَ اللَّهِ (Subhanallah - Maha Suci Allah)</option>
             <option value="Alhamdulillah">الْحَمْدُ لِلَّهِ (Alhamdulillah - Segala Puji bagi Allah)</option>
@@ -846,13 +739,10 @@
             <option value="LaIlahaIllallah">لَا إِلَٰهَ إِلَّا اللَّهُ (La ilaha illallah - Tiada Tuhan selain Allah)</option>
             <option value="Astaghfirullah">أَسْتَغْفِرُ اللَّهَ (Astaghfirullah - Aku memohon ampun kepada Allah)</option>
             <option value="Salawat">اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ (Allahumma Salli 'ala Muhammad)</option>
-            <option value="Hauqalah">لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ (La hawla wa la quwwata illa billah)</option>
-            <option value="SubhanallahWabihamdihi">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ (Subhanallahi wa bihamdih)</option>
           </select>
         </div>
 
-        <!-- Selected Zikir Arabic Display -->
-        <div class="py-4">
+        <div class="py-2">
           <p id="tasbih-arabic-display" class="font-quran text-4xl sm:text-5xl text-gold-300 font-bold leading-relaxed">
             سُبْحَانَ اللَّهِ
           </p>
@@ -861,117 +751,77 @@
           </p>
         </div>
 
-        <!-- Target Count Selector -->
         <div class="flex items-center justify-center gap-2">
           <span class="text-xs text-slate-400">Sasaran:</span>
           <button onclick="setTasbihTarget(33)" class="tasbih-target-btn px-3 py-1 rounded-xl bg-emerald-900 border border-gold-500/40 text-xs font-bold text-gold-300" data-target="33">33</button>
           <button onclick="setTasbihTarget(99)" class="tasbih-target-btn px-3 py-1 rounded-xl bg-emerald-950 border border-gold-500/20 text-xs font-bold text-slate-300" data-target="99">99</button>
           <button onclick="setTasbihTarget(100)" class="tasbih-target-btn px-3 py-1 rounded-xl bg-emerald-950 border border-gold-500/20 text-xs font-bold text-slate-300" data-target="100">100</button>
-          <button onclick="setTasbihTarget(1000)" class="tasbih-target-btn px-3 py-1 rounded-xl bg-emerald-950 border border-gold-500/20 text-xs font-bold text-slate-300" data-target="1000">1000</button>
           <button onclick="setTasbihTarget(0)" class="tasbih-target-btn px-3 py-1 rounded-xl bg-emerald-950 border border-gold-500/20 text-xs font-bold text-slate-300" data-target="0">Bebas</button>
         </div>
 
-        <!-- HUGE CLICKABLE BEAD BUTTON -->
         <div class="py-4">
-          <button id="tasbih-btn" onclick="incrementTasbih()" class="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full bg-gradient-to-b from-emerald-700 via-emerald-800 to-emerald-950 border-4 border-gold-400/80 shadow-2xl shadow-emerald-950/80 flex flex-col items-center justify-center active:scale-95 transition-transform cursor-pointer select-none group">
-            <span id="tasbih-counter" class="text-5xl sm:text-6xl font-extrabold text-gold-300 font-mono tracking-tight group-hover:scale-105 transition-transform">
-              0
-            </span>
-            <span id="tasbih-target-label" class="text-xs text-emerald-200/80 font-medium mt-1">
-              Sasaran: 33
-            </span>
-            <span class="text-[11px] text-gold-400/90 uppercase tracking-widest mt-2">
+          <button id="tasbih-btn" onclick="incrementTasbih()" class="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full bg-gradient-to-b from-emerald-700 via-emerald-800 to-emerald-950 border-4 border-gold-400 shadow-2xl flex flex-col items-center justify-center active:scale-95 transition-transform cursor-pointer select-none group">
+            <span id="tasbih-counter" class="text-5xl sm:text-6xl font-extrabold text-gold-300 font-mono tracking-tight group-hover:scale-105 transition-transform">0</span>
+            <span id="tasbih-target-label" class="text-xs text-emerald-200/80 font-medium mt-1">Sasaran: 33</span>
+            <span class="text-[10px] text-gold-400/90 uppercase tracking-widest mt-2">
               <i class="fa-solid fa-fingerprint mr-1"></i> TEKAN
             </span>
           </button>
         </div>
 
-        <!-- Total Stats & Reset Button -->
         <div class="flex items-center justify-between pt-4 border-t border-emerald-900/60 text-xs">
-          <div class="text-left">
-            <span class="text-slate-400">Pusingan (Lap): <strong id="tasbih-laps" class="text-gold-400">0</strong></span>
-            <span class="block text-slate-400 mt-0.5">Jumlah Keseluruhan: <strong id="tasbih-total" class="text-gold-400">0</strong></span>
-          </div>
-
+          <span>Jumlah: <strong id="tasbih-total" class="text-gold-400">0</strong> • Pusingan: <strong id="tasbih-laps" class="text-gold-400">0</strong></span>
           <div class="flex items-center gap-2">
-            <button onclick="toggleTasbihSound()" id="tasbih-sound-btn" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-300 text-xs hover:bg-gold-500/20">
-              <i id="tasbih-sound-icon" class="fa-solid fa-volume-high"></i> Bunyi: ON
+            <button onclick="toggleTasbihSound()" id="tasbih-sound-btn" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-300 text-xs">
+              <i class="fa-solid fa-volume-high"></i> Bunyi: ON
             </button>
-            <button onclick="resetTasbih()" class="px-3 py-1.5 rounded-xl bg-red-950/80 border border-red-500/30 text-red-300 text-xs hover:bg-red-900/60">
-              <i class="fa-solid fa-rotate-left"></i> Reset
-            </button>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ========================================================================= -->
-    <!-- TAB 6: DOA HARIAN & KHATAM AL-QURAN -->
-    <!-- ========================================================================= -->
-    <section id="tab-duas" class="tab-content hidden space-y-6">
-      
-      <div class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/30 space-y-4">
-        <div class="flex items-center justify-between">
-          <div>
-            <h2 class="text-xl sm:text-2xl font-bold gold-gradient-text flex items-center gap-2">
-              <i class="fa-solid fa-hands-praying"></i> Himpunan Doa Pilihan & Khatam Quran
-            </h2>
-            <p class="text-xs text-slate-300">Amalan doa mustajab bersumberkan Al-Quran dan Hadis sahih</p>
+            <button onclick="resetTasbih()" class="px-3 py-1.5 rounded-xl bg-red-950/80 border border-red-500/30 text-red-300 text-xs">Reset</button>
           </div>
         </div>
       </div>
-
-      <!-- DUAS CONTAINER -->
-      <div id="duas-list-container" class="space-y-4">
-        <!-- Populated via JS -->
-      </div>
-
     </section>
 
-
     <!-- ========================================================================= -->
-    <!-- TAB 7: 99 ASMAUL HUSNA -->
+    <!-- TAB 9: ASMAUL HUSNA -->
     <!-- ========================================================================= -->
     <section id="tab-asmaul" class="tab-content hidden space-y-6">
-      
       <div class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/30 space-y-4">
         <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
           <div>
             <h2 class="text-xl sm:text-2xl font-bold gold-gradient-text flex items-center gap-2">
               <i class="fa-solid fa-star-and-crescent"></i> 99 Asmaul Husna (Nama-Nama Indah Allah)
             </h2>
-            <p class="text-xs text-slate-300">Mengenali sifat keagungan dan kemuliaan Allah SWT</p>
+            <p class="text-xs text-slate-300">Menghayati sifat keagungan dan kemuliaan Allah SWT</p>
           </div>
-          <div class="w-full sm:w-72">
-            <input type="text" id="asmaul-search-input" onkeyup="filterAsmaul()" placeholder="Cari nama / maksud..." class="w-full px-4 py-2 rounded-2xl bg-midnight border border-gold-500/30 text-xs text-slate-100 placeholder-slate-400 focus:outline-none">
-          </div>
+          <input type="text" id="asmaul-search-input" onkeyup="filterAsmaul()" placeholder="Cari nama / maksud..." class="w-full sm:w-72 px-4 py-2 rounded-2xl bg-midnight border border-gold-500/30 text-xs text-slate-100 placeholder-slate-400 focus:outline-none">
         </div>
       </div>
-
-      <!-- ASMAUL HUSNA GRID -->
-      <div id="asmaul-grid-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-        <!-- Populated via JS -->
-      </div>
-
+      <div id="asmaul-grid-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4"></div>
     </section>
 
+    <!-- ========================================================================= -->
+    <!-- TAB 10: DOA HARIAN & KHATAM -->
+    <!-- ========================================================================= -->
+    <section id="tab-duas" class="tab-content hidden space-y-6">
+      <div class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/30 space-y-4">
+        <h2 class="text-xl sm:text-2xl font-bold gold-gradient-text flex items-center gap-2">
+          <i class="fa-solid fa-hands-praying"></i> Himpunan Doa Pilihan & Khatam Al-Quran
+        </h2>
+        <p class="text-xs text-slate-300">Amalan doa mustajab bersumberkan Al-Quran dan Hadis sahih</p>
+      </div>
+      <div id="duas-list-container" class="space-y-4"></div>
+    </section>
 
     <!-- ========================================================================= -->
-    <!-- TAB 8: PENANDA BUKU & TERAKHIR DIBACA -->
+    <!-- TAB 11: PENANDA BUKU & TERAKHIR BACA -->
     <!-- ========================================================================= -->
     <section id="tab-bookmarks" class="tab-content hidden space-y-6">
-      
       <div class="glass-card p-6 sm:p-8 rounded-3xl border border-gold-500/30 space-y-4">
         <h2 class="text-xl sm:text-2xl font-bold gold-gradient-text flex items-center gap-2">
           <i class="fa-solid fa-bookmark"></i> Penanda Ayat & Terakhir Dibaca
         </h2>
-        <p class="text-xs text-slate-300">Simpanan kemajuan bacaan harian anda secara automatik di peranti ini</p>
       </div>
 
-      <!-- Last Read Card -->
       <div id="last-read-card" class="glass-card p-6 rounded-3xl border border-gold-500/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xl">
         <div class="flex items-center gap-3.5">
           <div class="w-12 h-12 rounded-2xl bg-emerald-900 border border-gold-500/40 text-gold-400 flex items-center justify-center text-xl">
@@ -980,37 +830,24 @@
           <div>
             <span class="text-xs text-gold-300 font-semibold uppercase tracking-wider">Bacaan Terakhir Anda</span>
             <h3 id="last-read-surah-title" class="text-lg sm:text-xl font-bold text-slate-100">Surah Al-Fatihah : Ayat 1</h3>
-            <p id="last-read-timestamp" class="text-xs text-slate-400 mt-0.5">Disimpan secara automatik</p>
           </div>
         </div>
-
-        <button onclick="resumeLastRead()" class="gold-gradient-btn px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md hover:scale-105 transition-transform flex items-center gap-2">
+        <button onclick="resumeLastRead()" class="gold-gradient-btn px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2">
           <i class="fa-solid fa-book-open-reader"></i> Teruskan Bacaan
         </button>
       </div>
 
-      <!-- Bookmarks List -->
       <div class="space-y-3">
-        <h3 class="text-base font-bold text-slate-200 flex items-center gap-2">
-          <i class="fa-solid fa-bookmark text-gold-400 text-sm"></i> Senarai Penanda Buku Anda
-        </h3>
-        <div id="bookmarks-list-container" class="space-y-3">
-          <!-- Populated via JS -->
-        </div>
+        <h3 class="text-base font-bold text-slate-200">Senarai Penanda Buku Anda</h3>
+        <div id="bookmarks-list-container" class="space-y-3"></div>
       </div>
-
     </section>
 
   </main>
 
-
-  <!-- ========================================================================= -->
-  <!-- PERSISTENT BOTTOM AUDIO PLAYER BAR (QURAN RECITATION) -->
-  <!-- ========================================================================= -->
+  <!-- BOTTOM AUDIO RECITER BAR -->
   <div id="bottom-audio-bar" class="fixed bottom-0 left-0 right-0 z-50 glass-nav border-t border-gold-500/30 p-3 sm:p-4 transform translate-y-full transition-transform duration-300">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-      
-      <!-- Current Reciting Info -->
       <div class="flex items-center gap-3 w-full sm:w-auto">
         <div class="w-10 h-10 rounded-xl bg-emerald-900 border border-gold-500/40 text-gold-400 flex items-center justify-center text-lg shrink-0">
           <i class="fa-solid fa-volume-high"></i>
@@ -1021,21 +858,16 @@
         </div>
       </div>
 
-      <!-- Audio Controls -->
       <div class="flex items-center gap-3">
-        <button onclick="playPreviousAyah()" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20" title="Ayat Sebelum">
+        <button onclick="playPreviousAyah()" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-400 flex items-center justify-center">
           <i class="fa-solid fa-backward-step text-xs"></i>
         </button>
-
-        <button id="audio-main-play-btn" onclick="toggleMainAudio()" class="w-10 h-10 rounded-full gold-gradient-btn text-midnight flex items-center justify-center font-bold text-base shadow-lg hover:scale-105 transition-transform" title="Main / Jeda">
+        <button id="audio-main-play-btn" onclick="toggleMainAudio()" class="w-10 h-10 rounded-full gold-gradient-btn text-midnight flex items-center justify-center font-bold text-base shadow-lg">
           <i id="audio-main-play-icon" class="fa-solid fa-pause"></i>
         </button>
-
-        <button onclick="playNextAyah()" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:bg-gold-500/20" title="Ayat Seterusnya">
+        <button onclick="playNextAyah()" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-400 flex items-center justify-center">
           <i class="fa-solid fa-forward-step text-xs"></i>
         </button>
-
-        <!-- Speed Selector -->
         <select id="audio-speed-select" onchange="setAudioSpeed(this.value)" class="px-2 py-1 rounded-lg bg-emerald-950 border border-gold-500/30 text-[11px] text-gold-300">
           <option value="1.0">1.0x</option>
           <option value="1.25">1.25x</option>
@@ -1043,7 +875,6 @@
         </select>
       </div>
 
-      <!-- Close Player Bar Button -->
       <div class="hidden sm:flex items-center gap-2">
         <button onclick="closeAudioPlayer()" class="px-3 py-1 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-slate-300 hover:text-red-400">
           <i class="fa-solid fa-xmark"></i> Tutup
@@ -1052,12 +883,9 @@
     </div>
   </div>
 
-
-  <!-- ========================================================================= -->
   <!-- SETTINGS MODAL -->
-  <!-- ========================================================================= -->
   <div id="settings-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-md hidden flex items-center justify-center p-4">
-    <div class="glass-card max-w-md w-full p-6 rounded-3xl border border-gold-500/40 shadow-2xl space-y-5 animate-scale">
+    <div class="glass-card max-w-md w-full p-6 rounded-3xl border border-gold-500/40 shadow-2xl space-y-5">
       <div class="flex items-center justify-between pb-3 border-b border-gold-500/20">
         <h3 class="font-bold text-lg text-gold-300 flex items-center gap-2">
           <i class="fa-solid fa-sliders"></i> Tetapan Bacaan & Paparan
@@ -1067,7 +895,6 @@
         </button>
       </div>
 
-      <!-- Font Size Slider -->
       <div class="space-y-2">
         <div class="flex justify-between text-xs text-slate-300">
           <span>Saiz Tulisan Arab:</span>
@@ -1076,40 +903,19 @@
         <input type="range" id="font-size-range" min="20" max="46" value="28" oninput="changeArabicFontSize(this.value)" class="w-full accent-gold-500 cursor-pointer">
       </div>
 
-      <!-- Transliteration (Rumi) Toggle -->
       <div class="flex items-center justify-between py-2 border-t border-emerald-900/60">
-        <div>
-          <span class="text-sm font-medium text-slate-200">Paparan Rumi (Transliterasi)</span>
-          <p class="text-xs text-slate-400">Panduan sebutan huruf rumi</p>
-        </div>
-        <label class="relative inline-flex items-center cursor-pointer">
-          <input type="checkbox" id="toggle-latin-checkbox" checked onchange="toggleLatinDisplay(this.checked)" class="sr-only peer">
-          <div class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
-        </label>
+        <div><span class="text-sm font-medium text-slate-200">Paparan Rumi (Transliterasi)</span></div>
+        <input type="checkbox" id="toggle-latin-checkbox" checked onchange="toggleLatinDisplay(this.checked)" class="accent-gold-500 w-4 h-4 cursor-pointer">
       </div>
 
-      <!-- Translation (Malay) Toggle -->
       <div class="flex items-center justify-between py-2 border-t border-emerald-900/60">
-        <div>
-          <span class="text-sm font-medium text-slate-200">Terjemahan Bahasa Melayu</span>
-          <p class="text-xs text-slate-400">Maksud ayat yang sahih</p>
-        </div>
-        <label class="relative inline-flex items-center cursor-pointer">
-          <input type="checkbox" id="toggle-translation-checkbox" checked onchange="toggleTranslationDisplay(this.checked)" class="sr-only peer">
-          <div class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
-        </label>
+        <div><span class="text-sm font-medium text-slate-200">Terjemahan Bahasa Melayu</span></div>
+        <input type="checkbox" id="toggle-translation-checkbox" checked onchange="toggleTranslationDisplay(this.checked)" class="accent-gold-500 w-4 h-4 cursor-pointer">
       </div>
 
-      <!-- Auto Quotes Voice Toggle in Settings -->
       <div class="flex items-center justify-between py-2 border-t border-emerald-900/60">
-        <div>
-          <span class="text-sm font-medium text-slate-200">Suara Nasihat Kehidupan (TTS)</span>
-          <p class="text-xs text-slate-400">Auto main suara quotes setiap 30 saat</p>
-        </div>
-        <label class="relative inline-flex items-center cursor-pointer">
-          <input type="checkbox" id="toggle-tts-checkbox" checked onchange="setQuotesVoice(this.checked)" class="sr-only peer">
-          <div class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
-        </label>
+        <div><span class="text-sm font-medium text-slate-200">Suara Nasihat Kehidupan (TTS)</span></div>
+        <input type="checkbox" id="toggle-tts-checkbox" checked onchange="setQuotesVoice(this.checked)" class="accent-gold-500 w-4 h-4 cursor-pointer">
       </div>
 
       <button onclick="closeSettingsModal()" class="w-full py-2.5 rounded-xl gold-gradient-btn font-bold text-xs">
@@ -1118,40 +924,25 @@
     </div>
   </div>
 
-
-  <!-- ========================================================================= -->
-  <!-- ABOUT / OWNER MODAL -->
-  <!-- ========================================================================= -->
+  <!-- ABOUT MODAL -->
   <div id="about-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-md hidden flex items-center justify-center p-4">
     <div class="glass-card max-w-md w-full p-6 sm:p-8 rounded-3xl border border-gold-500/40 shadow-2xl space-y-4 text-center">
       <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-600 to-emerald-900 border-2 border-gold-400 mx-auto flex items-center justify-center text-3xl text-gold-400 shadow-xl">
         <i class="fa-solid fa-quran"></i>
       </div>
-
-      <h3 class="text-2xl font-bold gold-gradient-text">FaQuran Digital</h3>
-      <p class="text-xs text-emerald-200/80 font-medium">Aplikasi Al-Quran, Tadabbur & Inspirasi Jiwa</p>
-
+      <h3 class="text-2xl font-bold gold-gradient-text">FaQuran Pro</h3>
+      <p class="text-xs text-emerald-200/80 font-medium">Aplikasi Al-Quran Digital, Tadabbur & Ibadah</p>
       <div class="p-4 rounded-2xl bg-emerald-950/80 border border-gold-500/30 text-left space-y-2 text-xs text-slate-300 leading-relaxed">
         <p><strong class="text-gold-300">Pemilik & Pembangun:</strong> Fakrul (fakruldev / Fakrul Afif)</p>
         <p><strong class="text-gold-300">Domain Rasmi:</strong> <a href="https://quran.fakrulafif.com" target="_blank" class="text-emerald-400 underline">quran.fakrulafif.com</a></p>
-        <p><strong class="text-gold-300">Integriti Data:</strong> Teks Al-Quran Uthmani rasmi dan terjemahan Bahasa Melayu sahih disemak mengikut piawaian JAKIM & Kemenag.</p>
-        <p><strong class="text-gold-300">Ciri Khas:</strong> Nasihat Kehidupan 30s dengan Auto-Voice, 114 Surah berserta Audio Murottal, Waktu Solat tepat, Tasbih Digital berbunyi & 99 Asmaul Husna.</p>
+        <p><strong class="text-gold-300">Status 114 Surah:</strong> Tersedia sepenuhnya, disemak mengikut teks Resam Uthmani sahih dan terjemahan Bahasa Melayu.</p>
+        <p><strong class="text-gold-300">Fitur Nasihat 30s:</strong> Dilengkapi butang <strong>Stop / Jeda</strong> dan sokongan suara narasi automatik.</p>
       </div>
-
-      <p class="text-[11px] text-slate-400 italic">
-        "Sebaik-baik kamu adalah orang yang mempelajari Al-Quran dan mengajarkannya." (HR. Bukhari)
-      </p>
-
-      <button onclick="closeAboutModal()" class="w-full py-2.5 rounded-xl gold-gradient-btn font-bold text-xs">
-        Tutup
-      </button>
+      <button onclick="closeAboutModal()" class="w-full py-2.5 rounded-xl gold-gradient-btn font-bold text-xs">Tutup</button>
     </div>
   </div>
 
-
-  <!-- ========================================================================= -->
   <!-- FOOTER -->
-  <!-- ========================================================================= -->
   <footer class="glass-nav border-t border-gold-500/20 py-8 px-4 text-center space-y-2">
     <div class="flex items-center justify-center gap-2">
       <i class="fa-solid fa-quran text-gold-400"></i>
@@ -1161,27 +952,17 @@
     <p class="text-xs text-slate-400">
       Hak Cipta Terpelihara © 2026 Fakrul. Dibina dengan penuh ikhlas dan amanah untuk ummah.
     </p>
-    <div class="flex items-center justify-center gap-4 text-xs text-gold-400/80 pt-1">
-      <button onclick="switchTab('home')" class="hover:underline">Laman Utama</button>
-      <span>•</span>
-      <button onclick="switchTab('surahs')" class="hover:underline">114 Surah</button>
-      <span>•</span>
-      <button onclick="switchTab('prayer')" class="hover:underline">Waktu Solat</button>
-      <span>•</span>
-      <button onclick="openAboutModal()" class="hover:underline">Tentang Pemilik</button>
-    </div>
   </footer>
 
-  <!-- EMBEDDED JAVASCRIPT LOGIC -->
+  <!-- SCRIPT LOGIC -->
   <script>
-    // ==========================================
-    // DATA STORES
-    // ==========================================
     const SURAHS_DATA = [{"number": 1, "name": "Al-Fatihah", "arabic": "الفاتحة", "meaning": "Pembukaan", "verses": 7, "type": "Makkiyah"}, {"number": 2, "name": "Al-Baqarah", "arabic": "البقرة", "meaning": "Lembu Betina", "verses": 286, "type": "Madaniyah"}, {"number": 3, "name": "Ali 'Imran", "arabic": "آل عمران", "meaning": "Keluarga Imran", "verses": 200, "type": "Madaniyah"}, {"number": 4, "name": "An-Nisa'", "arabic": "النساء", "meaning": "Wanita", "verses": 176, "type": "Madaniyah"}, {"number": 5, "name": "Al-Ma'idah", "arabic": "المائدة", "meaning": "Hidangan", "verses": 120, "type": "Madaniyah"}, {"number": 6, "name": "Al-An'am", "arabic": "الأنعام", "meaning": "Binatang Ternakan", "verses": 165, "type": "Makkiyah"}, {"number": 7, "name": "Al-A'raf", "arabic": "الأعراف", "meaning": "Tempat Tertinggi", "verses": 206, "type": "Makkiyah"}, {"number": 8, "name": "Al-Anfal", "arabic": "الأنفال", "meaning": "Harta Rampasan Perang", "verses": 75, "type": "Madaniyah"}, {"number": 9, "name": "At-Taubah", "arabic": "التوبة", "meaning": "Pengampunan / Taubat", "verses": 129, "type": "Madaniyah"}, {"number": 10, "name": "Yunus", "arabic": "يونس", "meaning": "Nabi Yunus a.s.", "verses": 109, "type": "Makkiyah"}, {"number": 11, "name": "Hud", "arabic": "هود", "meaning": "Nabi Hud a.s.", "verses": 123, "type": "Makkiyah"}, {"number": 12, "name": "Yusuf", "arabic": "يوسف", "meaning": "Nabi Yusuf a.s.", "verses": 111, "type": "Makkiyah"}, {"number": 13, "name": "Ar-Ra'd", "arabic": "الرعد", "meaning": "Guruh", "verses": 43, "type": "Madaniyah"}, {"number": 14, "name": "Ibrahim", "arabic": "إبراهيم", "meaning": "Nabi Ibrahim a.s.", "verses": 52, "type": "Makkiyah"}, {"number": 15, "name": "Al-Hijr", "arabic": "الحجر", "meaning": "Kawasan Berbatu", "verses": 99, "type": "Makkiyah"}, {"number": 16, "name": "An-Nahl", "arabic": "النحل", "meaning": "Lebah", "verses": 128, "type": "Makkiyah"}, {"number": 17, "name": "Al-Isra'", "arabic": "الإسراء", "meaning": "Perjalanan Malam", "verses": 111, "type": "Makkiyah"}, {"number": 18, "name": "Al-Kahf", "arabic": "الكهف", "meaning": "Gua", "verses": 110, "type": "Makkiyah"}, {"number": 19, "name": "Maryam", "arabic": "مريم", "meaning": "Siti Maryam", "verses": 98, "type": "Makkiyah"}, {"number": 20, "name": "Taha", "arabic": "طه", "meaning": "Taha", "verses": 135, "type": "Makkiyah"}, {"number": 21, "name": "Al-Anbiya'", "arabic": "الأنبياء", "meaning": "Para Nabi", "verses": 112, "type": "Makkiyah"}, {"number": 22, "name": "Al-Hajj", "arabic": "الحج", "meaning": "Ibadah Haji", "verses": 78, "type": "Madaniyah"}, {"number": 23, "name": "Al-Mu'minun", "arabic": "المؤمنون", "meaning": "Golongan Beriman", "verses": 118, "type": "Makkiyah"}, {"number": 24, "name": "An-Nur", "arabic": "النور", "meaning": "Cahaya", "verses": 64, "type": "Madaniyah"}, {"number": 25, "name": "Al-Furqan", "arabic": "الفرقان", "meaning": "Pembeda Benar & Salah", "verses": 77, "type": "Makkiyah"}, {"number": 26, "name": "Asy-Syu'ara'", "arabic": "الشعراء", "meaning": "Para Penyair", "verses": 227, "type": "Makkiyah"}, {"number": 27, "name": "An-Naml", "arabic": "النمل", "meaning": "Semut", "verses": 93, "type": "Makkiyah"}, {"number": 28, "name": "Al-Qasas", "arabic": "القصص", "meaning": "Kisah-Kisah", "verses": 88, "type": "Makkiyah"}, {"number": 29, "name": "Al-'Ankabut", "arabic": "العنكبوت", "meaning": "Labah-Labah", "verses": 69, "type": "Makkiyah"}, {"number": 30, "name": "Ar-Rum", "arabic": "الروم", "meaning": "Bangsa Rom", "verses": 60, "type": "Makkiyah"}, {"number": 31, "name": "Luqman", "arabic": "لقمان", "meaning": "Luqman", "verses": 34, "type": "Makkiyah"}, {"number": 32, "name": "As-Sajdah", "arabic": "السجدة", "meaning": "Sujud", "verses": 30, "type": "Makkiyah"}, {"number": 33, "name": "Al-Ahzab", "arabic": "الأحزاب", "meaning": "Golongan Bersekutu", "verses": 73, "type": "Madaniyah"}, {"number": 34, "name": "Saba'", "arabic": "سبإ", "meaning": "Kaum Saba'", "verses": 54, "type": "Makkiyah"}, {"number": 35, "name": "Fatir", "arabic": "فاطر", "meaning": "Pencipta", "verses": 45, "type": "Makkiyah"}, {"number": 36, "name": "Yasin", "arabic": "يس", "meaning": "Yasin", "verses": 83, "type": "Makkiyah"}, {"number": 37, "name": "As-Saffat", "arabic": "الصافات", "meaning": "Barisan Bersaf-saf", "verses": 182, "type": "Makkiyah"}, {"number": 38, "name": "Sad", "arabic": "ص", "meaning": "Sad", "verses": 88, "type": "Makkiyah"}, {"number": 39, "name": "Az-Zumar", "arabic": "الزمر", "meaning": "Rombongan", "verses": 75, "type": "Makkiyah"}, {"number": 40, "name": "Ghafir", "arabic": "غافر", "meaning": "Maha Pengampun", "verses": 85, "type": "Makkiyah"}, {"number": 41, "name": "Fussilat", "arabic": "فصلت", "meaning": "Dijelaskan", "verses": 54, "type": "Makkiyah"}, {"number": 42, "name": "Asy-Syura", "arabic": "الشورى", "meaning": "Musyawarah", "verses": 53, "type": "Makkiyah"}, {"number": 43, "name": "Az-Zukhruf", "arabic": "الزخرف", "meaning": "Perhiasan", "verses": 89, "type": "Makkiyah"}, {"number": 44, "name": "Ad-Dukhan", "arabic": "الدخان", "meaning": "Kabut / Asap", "verses": 59, "type": "Makkiyah"}, {"number": 45, "name": "Al-Jasiyah", "arabic": "الجاثية", "meaning": "Yang Berlutut", "verses": 37, "type": "Makkiyah"}, {"number": 46, "name": "Al-Ahqaf", "arabic": "الأحقاف", "meaning": "Bukit Pasir", "verses": 35, "type": "Makkiyah"}, {"number": 47, "name": "Muhammad", "arabic": "محمد", "meaning": "Nabi Muhammad s.a.w.", "verses": 38, "type": "Madaniyah"}, {"number": 48, "name": "Al-Fath", "arabic": "الفتح", "meaning": "Kemenangan", "verses": 29, "type": "Madaniyah"}, {"number": 49, "name": "Al-Hujurat", "arabic": "الحجرات", "meaning": "Bilik-Bilik Kediaman", "verses": 18, "type": "Madaniyah"}, {"number": 50, "name": "Qaf", "arabic": "ق", "meaning": "Qaf", "verses": 45, "type": "Makkiyah"}, {"number": 51, "name": "Az-Zariyat", "arabic": "الذاريات", "meaning": "Angin Menerbangkan", "verses": 60, "type": "Makkiyah"}, {"number": 52, "name": "At-Tur", "arabic": "الطور", "meaning": "Bukit Tursina", "verses": 49, "type": "Makkiyah"}, {"number": 53, "name": "An-Najm", "arabic": "النجم", "meaning": "Bintang", "verses": 62, "type": "Makkiyah"}, {"number": 54, "name": "Al-Qamar", "arabic": "القمر", "meaning": "Bulan", "verses": 55, "type": "Makkiyah"}, {"number": 55, "name": "Ar-Rahman", "arabic": "الرحمن", "meaning": "Maha Pemurah", "verses": 78, "type": "Madaniyah"}, {"number": 56, "name": "Al-Waqi'ah", "arabic": "الواقعة", "meaning": "Hari Kiamat", "verses": 96, "type": "Makkiyah"}, {"number": 57, "name": "Al-Hadid", "arabic": "الحديد", "meaning": "Besi", "verses": 29, "type": "Madaniyah"}, {"number": 58, "name": "Al-Mujadilah", "arabic": "المجادلة", "meaning": "Wanita Mengadu", "verses": 22, "type": "Madaniyah"}, {"number": 59, "name": "Al-Hasyr", "arabic": "الحشر", "meaning": "Pengusiran / Himpunan", "verses": 24, "type": "Madaniyah"}, {"number": 60, "name": "Al-Mumtahanah", "arabic": "الممتحنة", "meaning": "Wanita yang Diuji", "verses": 13, "type": "Madaniyah"}, {"number": 61, "name": "As-Saff", "arabic": "الصف", "meaning": "Barisan", "verses": 14, "type": "Madaniyah"}, {"number": 62, "name": "Al-Jumu'ah", "arabic": "الجمعة", "meaning": "Hari Jumaat", "verses": 11, "type": "Madaniyah"}, {"number": 63, "name": "Al-Munafiqun", "arabic": "المنافقون", "meaning": "Golongan Munafik", "verses": 11, "type": "Madaniyah"}, {"number": 64, "name": "At-Taghabun", "arabic": "التغابن", "meaning": "Hari Penyesalan", "verses": 18, "type": "Madaniyah"}, {"number": 65, "name": "At-Talaq", "arabic": "الطلاق", "meaning": "Penceraian / Talak", "verses": 12, "type": "Madaniyah"}, {"number": 66, "name": "At-Tahrim", "arabic": "التحريم", "meaning": "Pengharaman", "verses": 12, "type": "Madaniyah"}, {"number": 67, "name": "Al-Mulk", "arabic": "الملك", "meaning": "Kerajaan / Kekuasaan", "verses": 30, "type": "Makkiyah"}, {"number": 68, "name": "Al-Qalam", "arabic": "القلم", "meaning": "Pena", "verses": 52, "type": "Makkiyah"}, {"number": 69, "name": "Al-Haqqah", "arabic": "الحاقة", "meaning": "Hari Kiamat yang Pasti", "verses": 52, "type": "Makkiyah"}, {"number": 70, "name": "Al-Ma'arij", "arabic": "المعارج", "meaning": "Tempat-Tempat Naik", "verses": 44, "type": "Makkiyah"}, {"number": 71, "name": "Nuh", "arabic": "نوح", "meaning": "Nabi Nuh a.s.", "verses": 28, "type": "Makkiyah"}, {"number": 72, "name": "Al-Jinn", "arabic": "الجن", "meaning": "Golongan Jin", "verses": 28, "type": "Makkiyah"}, {"number": 73, "name": "Al-Muzzammil", "arabic": "المزمل", "meaning": "Orang Berselimut", "verses": 20, "type": "Makkiyah"}, {"number": 74, "name": "Al-Muddassir", "arabic": "المدثر", "meaning": "Orang Berkemul", "verses": 56, "type": "Makkiyah"}, {"number": 75, "name": "Al-Qiyamah", "arabic": "القيامة", "meaning": "Hari Kebangkitan", "verses": 40, "type": "Makkiyah"}, {"number": 76, "name": "Al-Insan", "arabic": "الإنسان", "meaning": "Manusia", "verses": 31, "type": "Madaniyah"}, {"number": 77, "name": "Al-Mursalat", "arabic": "المرسلات", "meaning": "Malaikat yang Diutus", "verses": 50, "type": "Makkiyah"}, {"number": 78, "name": "An-Naba'", "arabic": "النبإ", "meaning": "Berita Besar", "verses": 40, "type": "Makkiyah"}, {"number": 79, "name": "An-Nazi'at", "arabic": "النازعات", "meaning": "Malaikat Pencabut Nyawa", "verses": 46, "type": "Makkiyah"}, {"number": 80, "name": "'Abasa", "arabic": "عبس", "meaning": "Bermuka Masam", "verses": 42, "type": "Makkiyah"}, {"number": 81, "name": "At-Takwir", "arabic": "التكوير", "meaning": "Menggulung Matahari", "verses": 29, "type": "Makkiyah"}, {"number": 82, "name": "Al-Infitar", "arabic": "الانفطار", "meaning": "Terbelah", "verses": 19, "type": "Makkiyah"}, {"number": 83, "name": "Al-Mutaffifin", "arabic": "المطففين", "meaning": "Orang yang Curang", "verses": 36, "type": "Makkiyah"}, {"number": 84, "name": "Al-Insyiqaq", "arabic": "الانشقاق", "meaning": "Terbelah Dua", "verses": 25, "type": "Makkiyah"}, {"number": 85, "name": "Al-Buruj", "arabic": "البروج", "meaning": "Gugusan Bintang", "verses": 22, "type": "Makkiyah"}, {"number": 86, "name": "At-Tariq", "arabic": "الطارق", "meaning": "Bintang Penembus Malam", "verses": 17, "type": "Makkiyah"}, {"number": 87, "name": "Al-A'la", "arabic": "الأعلى", "meaning": "Maha Tinggi", "verses": 19, "type": "Makkiyah"}, {"number": 88, "name": "Al-Ghasyiyah", "arabic": "الغاشية", "meaning": "Peristiwa Dahsyat", "verses": 26, "type": "Makkiyah"}, {"number": 89, "name": "Al-Fajr", "arabic": "الفجر", "meaning": "Waktu Fajar", "verses": 30, "type": "Makkiyah"}, {"number": 90, "name": "Al-Balad", "arabic": "البلد", "meaning": "Negeri Makkah", "verses": 20, "type": "Makkiyah"}, {"number": 91, "name": "Asy-Syams", "arabic": "الشمس", "meaning": "Matahari", "verses": 15, "type": "Makkiyah"}, {"number": 92, "name": "Al-Lail", "arabic": "الليل", "meaning": "Malam", "verses": 21, "type": "Makkiyah"}, {"number": 93, "name": "Ad-Duha", "arabic": "الضحى", "meaning": "Waktu Dhuha", "verses": 11, "type": "Makkiyah"}, {"number": 94, "name": "Asy-Syarh", "arabic": "الشرح", "meaning": "Kelapangan Dada", "verses": 8, "type": "Makkiyah"}, {"number": 95, "name": "At-Tin", "arabic": "التين", "meaning": "Buah Tin", "verses": 8, "type": "Makkiyah"}, {"number": 96, "name": "Al-'Alaq", "arabic": "العلق", "meaning": "Segumpal Darah", "verses": 19, "type": "Makkiyah"}, {"number": 97, "name": "Al-Qadr", "arabic": "القدر", "meaning": "Malam Kemuliaan", "verses": 5, "type": "Makkiyah"}, {"number": 98, "name": "Al-Bayyinah", "arabic": "البينة", "meaning": "Bukti yang Nyata", "verses": 8, "type": "Madaniyah"}, {"number": 99, "name": "Az-Zalzalah", "arabic": "الزلزلة", "meaning": "Gegaran Gempa", "verses": 8, "type": "Madaniyah"}, {"number": 100, "name": "Al-'Adiyat", "arabic": "العاديات", "meaning": "Kuda Perang Berlari Kencang", "verses": 11, "type": "Makkiyah"}, {"number": 101, "name": "Al-Qari'ah", "arabic": "القارعة", "meaning": "Hari Kiamat", "verses": 11, "type": "Makkiyah"}, {"number": 102, "name": "At-Takasur", "arabic": "التكاثر", "meaning": "Bermegah-megahan", "verses": 8, "type": "Makkiyah"}, {"number": 103, "name": "Al-'Asr", "arabic": "العصر", "meaning": "Masa / Demi Masa", "verses": 3, "type": "Makkiyah"}, {"number": 104, "name": "Al-Humazah", "arabic": "الهمزة", "meaning": "Pengumpat & Pencela", "verses": 9, "type": "Makkiyah"}, {"number": 105, "name": "Al-Fil", "arabic": "الفيل", "meaning": "Tentera Bergajah", "verses": 5, "type": "Makkiyah"}, {"number": 106, "name": "Quraisy", "arabic": "قريش", "meaning": "Kaum Quraisy", "verses": 4, "type": "Makkiyah"}, {"number": 107, "name": "Al-Ma'un", "arabic": "الماعون", "meaning": "Bantuan Berguna", "verses": 7, "type": "Makkiyah"}, {"number": 108, "name": "Al-Kausar", "arabic": "الكوثر", "meaning": "Nikmat yang Melimpah", "verses": 3, "type": "Makkiyah"}, {"number": 109, "name": "Al-Kafirun", "arabic": "الكافرون", "meaning": "Golongan Kafir", "verses": 6, "type": "Makkiyah"}, {"number": 110, "name": "An-Nasr", "arabic": "النصر", "meaning": "Pertolongan", "verses": 3, "type": "Madaniyah"}, {"number": 111, "name": "Al-Lahab", "arabic": "المسد", "meaning": "Gejolak Api / Tali Sabut", "verses": 5, "type": "Makkiyah"}, {"number": 112, "name": "Al-Ikhlas", "arabic": "الإخلاص", "meaning": "Kemurnian Keesaan Allah", "verses": 4, "type": "Makkiyah"}, {"number": 113, "name": "Al-Falaq", "arabic": "الفلق", "meaning": "Waktu Subuh", "verses": 5, "type": "Makkiyah"}, {"number": 114, "name": "An-Nas", "arabic": "الناس", "meaning": "Umat Manusia", "verses": 6, "type": "Makkiyah"}];
     const QUOTES_DATA = [{"id": 1, "theme": "Ujian & Kekuatan Jiwa", "arabic": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا", "text": "Allah tidak membebani seseorang melainkan sesuai dengan kesanggupannya.", "source": "Surah Al-Baqarah (2:286)", "reflection": "Setiap ujian dan kepayahan yang hadir dalam hidupmu telah diukur oleh Allah. Kamu mampu melaluinya dengan pertolongan-Nya."}, {"id": 2, "theme": "Harapan & Kemudahan", "arabic": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا • إِنَّ مَعَ الْعُسْرِ يُسْرًا", "text": "Maka sesungguhnya bersama kesulitan ada kemudahan, sesungguhnya bersama kesulitan ada kemudahan.", "source": "Surah Asy-Syarh (94:5-6)", "reflection": "Pintu kemudahan sentiasa terbuka rapat di sisi setiap kesukaran. Jangan berputus asa, fajar kegembiraan pasti menyinsing."}, {"id": 3, "theme": "Ketenangan Hati", "arabic": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ", "text": "Ingatlah, hanya dengan mengingati Allah hati akan menjadi tenang dan tenteram.", "source": "Surah Ar-Ra'd (13:28)", "reflection": "Ketenangan hakiki bukan dicari pada kemewahan dunia, tetapi pada basahnya lidah dan sucinya jiwa mengingati Allah."}, {"id": 4, "theme": "Kekuatan Iman", "arabic": "وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنْتُمُ الْأَعْلَوْنَ إِنْ كُنْتُمْ مُؤْمِنِينَ", "text": "Janganlah kamu bersikap lemah, dan janganlah pula kamu bersedih hati, padahal kamulah orang-orang yang paling tinggi darjatnya jika kamu beriman.", "source": "Surah Ali 'Imran (3:139)", "reflection": "Kuatkan semangatmu dalam melangkah. Keimananmu kepada Allah adalah darjat kemuliaan yang paling agung."}, {"id": 5, "theme": "Hikmah Takdir", "arabic": "وَعَسَىٰ أَن تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَّكُمْ ۖ وَعَسَىٰ أَن تُحِبُّوا شَيْئًا وَهُوَ شَرٌّ لَّكُمْ", "text": "Boleh jadi kamu membenci sesuatu padahal ia amat baik bagimu, dan boleh jadi kamu menyukai sesuatu padahal ia amat buruk bagimu; Allah mengetahui, sedang kamu tidak mengetahui.", "source": "Surah Al-Baqarah (2:216)", "reflection": "Bersangka baiklah dengan setiap aturan Ilahi. Apa yang ditakdirkan untukmu adalah yang terbaik menurut ilmu-Nya yang maha luas."}, {"id": 6, "theme": "Takwa & Rezeki", "arabic": "وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا • وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ", "text": "Sesiapa yang bertakwa kepada Allah nescaya Dia akan mengadakan baginya jalan keluar, dan memberinya rezeki dari arah yang tidak disangka-sangkanya.", "source": "Surah At-Talaq (65:2-3)", "reflection": "Peliharalah hubunganmu dengan Allah melalui ketakwaan, maka Dia akan membuka segala pintu rezeki dan penyelesaian bagi setiap kebuntuan."}, {"id": 7, "theme": "Kesyukuran Nikmat", "arabic": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِي لَشَدِيدٌ", "text": "Sesungguhnya jika kamu bersyukur, pasti Kami akan menambah nikmat kepadamu, dan jika kamu mengingkari, sesungguhnya azab-Ku sangat pedih.", "source": "Surah Ibrahim (14:7)", "reflection": "Syukur adalah kunci kelimpahan berkat. Hargai setiap nafas, kesihatan, dan rezeki yang dikurniakan hari ini."}, {"id": 8, "theme": "Pintu Taubat & Keampunan", "arabic": "قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنفُسِهِمْ لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ", "text": "Katakanlah: Wahai hamba-hamba-Ku yang melampaui batas terhadap diri mereka sendiri! Janganlah kamu berputus asa dari rahmat Allah. Sesungguhnya Allah mengampuni dosa-dosa semuanya.", "source": "Surah Az-Zumar (39:53)", "reflection": "Sebesar mana pun kesilapan lalumu, pintu keampunan Allah sentiasa terbentang luas untuk hamba-Nya yang kembali bersujud."}, {"id": 9, "theme": "Hubungan & Zikir", "arabic": "فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ", "text": "Ingatlah kepada-Ku, nescaya Aku akan ingat kepadamu, dan bersyukurlah kepada-Ku, dan janganlah kamu ingkar.", "source": "Surah Al-Baqarah (2:152)", "reflection": "Apabila kamu mengingati Allah dalam kesunyian mahupun keramaian, Allah Yang Maha Pengasih akan memeliharamu sepanjang masa."}, {"id": 10, "theme": "Kasih Sayang Allah", "arabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ • وَلَلْآخِرَةُ خَيْرٌ لَّكَ مِنَ الْأُولَىٰ", "text": "Tuhanmu tiada meninggalkan kamu dan tiada pula benci kepadamu. Dan sesungguhnya hari kemudian itu lebih baik bagimu daripada yang sekarang.", "source": "Surah Ad-Duha (93:3-4)", "reflection": "Saat kamu merasa sunyi dan dipinggirkan, ketahuilah bahawa Allah tidak pernah sesaat pun mengabaikanmu."}, {"id": 11, "theme": "Sabar & Solat", "arabic": "وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ وَإِنَّهَا لَكَبِيرَةٌ إِلَّا عَلَى الْخَاشِعِينَ", "text": "Dan mintalah pertolongan kepada Allah dengan sabar dan mengerjakan solat; dan sesungguhnya solat itu amat berat kecuali bagi orang-orang yang khusyuk.", "source": "Surah Al-Baqarah (2:45)", "reflection": "Jadikan sujud sebagai tempat mencurahkan segala keluh kesahmu, dan jadikan sabar sebagai tongkat perjuangan hidupmu."}, {"id": 12, "theme": "Hakikat Kehidupan", "arabic": "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا", "text": "Dialah yang menciptakan mati dan hidup, untuk menguji kamu, siapakah di antara kamu yang lebih baik amalnya.", "source": "Surah Al-Mulk (67:2)", "reflection": "Dunia ini hanyalah tempat persinggahan dan ujian. Hiasilah harimu dengan kebaikan dan amal soleh yang berkekalan ke akhirat."}, {"id": 13, "theme": "Nasihat Luqman Al-Hakim", "arabic": "يَا بُنَيَّ أَقِمِ الصَّلَاةَ وَأْمُرْ بِالْمَعْرُوفِ وَانْهَ عَنِ الْمُنكَرِ وَاصْبِرْ عَلَىٰ مَا أَصَابَكَ", "text": "Wahai anak kesayanganku, dirikanlah solat, dan suruhlah berbuat kebaikan, serta laranglah daripada kemungkaran, dan bersabarlah atas apa jua musibah yang menimpamu.", "source": "Surah Luqman (31:17)", "reflection": "Tiang kehidupan yang kukuh bermula dari solat yang terjaga, hati yang menyeru kebaikan, dan jiwa yang kental bersabar."}, {"id": 14, "theme": "Doa Penyejuk Hati", "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا", "text": "Wahai Tuhan kami, anugerahkanlah kepada kami pasangan dan zuriat keturunan kami sebagai penyejuk mata (hati), dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa.", "source": "Surah Al-Furqan (25:74)", "reflection": "Keluarga yang soleh dan saling mencintai kerana Allah adalah nikmat syurga dunia yang paling manis."}, {"id": 15, "theme": "Peringatan Waktu & Kematian", "arabic": "كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۖ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ الْقِيَامَةِ", "text": "Tiap-tiap yang bernyawa akan merasai mati, dan bahawasanya pada hari kiamat sahajalah akan disempurnakan balasan kamu.", "source": "Surah Ali 'Imran (3:185)", "reflection": "Setiap detik yang berlalu mendekatkan kita kepada negeri abadi. Manfaatkan usia ini dengan memperbanyakkan bekal akhirat."}, {"id": 16, "theme": "Mutiara Hadis 5 Perkara", "arabic": "اغْتَنِمْ خَمْسًا قَبْلَ خَمْسٍ: شَبَابَكَ قَبْلَ هَرَمِكَ، وَصِحَّتَكَ قَبْلَ سَقَمِكَ", "text": "Rebutlah lima perkara sebelum datang lima perkara: Waktu mudamu sebelum tuamu, sihatmu sebelum sakitmu, kayamu sebelum miskinmu, lapangmu sebelum sibukmu, dan hidupmu sebelum matimu.", "source": "Hadis Riwayat Al-Hakim & Al-Baihaqi", "reflection": "Hargai nikmat peluang yang masih ada hari ini sebelum ia ditarik kembali oleh takdir."}, {"id": 17, "theme": "Tawakkal Kepada Allah", "arabic": "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ", "text": "Dan sesiapa yang bertawakkal kepada Allah, maka cukuplah Allah baginya.", "source": "Surah At-Talaq (65:3)", "reflection": "Setelah segala usaha dan ikhtiar dijalankan, serahkanlah penghujungnya kepada Allah. Hati akan tenang dan tidak gundah."}, {"id": 18, "theme": "Kebaikan & Sedekah", "arabic": "مَّثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ", "text": "Bandingan orang-orang yang membelanjakan hartanya pada jalan Allah, adalah sama seperti sebiji benih yang menumbuhkan tujuh tangkai, pada tiap-tiap tangkai itu mengandungi seratus biji.", "source": "Surah Al-Baqarah (2:261)", "reflection": "Harta yang disedekahkan tidak akan berkurang, bahkan menjadi pohon pahala yang rendang dan berbuah di akhirat."}, {"id": 19, "theme": "Pesanan Hasan Al-Basri", "arabic": "يَا ابْنَ آدَمَ إِنَّمَا أَنْتَ أَيَّامٌ، كُلَّمَا ذَهَبَ يَوْمٌ ذَهَبَ بَعْضُكَ", "text": "Wahai anak Adam, sesungguhnya engkau hanyalah himpunan hari-hari. Setiap kali berlalunya satu hari, maka lenyaplah sebahagian daripada dirimu.", "source": "Kalam Hikmah Hasan Al-Basri", "reflection": "Setiap matahari terbit adalah peluang baharu untuk bertaubat, beramal, dan memperbaiki diri menjadi insan yang diredhai Allah."}, {"id": 20, "theme": "Kedekatan Allah SWT", "arabic": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ", "text": "Dan apabila hamba-hamba-Ku bertanya kepadamu tentang Aku, maka (jawablah) sesungguhnya Aku adalah amat dekat. Aku memperkenankan doa orang yang berdoa apabila dia memohon kepada-Ku.", "source": "Surah Al-Baqarah (2:186)", "reflection": "Allah sentiasa mendengar bisikan hatimu di keheningan malam. Berdoalah dengan penuh keyakinan dan pengharapan."}];
     const SAMPLE_SURAHS = {"1": {"number": 1, "name": "Al-Fatihah", "arabic": "الفاتحة", "meaning": "Pembukaan", "verses": 7, "type": "Makkiyah", "bismillah": true, "ayahs": [{"number": 1, "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", "latin": "Bismillāhir-raḥmānir-raḥīm", "translation": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3"}, {"number": 2, "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ", "latin": "Al-ḥamdu lillāhi rabbil-'ālamīn", "translation": "Segala puji bagi Allah, Tuhan seluruh alam.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2.mp3"}, {"number": 3, "arabic": "الرَّحْمَٰنِ الرَّحِيمِ", "latin": "Ar-raḥmānir-raḥīm", "translation": "Yang Maha Pengasih, Maha Penyayang.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3.mp3"}, {"number": 4, "arabic": "مَالِكِ يَوْمِ الدِّينِ", "latin": "Māliki yaumid-dīn", "translation": "Pemilik hari pembalasan.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4.mp3"}, {"number": 5, "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ", "latin": "Iyyāka na'budu wa iyyāka nasta'īn", "translation": "Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami memohon pertolongan.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5.mp3"}, {"number": 6, "arabic": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ", "latin": "Ihdinaṣ-ṣirāṭal-mustaqīm", "translation": "Tunjukilah kami jalan yang lurus,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6.mp3"}, {"number": 7, "arabic": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ", "latin": "Ṣirāṭallażīna an'amta 'alaihim gairil-magḍūbi 'alaihim wa laḍ-ḍāllīn", "translation": "(iaitu) jalan orang-orang yang telah Engkau kurniakan nikmat kepada mereka, bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/7.mp3"}]}, "112": {"number": 112, "name": "Al-Ikhlas", "arabic": "الإخلاص", "meaning": "Kemurnian Keesaan Allah", "verses": 4, "type": "Makkiyah", "bismillah": true, "ayahs": [{"number": 1, "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ", "latin": "Qul huwallāhu aḥad", "translation": "Katakanlah (wahai Muhammad): 'Dialah Allah, Yang Maha Esa.'", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6222.mp3"}, {"number": 2, "arabic": "اللَّهُ الصَّمَدُ", "latin": "Allāhuṣ-ṣamad", "translation": "Allah adalah Tuhan yang bergantung kepada-Nya segala sesuatu.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6223.mp3"}, {"number": 3, "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ", "latin": "Lam yalid wa lam yūlad", "translation": "Dia tiada beranak dan tidak pula diperanakkan,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6224.mp3"}, {"number": 4, "arabic": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ", "latin": "Wa lam yakul lahū kufuwan aḥad", "translation": "Dan tidak ada seorang pun yang setara dengan Dia.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6225.mp3"}]}, "113": {"number": 113, "name": "Al-Falaq", "arabic": "الفلق", "meaning": "Waktu Subuh", "verses": 5, "type": "Makkiyah", "bismillah": true, "ayahs": [{"number": 1, "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ", "latin": "Qul a'ūżu birabbil-falaq", "translation": "Katakanlah: 'Aku berlindung kepada Tuhan yang menguasai waktu subuh,'", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6226.mp3"}, {"number": 2, "arabic": "مِن شَرِّ مَا خَلَقَ", "latin": "Min syarri mā khalaq", "translation": "Dari kejahatan makhluk-Nya,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6227.mp3"}, {"number": 3, "arabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ", "latin": "Wa min syarri gāsiqin iżā waqab", "translation": "Dan dari kejahatan malam apabila telah gelap gelita,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6228.mp3"}, {"number": 4, "arabic": "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ", "latin": "Wa min syarrin-naffāṡāti fil-'uqad", "translation": "Dan dari kejahatan wanita-wanita tukang sihir yang menghembus pada buhul-buhul,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6229.mp3"}, {"number": 5, "arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ", "latin": "Wa min syarri ḥāsidin iżā ḥasad", "translation": "Dan dari kejahatan orang yang dengki apabila dia mendengki.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6230.mp3"}]}, "114": {"number": 114, "name": "An-Nas", "arabic": "الناس", "meaning": "Umat Manusia", "verses": 6, "type": "Makkiyah", "bismillah": true, "ayahs": [{"number": 1, "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ", "latin": "Qul a'ūżu birabbin-nās", "translation": "Katakanlah: 'Aku berlindung kepada Tuhan (yang memelihara dan menguasai) manusia,'", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6231.mp3"}, {"number": 2, "arabic": "مَلِكِ النَّاسِ", "latin": "Malikin-nās", "translation": "Raja manusia,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6232.mp3"}, {"number": 3, "arabic": "إِلَٰهِ النَّاسِ", "latin": "Ilāhin-nās", "translation": "Sembahan manusia,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6233.mp3"}, {"number": 4, "arabic": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ", "latin": "Min syarril-waswāsil-khannās", "translation": "Dari kejahatan (bisikan) syaitan yang biasa bersembunyi,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6234.mp3"}, {"number": 5, "arabic": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ", "latin": "Allażī yuwaswisu fī ṣudūrin-nās", "translation": "Yang membisikkan (kejahatan) ke dalam dada manusia,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6235.mp3"}, {"number": 6, "arabic": "مِنَ الْجِنَّةِ وَالنَّاسِ", "latin": "Minal-jinnati wan-nās", "translation": "Dari (golongan) jin dan manusia.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6236.mp3"}]}, "103": {"number": 103, "name": "Al-'Asr", "arabic": "العصر", "meaning": "Masa / Demi Masa", "verses": 3, "type": "Makkiyah", "bismillah": true, "ayahs": [{"number": 1, "arabic": "وَالْعَصْرِ", "latin": "Wal-'aṣr", "translation": "Demi masa.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6177.mp3"}, {"number": 2, "arabic": "إِنَّ الْإِنسَانَ لَفِي خُسْرٍ", "latin": "Innal-insāna lafī khusr", "translation": "Sesungguhnya manusia itu benar-benar dalam kerugian,", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6178.mp3"}, {"number": 3, "arabic": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ", "latin": "Illallażīna āmanū wa 'amiluṣ-ṣāliḥāti wa tawāṣau bil-ḥaqqi wa tawāṣau biṣ-ṣabr", "translation": "Kecuali orang-orang yang beriman dan mengerjakan amal soleh serta saling menasihati untuk kebenaran dan saling menasihati untuk kesabaran.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6179.mp3"}]}, "108": {"number": 108, "name": "Al-Kausar", "arabic": "الكوثر", "meaning": "Nikmat yang Melimpah", "verses": 3, "type": "Makkiyah", "bismillah": true, "ayahs": [{"number": 1, "arabic": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ", "latin": "Innā a'ṭainākal-kauṡar", "translation": "Sesungguhnya Kami telah mengurniakan kepadamu (wahai Muhammad) nikmat yang sangat banyak.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6205.mp3"}, {"number": 2, "arabic": "فَصَلِّ لِرَبِّكَ وَانْحَرْ", "latin": "Faṣalli lirabbika wan-ḥar", "translation": "Maka dirikanlah solat kerana Tuhanmu dan berkorbanlah.", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6206.mp3"}, {"number": 3, "arabic": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ", "latin": "Inna syāni'aka huwal-abtar", "translation": "Sesungguhnya orang yang membencimu dialah yang terputus (dari rahmat Allah).", "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6207.mp3"}]}};
     const ASMAUL_HUSNA = [{"no": 1, "arabic": "الرَّحْمَنُ", "latin": "Ar-Rahman", "meaning": "Maha Pengasih"}, {"no": 2, "arabic": "الرَّحِيمُ", "latin": "Ar-Rahim", "meaning": "Maha Penyayang"}, {"no": 3, "arabic": "الْمَلِكُ", "latin": "Al-Malik", "meaning": "Maha Menguasai / Merajai"}, {"no": 4, "arabic": "الْقُدُّوسُ", "latin": "Al-Quddus", "meaning": "Maha Suci"}, {"no": 5, "arabic": "السَّلَامُ", "latin": "As-Salam", "meaning": "Maha Memberi Kesejahteraan"}, {"no": 6, "arabic": "الْمُؤْمِنُ", "latin": "Al-Mu'min", "meaning": "Maha Memberi Keamanan"}, {"no": 7, "arabic": "الْمُهَيْمِنُ", "latin": "Al-Muhaimin", "meaning": "Maha Memelihara"}, {"no": 8, "arabic": "الْعَزِيزُ", "latin": "Al-Aziz", "meaning": "Maha Perkasa"}, {"no": 9, "arabic": "الْجَبَّارُ", "latin": "Al-Jabbar", "meaning": "Maha Memaksa / Gagah"}, {"no": 10, "arabic": "الْمُتَكَبِّرُ", "latin": "Al-Mutakabbir", "meaning": "Maha Memiliki Kebesaran"}, {"no": 11, "arabic": "الْخَالِقُ", "latin": "Al-Khaliq", "meaning": "Maha Pencipta"}, {"no": 12, "arabic": "الْبَارِئُ", "latin": "Al-Bari'", "meaning": "Maha Mengadakan dari Tiada"}, {"no": 13, "arabic": "الْمُصَوِّرُ", "latin": "Al-Musawwir", "meaning": "Maha Membentuk Rupa"}, {"no": 14, "arabic": "الْغَفَّارُ", "latin": "Al-Ghaffar", "meaning": "Maha Pengampun"}, {"no": 15, "arabic": "الْقَهَّارُ", "latin": "Al-Qahhar", "meaning": "Maha Menundukkan"}, {"no": 16, "arabic": "الْوَهَّابُ", "latin": "Al-Wahhab", "meaning": "Maha Pemberi Kurnia"}, {"no": 17, "arabic": "الرَّزَّاقُ", "latin": "Ar-Razzaq", "meaning": "Maha Pemberi Rezeki"}, {"no": 18, "arabic": "الْفَتَّاحُ", "latin": "Al-Fattah", "meaning": "Maha Membuka Rahmat"}, {"no": 19, "arabic": "الْعَلِيمُ", "latin": "Al-Alim", "meaning": "Maha Mengetahui"}, {"no": 20, "arabic": "الْقَابِضُ", "latin": "Al-Qabidh", "meaning": "Maha Menyempitkan Rezeki"}, {"no": 21, "arabic": "الْبَاسِطُ", "latin": "Al-Basit", "meaning": "Maha Melapangkan Rezeki"}, {"no": 22, "arabic": "الْخَافِضُ", "latin": "Al-Khafidz", "meaning": "Maha Merendahkan"}, {"no": 23, "arabic": "الرَّافِعُ", "latin": "Ar-Rafi'", "meaning": "Maha Meninggikan"}, {"no": 24, "arabic": "الْمُعِزُّ", "latin": "Al-Mu'izz", "meaning": "Maha Memuliakan"}, {"no": 25, "arabic": "الْمُذِلُّ", "latin": "Al-Mudzill", "meaning": "Maha Menghinakan"}, {"no": 26, "arabic": "السَّمِيعُ", "latin": "As-Sami'", "meaning": "Maha Mendengar"}, {"no": 27, "arabic": "الْبَصِيرُ", "latin": "Al-Basir", "meaning": "Maha Melihat"}, {"no": 28, "arabic": "الْحَكَمُ", "latin": "Al-Hakam", "meaning": "Maha Menetapkan Hukum"}, {"no": 29, "arabic": "الْعَدْلُ", "latin": "Al-Adl", "meaning": "Maha Adil"}, {"no": 30, "arabic": "اللَّطِيفُ", "latin": "Al-Latif", "meaning": "Maha Lembut & Halus"}, {"no": 31, "arabic": "الْخَبِيرُ", "latin": "Al-Khabir", "meaning": "Maha Mengetahui Rahsia"}, {"no": 32, "arabic": "الْحَلِيمُ", "latin": "Al-Halim", "meaning": "Maha Penyantun"}, {"no": 33, "arabic": "الْعَظِيمُ", "latin": "Al-Azim", "meaning": "Maha Agung"}, {"no": 34, "arabic": "الْغَفُورُ", "latin": "Al-Ghafur", "meaning": "Maha Pengampun"}, {"no": 35, "arabic": "الشَّكُورُ", "latin": "Asy-Syakur", "meaning": "Maha Menghargai Syukur"}, {"no": 36, "arabic": "الْعَلِيُّ", "latin": "Al-Aliyy", "meaning": "Maha Tinggi"}, {"no": 37, "arabic": "الْكَبِيرُ", "latin": "Al-Kabir", "meaning": "Maha Besar"}, {"no": 38, "arabic": "الْحَفِيظُ", "latin": "Al-Hafiz", "meaning": "Maha Memelihara"}, {"no": 39, "arabic": "الْمُقِيتُ", "latin": "Al-Muqit", "meaning": "Maha Memberi Kecukupan"}, {"no": 40, "arabic": "الْحَسِيبُ", "latin": "Al-Hasib", "meaning": "Maha Menghitung Hisab"}, {"no": 41, "arabic": "الْجَلِيلُ", "latin": "Al-Jalil", "meaning": "Maha Mulia & Luhur"}, {"no": 42, "arabic": "الْكَرِيمُ", "latin": "Al-Karim", "meaning": "Maha Pemurah"}, {"no": 43, "arabic": "الرَّقِيبُ", "latin": "Ar-Raqib", "meaning": "Maha Mengawasi"}, {"no": 44, "arabic": "الْمُجِيبُ", "latin": "Al-Mujib", "meaning": "Maha Memperkenankan Doa"}, {"no": 45, "arabic": "الْوَاسِعُ", "latin": "Al-Wasi'", "meaning": "Maha Luas Rahmat-Nya"}, {"no": 46, "arabic": "الْحَكِيمُ", "latin": "Al-Hakim", "meaning": "Maha Bijaksana"}, {"no": 47, "arabic": "الْوَدُودُ", "latin": "Al-Wadud", "meaning": "Maha Mengasihi"}, {"no": 48, "arabic": "الْمَجِيدُ", "latin": "Al-Majid", "meaning": "Maha Mulia"}, {"no": 49, "arabic": "الْبَاعِثُ", "latin": "Al-Ba'ith", "meaning": "Maha Membangkitkan"}, {"no": 50, "arabic": "الشَّهِيدُ", "latin": "Asy-Syahid", "meaning": "Maha Menyaksikan"}, {"no": 51, "arabic": "الْحَقُّ", "latin": "Al-Haqq", "meaning": "Maha Benar"}, {"no": 52, "arabic": "الْوَكِيلُ", "latin": "Al-Wakil", "meaning": "Maha Memelihara / Pelindung"}, {"no": 53, "arabic": "الْقَوِيُّ", "latin": "Al-Qawiyy", "meaning": "Maha Kuat"}, {"no": 54, "arabic": "الْمَتِينُ", "latin": "Al-Matin", "meaning": "Maha Kukuh"}, {"no": 55, "arabic": "الْوَلِيُّ", "latin": "Al-Waliyy", "meaning": "Maha Melindungi"}, {"no": 56, "arabic": "الْحَمِيدُ", "latin": "Al-Hamid", "meaning": "Maha Terpuji"}, {"no": 57, "arabic": "الْمُحْصِي", "latin": "Al-Muhsi", "meaning": "Maha Menghitung"}, {"no": 58, "arabic": "الْمُبْدِئُ", "latin": "Al-Mubdi'", "meaning": "Maha Memulai Penciptaan"}, {"no": 59, "arabic": "الْمُعِيدُ", "latin": "Al-Mu'id", "meaning": "Maha Mengembalikan Kehidupan"}, {"no": 60, "arabic": "الْمُحْيِي", "latin": "Al-Muhyi", "meaning": "Maha Menghidupkan"}, {"no": 61, "arabic": "الْمُمِيتُ", "latin": "Al-Mumit", "meaning": "Maha Mematikan"}, {"no": 62, "arabic": "الْحَيُّ", "latin": "Al-Hayy", "meaning": "Maha Hidup Abadi"}, {"no": 63, "arabic": "الْقَيُّومُ", "latin": "Al-Qayyum", "meaning": "Maha Berdiri Sendiri"}, {"no": 64, "arabic": "الْوَاجِدُ", "latin": "Al-Wajid", "meaning": "Maha Menemukan"}, {"no": 65, "arabic": "الْمَاجِدُ", "latin": "Al-Majid", "meaning": "Maha Mulia & Pemurah"}, {"no": 66, "arabic": "الْوَاحِدُ", "latin": "Al-Wahid", "meaning": "Maha Esa / Tunggal"}, {"no": 67, "arabic": "الْأَحَدُ", "latin": "Al-Ahad", "meaning": "Maha Satu"}, {"no": 68, "arabic": "الصَّمَدُ", "latin": "As-Samad", "meaning": "Maha Tempat Bergantung"}, {"no": 69, "arabic": "الْقَادِرُ", "latin": "Al-Qadir", "meaning": "Maha Kuasa"}, {"no": 70, "arabic": "الْمُقْتَدِرُ", "latin": "Al-Muqtadir", "meaning": "Maha Menentukan Kuasa"}, {"no": 71, "arabic": "الْمُقَدِّمُ", "latin": "Al-Muqaddim", "meaning": "Maha Mendahulukan"}, {"no": 72, "arabic": "الْمُؤَخِّرُ", "latin": "Al-Mu'akhkhir", "meaning": "Maha Mengakhirkan"}, {"no": 73, "arabic": "الْأَوَّلُ", "latin": "Al-Awwal", "meaning": "Maha Awal"}, {"no": 74, "arabic": "الْآخِرُ", "latin": "Al-Akhir", "meaning": "Maha Akhir"}, {"no": 75, "arabic": "الظَّاهِرُ", "latin": "Az-Zahir", "meaning": "Maha Nyata"}, {"no": 76, "arabic": "الْبَاطِنُ", "latin": "Al-Batin", "meaning": "Maha Tersembunyi"}, {"no": 77, "arabic": "الْوَالِي", "latin": "Al-Wali", "meaning": "Maha Memerintah"}, {"no": 78, "arabic": "الْمُتَعَالِي", "latin": "Al-Muta'ali", "meaning": "Maha Tinggi & Suci"}, {"no": 79, "arabic": "الْبَرُّ", "latin": "Al-Barr", "meaning": "Maha Melimpahkan Kebaikan"}, {"no": 80, "arabic": "التَّوَّابُ", "latin": "At-Tawwab", "meaning": "Maha Menerima Taubat"}, {"no": 81, "arabic": "الْمُنْتَقِمُ", "latin": "Al-Muntaqim", "meaning": "Maha Menghukum Kezaliman"}, {"no": 82, "arabic": "الْعَفُوُّ", "latin": "Al-Afuww", "meaning": "Maha Pemaaf"}, {"no": 83, "arabic": "الرَّؤُوفُ", "latin": "Ar-Ra'uf", "meaning": "Maha Pengasih & Pengasuh"}, {"no": 84, "arabic": "مَالِكُ الْمُلْكِ", "latin": "Malikul-Mulk", "meaning": "Pemilik Segala Kekuasaan"}, {"no": 85, "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ", "latin": "Dzul-Jalali wal-Ikram", "meaning": "Pemilik Keagungan & Kemuliaan"}, {"no": 86, "arabic": "الْمُقْسِطُ", "latin": "Al-Muqsit", "meaning": "Maha Saksama"}, {"no": 87, "arabic": "الْجَامِعُ", "latin": "Al-Jami'", "meaning": "Maha Menghimpunkan"}, {"no": 88, "arabic": "الْغَنِيُّ", "latin": "Al-Ghaniyy", "meaning": "Maha Kaya Raya"}, {"no": 89, "arabic": "الْمُغْنِي", "latin": "Al-Mughni", "meaning": "Maha Memberi Kekayaan"}, {"no": 90, "arabic": "الْمَانِعُ", "latin": "Al-Mani'", "meaning": "Maha Mencegah / Melindungi"}, {"no": 91, "arabic": "الضَّارُّ", "latin": "Ad-Dharr", "meaning": "Maha Mendatangkan Kemudaratan"}, {"no": 92, "arabic": "النَّافِعُ", "latin": "An-Nafi'", "meaning": "Maha Memberi Manfaat"}, {"no": 93, "arabic": "النُّورُ", "latin": "An-Nur", "meaning": "Maha Bercahaya"}, {"no": 94, "arabic": "الْهَادِي", "latin": "Al-Hadi", "meaning": "Maha Memberi Petunjuk"}, {"no": 95, "arabic": "الْبَدِيعُ", "latin": "Al-Badi'", "meaning": "Maha Pencipta Keindahan Unik"}, {"no": 96, "arabic": "الْبَاقِي", "latin": "Al-Baqi", "meaning": "Maha Kekal Abadi"}, {"no": 97, "arabic": "الْوَارِثُ", "latin": "Al-Warith", "meaning": "Maha Mewarisi Semesta"}, {"no": 98, "arabic": "الرَّشِيدُ", "latin": "Ar-Rasyid", "meaning": "Maha Pandai & Membimbing"}, {"no": 99, "arabic": "الصَّبُورُ", "latin": "As-Sabur", "meaning": "Maha Penyabar"}];
     const DAILY_DUAS = [{"title": "Doa Khatam Al-Quran", "arabic": "اللَّهُمَّ ارْحَمْنَا بِالقُرْآنِ، وَاجْعَلْهُ لَنَا إِمَامًا وَنُورًا وَهُدًى وَرَحْمَةً، اللَّهُمَّ ذَكِّرْنَا مِنْهُ مَا نَسِينَا، وَعَلِّمْنَا مِنْهُ مَا جَهِلْنَا، وَارْزُقْنَا تِلاوَتَهُ آنَاءَ اللَّيْلِ وَأَطْرَافَ النَّهَارِ، وَاجْعَلْهُ لَنَا حُجَّةً يَا رَبَّ العَالَمِينَ", "latin": "Allahummarhamna bil-Qur'an, waj'alhu lana imaman wa nuran wa hudan wa rahmah. Allahumma dzakkirna minhu ma nasina, wa 'allimna minhu ma jahilna, warzuqna tilawatahu ana-allaili wa athrafan-nahar, waj'alhu lana hujjatan ya Rabbal 'alamin.", "translation": "Ya Allah, rahmatilah kami dengan Al-Quran. Jadikanlah ia bagi kami sebagai pemimpin, cahaya, petunjuk dan rahmat. Ya Allah, ingatkanlah kami apa yang kami lupa daripadanya, ajarkanlah kami apa yang kami jahil daripadanya, dan kurniakanlah kami membacanya sepanjang malam dan siang hari, serta jadikanlah ia sebagai hujah pembela bagi kami, wahai Tuhan sekalian alam."}, {"title": "Sayyidul Istighfar (Penghulu Istighfar)", "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ", "latin": "Allahumma anta Rabbi la ilaha illa anta, khalaqtani wa ana 'abduka, wa ana 'ala 'ahdika wa wa'dika mastatha'tu, a'udzu bika min syarri ma shana'tu, abu'u laka bini'matika 'alayya, wa abu'u bidzanbi faghfir li fa innahu la yaghfirudz-dzunuba illa anta.", "translation": "Ya Allah, Engkau adalah Tuhanku, tiada Tuhan yang berhak disembah selain Engkau. Engkaulah yang menciptakanku dan aku adalah hamba-Mu. Aku berada dalam perjanjian dan janji-Mu sekadar kemampuanku. Aku berlindung kepada-Mu daripada kejahatan yang telah aku lakukan. Aku mengakui nikmat-Mu kepadaku dan aku mengakui dosaku, maka ampunilah daku, sesungguhnya tiada yang mengampuni dosa-dosa melainkan Engkau."}, {"title": "Doa Kebaikan Dunia & Akhirat", "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ", "latin": "Rabbana atina fid-dunya hasanah wa fil-akhirati hasanah wa qina 'adzaban-nar.", "translation": "Wahai Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami daripada azab api neraka."}, {"title": "Doa Memohon Kelapangan Hati & Urusan", "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي • وَيَسِّرْ لِي أَمْرِي • وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي • يَفْقَهُوا قَوْلِي", "latin": "Rabbisyrah li sadri, wa yassir li amri, wahlul 'uqdatam mil-lisani, yafqahu qauli.", "translation": "Wahai Tuhanku, lapangkanlah bagiku dadaku, dan mudahkanlah bagiku urusanku, dan lepaskanlah kekakuan daripada lidahku, supaya mereka memahami perkataanku."}, {"title": "Doa Perlindungan Pagi & Petang", "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ", "latin": "Bismillahilladzi la yadhurru ma'asmihi syai'un fil-ardhi wa la fis-sama'i wa huwas-sami'ul 'alim.", "translation": "Dengan nama Allah yang dengan nama-Nya tidak ada sesuatu pun di bumi dan di langit yang dapat mendatangkan kemudaratan, dan Dia Maha Mendengar lagi Maha Mengetahui."}];
+    const HADITHS_DATA = [{"no": 1, "title": "Niat dan Keikhlasan", "narrator": "Umar bin Al-Khattab r.a.", "arabic": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى", "translation": "Sesungguhnya setiap amalan itu bergantung kepada niat, dan sesungguhnya bagi setiap orang apa yang dia niatkan.", "lesson": "Ikhlas adalah syarat utama diterimanya setiap amal ibadah di sisi Allah SWT."}, {"no": 2, "title": "Islam, Iman dan Ihsan", "narrator": "Umar bin Al-Khattab r.a.", "arabic": "أَنْ تَعْبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ", "translation": "Ihsan itu ialah bahawa engkau menyembah Allah seolah-olah engkau melihat-Nya. Sekiranya engkau tidak dapat melihat-Nya, maka sesungguhnya Dia melihat engkau.", "lesson": "Merasakan pengawasan Allah (muraqabah) dalam setiap detik kehidupan."}, {"no": 3, "title": "Meninggalkan yang Meragukan", "narrator": "Al-Hasan bin Ali r.a.", "arabic": "دَعْ مَا يَرِيبُكَ إِلَى مَا لاَ يَرِيبُكَ", "translation": "Tinggalkanlah apa yang meragukanmu kepada apa yang tidak meragukanmu.", "lesson": "Wara' dan menjauhi perkara syubhat membawa ketenteraman jiwa."}, {"no": 4, "title": "Mencintai Saudara Seiman", "narrator": "Anas bin Malik r.a.", "arabic": "لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ", "translation": "Tidak sempurna iman seseorang daripada kamu sehinggalah dia mencintai untuk saudaranya apa yang dia cintai untuk dirinya sendiri.", "lesson": "Persaudaraan Islam menuntut rasa kasih sayang, empati dan saling menyokong."}, {"no": 5, "title": "Berkata Baik atau Diam", "narrator": "Abu Hurairah r.a.", "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ", "translation": "Sesiapa yang beriman kepada Allah dan Hari Akhirat, maka hendaklah dia berkata yang baik atau diam.", "lesson": "Menjaga lisan adalah tanda kesempurnaan iman dan perisai daripada dosa."}, {"no": 6, "title": "Jangan Marah", "narrator": "Abu Hurairah r.a.", "arabic": "لاَ تَغْضَبْ، فَرَدَّدَ مِرَارًا، قَالَ: لاَ تَغْضَبْ", "translation": "Janganlah engkau marah. Beliau mengulanginya beberapa kali: 'Janganlah engkau marah.'", "lesson": "Mengawal emosi dan kemarahan adalah tanda kekuatan jiwa yang sebenar."}, {"no": 7, "title": "Agama Adalah Nasihat", "narrator": "Tamim Ad-Dari r.a.", "arabic": "الدِّينُ النَّصِيحَةُ", "translation": "Agama itu adalah nasihat (kesetiaan dan keikhlasan kepada Allah, Kitab-Nya, Rasul-Nya, para pemimpin, dan umat Islam).", "lesson": "Saling menasihati dengan penuh hikmah adalah nadi keharmonian ummah."}, {"no": 8, "title": "Taqwa di Mana Sahaja Berada", "narrator": "Abu Dzar & Mu'adz bin Jabal r.a.", "arabic": "اتَّقِ اللَّهَ حَيْثُمَا كُنْتَ، وَأَتْبِعِ السَّيِّئَةَ الْحَسَنَةَ تَمْحُهَا، وَخَالِقِ النَّاسَ بِخُلُقٍ حَسَنٍ", "translation": "Bertaqwalah kepada Allah di mana sahaja engkau berada, dan ikutilah kejahatan dengan kebaikan nescaya ia memadamkannya, serta pergaulilah manusia dengan akhlak yang mulia.", "lesson": "Integriti takwa yang berterusan dan akhlak terpuji terhadap sesama manusia."}];
+    const MATHURAT_DATA = [{"title": "Ayat Al-Kursi (Pelindung Agung)", "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ", "translation": "Allah, tiada Tuhan selain Dia, Yang Maha Hidup, Yang terus-menerus mengurus (makhluk-Nya). Tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan di bumi...", "repeat": "1 kali pagi & petang"}, {"title": "Doa Perlindungan Pagi (3x)", "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ", "translation": "Dengan nama Allah yang dengan nama-Nya tidak ada sesuatu pun di bumi dan di langit yang dapat mendatangkan kemudaratan, dan Dia Maha Mendengar lagi Maha Mengetahui.", "repeat": "3 kali pagi & petang"}, {"title": "Keredhaan Iman (3x)", "arabic": "رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا وَرَسُولًا", "translation": "Aku redha Allah sebagai Tuhanku, Islam sebagai agamaku, dan Muhammad s.a.w. sebagai Nabi dan Rasulku.", "repeat": "3 kali pagi & petang"}, {"title": "Tasbih Keagungan Allah (3x)", "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ", "translation": "Maha Suci Allah dan dengan segala puji-Nya; sebanyak bilangan makhluk-Nya, mengikut keredhaan diri-Nya, seberat timbangan Arasy-Nya, dan sebanyak dakwat kalimat-kalimat-Nya.", "repeat": "3 kali pagi"}];
 
     // State Variables
     let currentTab = 'home';
@@ -1189,6 +970,7 @@
     let quoteTimerInterval = null;
     let quoteProgressInterval = null;
     let quoteSecondsLeft = 30;
+    let isQuotesPaused = false; // Dedicated Pause/Stop State
     let autoVoiceEnabled = true;
     let currentLoadedSurah = null;
     let currentReciter = 'ar.alafasy';
@@ -1197,6 +979,9 @@
     let isFullSurahPlaying = false;
     let currentSelectedZone = 'WLY01';
     let prayerTimesCache = {};
+
+    // Khatam Tracker State
+    let completedJuzList = JSON.parse(localStorage.getItem('faquran_khatam_juz') || '[]');
 
     // Tasbih State
     let tasbihCount = parseInt(localStorage.getItem('faquran_tasbih_count') || '0');
@@ -1215,19 +1000,22 @@
     let lastReadAyahNumber = parseInt(localStorage.getItem('faquran_last_ayah') || '1');
     let savedBookmarks = JSON.parse(localStorage.getItem('faquran_bookmarks') || '[]');
 
-    // Audio Synthesis (TTS) setup
+    // In-memory Surah cache so surahs never get erased or re-downloaded repeatedly
+    const surahMemoryCache = { ...SAMPLE_SURAHS };
+
     const synth = window.speechSynthesis;
 
-    // ==========================================
-    // INITIALIZATION
-    // ==========================================
     document.addEventListener('DOMContentLoaded', () => {
       initParticleBackground();
-      renderSurahsList(SURAHS_DATA);
+      renderSurahsList(SURAHS_DATA); // Pre-render all 114 surahs permanently
       renderQuotesCarousel();
       renderDuas();
+      renderHadiths();
+      renderMathurat();
       renderAsmaulHusna(ASMAUL_HUSNA);
       renderBookmarks();
+      renderKhatamJuzGrid();
+      updateKhatamUI();
       initReaderSurahDropdown();
       initPrayerTimes();
       updateTasbihUI();
@@ -1235,9 +1023,8 @@
       updateLastReadCardUI();
       startQuoteTimer();
 
-      // Service Worker Registration
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').catch(err => console.log('SW registration note:', err));
+        navigator.serviceWorker.register('sw.js').catch(() => {});
       }
     });
 
@@ -1250,7 +1037,6 @@
       const target = document.getElementById('tab-' + tabId);
       if (target) target.classList.remove('hidden');
 
-      // Update Nav Buttons
       document.querySelectorAll('.nav-btn').forEach(btn => {
         if (btn.getAttribute('data-tab') === tabId) {
           btn.classList.remove('text-slate-300');
@@ -1270,7 +1056,7 @@
     }
 
     // ==========================================
-    // 30-SECOND ROTATING QUOTES & AUTO-VOICE
+    // 30s QUOTES WITH DEDICATED STOP / PAUSE BUTTON
     // ==========================================
     function renderQuotesCarousel() {
       const quote = QUOTES_DATA[currentQuoteIndex];
@@ -1289,8 +1075,7 @@
 
         box.style.opacity = '1';
 
-        // Auto-play voice if enabled
-        if (autoVoiceEnabled) {
+        if (autoVoiceEnabled && !isQuotesPaused) {
           speakCurrentQuote();
         }
       }, 250);
@@ -1299,8 +1084,10 @@
     function startQuoteTimer() {
       clearInterval(quoteTimerInterval);
       clearInterval(quoteProgressInterval);
-      quoteSecondsLeft = 30;
 
+      if (isQuotesPaused) return;
+
+      quoteSecondsLeft = 30;
       const timerText = document.getElementById('quote-timer-text');
       const progressBar = document.getElementById('quote-progress-bar');
       progressBar.style.width = '0%';
@@ -1308,15 +1095,15 @@
       let progressMs = 0;
       const totalMs = 30000;
 
-      // Update smooth progress bar
       quoteProgressInterval = setInterval(() => {
+        if (isQuotesPaused) return;
         progressMs += 100;
         const pct = (progressMs / totalMs) * 100;
         progressBar.style.width = pct + '%';
       }, 100);
 
-      // Countdown in seconds
       quoteTimerInterval = setInterval(() => {
+        if (isQuotesPaused) return;
         quoteSecondsLeft--;
         if (timerText) timerText.innerText = quoteSecondsLeft + 's';
 
@@ -1324,6 +1111,44 @@
           nextQuote();
         }
       }, 1000);
+    }
+
+    // Dedicated STOP / PLAY Quotes Toggle
+    function toggleQuotesPause() {
+      isQuotesPaused = !isQuotesPaused;
+      const btn = document.getElementById('quotes-pause-btn');
+      const icon = document.getElementById('quotes-pause-icon');
+      const label = document.getElementById('quotes-pause-label');
+      const timerIcon = document.getElementById('timer-icon');
+
+      if (isQuotesPaused) {
+        // STOPPED
+        clearInterval(quoteTimerInterval);
+        clearInterval(quoteProgressInterval);
+        synth.cancel(); // stop speech
+
+        btn.className = 'px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-800 text-white border border-emerald-400 text-xs font-bold shadow-md hover:scale-105 transition-all flex items-center gap-1.5';
+        icon.className = 'fa-solid fa-play';
+        label.innerText = 'Sambung (Play)';
+        timerIcon.className = 'fa-solid fa-pause text-amber-400';
+        document.getElementById('quote-timer-text-container').innerHTML = '<span class="text-amber-300 font-bold">⏸️ DIJEDA</span>';
+
+        const voiceIndicator = document.getElementById('voice-indicator');
+        if (voiceIndicator) voiceIndicator.classList.add('hidden');
+
+        showToast('Quotes 30s telah dijeda (dihentikan).');
+      } else {
+        // RESUMED
+        btn.className = 'px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-800 text-white border border-gold-400/60 text-xs font-bold shadow-md hover:scale-105 transition-all flex items-center gap-1.5';
+        icon.className = 'fa-solid fa-pause';
+        label.innerText = 'Hentikan (Stop)';
+        timerIcon.className = 'fa-solid fa-stopwatch text-gold-400 animate-pulse';
+        document.getElementById('quote-timer-text-container').innerHTML = 'Masa: <strong id="quote-timer-text" class="text-gold-400">30s</strong>';
+
+        startQuoteTimer();
+        if (autoVoiceEnabled) speakCurrentQuote();
+        showToast('Quotes 30s disambung semula.');
+      }
     }
 
     function nextQuote() {
@@ -1340,35 +1165,25 @@
 
     function speakCurrentQuote() {
       if (!('speechSynthesis' in window)) return;
-
-      synth.cancel(); // Stop ongoing speech
+      synth.cancel();
 
       const quote = QUOTES_DATA[currentQuoteIndex];
       if (!quote) return;
 
       const textToSpeak = `${quote.theme}. ${quote.text}. ${quote.source}. Tadabbur: ${quote.reflection}`;
-
       const utterance = new SpeechSynthesisUtterance(textToSpeak);
       utterance.lang = 'ms-MY';
       utterance.rate = 0.92;
       utterance.pitch = 1.0;
 
-      // Set voice to Malay or Indonesian if available
       const voices = synth.getVoices();
       const preferredVoice = voices.find(v => v.lang.includes('ms') || v.lang.includes('id') || v.lang.includes('zlm'));
       if (preferredVoice) utterance.voice = preferredVoice;
 
       const voiceIndicator = document.getElementById('voice-indicator');
-
-      utterance.onstart = () => {
-        if (voiceIndicator) voiceIndicator.classList.remove('hidden');
-      };
-      utterance.onend = () => {
-        if (voiceIndicator) voiceIndicator.classList.add('hidden');
-      };
-      utterance.onerror = () => {
-        if (voiceIndicator) voiceIndicator.classList.add('hidden');
-      };
+      utterance.onstart = () => { if (voiceIndicator) voiceIndicator.classList.remove('hidden'); };
+      utterance.onend = () => { if (voiceIndicator) voiceIndicator.classList.add('hidden'); };
+      utterance.onerror = () => { if (voiceIndicator) voiceIndicator.classList.add('hidden'); };
 
       synth.speak(utterance);
     }
@@ -1391,7 +1206,7 @@
         if (label) label.innerText = 'Suara: ON';
         if (icon) icon.className = 'fa-solid fa-volume-high text-gold-400';
         if (headerIcon) headerIcon.className = 'fa-solid fa-volume-high';
-        speakCurrentQuote();
+        if (!isQuotesPaused) speakCurrentQuote();
       } else {
         if (label) label.innerText = 'Suara: OFF';
         if (icon) icon.className = 'fa-solid fa-volume-xmark text-slate-400';
@@ -1409,10 +1224,8 @@ ${quote.source}
 
 Tadabbur: ${quote.reflection}
 
-(Dikongsi daripada FaQuran oleh Fakrul - quran.fakrulafif.com)`;
-      navigator.clipboard.writeText(copyText).then(() => {
-        showToast('Nasihat kehidupan berjaya disalin!');
-      });
+(FaQuran oleh Fakrul - quran.fakrulafif.com)`;
+      navigator.clipboard.writeText(copyText).then(() => showToast('Nasihat kehidupan berjaya disalin!'));
     }
 
     function shareQuote() {
@@ -1432,7 +1245,7 @@ Tadabbur: ${quote.reflection}`,
     }
 
     // ==========================================
-    // SURAH LIST & SEARCH
+    // 114 SURAH LIST (PERMANENT & NEVER ERASED)
     // ==========================================
     function renderSurahsList(surahArray) {
       const container = document.getElementById('surahs-grid-container');
@@ -1449,11 +1262,9 @@ Tadabbur: ${quote.reflection}`,
       container.innerHTML = surahArray.map(s => `
         <div onclick="openSurah(${s.number})" class="glass-card p-4 sm:p-5 rounded-2xl cursor-pointer hover:scale-[1.02] hover:border-gold-400 transition-all flex items-center justify-between group shadow-md">
           <div class="flex items-center gap-3.5">
-            <!-- Number badge -->
-            <div class="relative w-11 h-11 rounded-xl bg-emerald-950/80 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm group-hover:bg-gold-500/20 transition-all shrink-0">
+            <div class="w-11 h-11 rounded-xl bg-emerald-950/80 border border-gold-500/30 flex items-center justify-center text-gold-400 font-bold text-sm group-hover:bg-gold-500/20 transition-all shrink-0">
               ${s.number}
             </div>
-            <!-- Title & Meaning -->
             <div>
               <h3 class="font-bold text-slate-100 text-sm sm:text-base group-hover:text-gold-300 transition-colors">
                 ${s.name}
@@ -1468,8 +1279,6 @@ Tadabbur: ${quote.reflection}`,
               </div>
             </div>
           </div>
-
-          <!-- Arabic Calligraphy Name -->
           <div class="text-right">
             <p class="font-quran text-2xl text-gold-300 font-bold group-hover:scale-105 transition-transform">
               ${s.arabic}
@@ -1510,26 +1319,23 @@ Tadabbur: ${quote.reflection}`,
     }
 
     // ==========================================
-    // SURAH READER & API FETCH WITH OFFLINE FALLBACK
+    // SURAH READER WITH MULTI-SOURCE CACHING
     // ==========================================
     async function openSurah(surahNumber) {
       surahNumber = parseInt(surahNumber);
       switchTab('reader');
 
-      // Update dropdown
       const select = document.getElementById('reader-surah-select');
       if (select) select.value = surahNumber;
 
       const meta = SURAHS_DATA.find(s => s.number === surahNumber) || SURAHS_DATA[0];
 
-      // Update Header Info
       document.getElementById('reader-surah-arabic-title').innerText = meta.arabic;
       document.getElementById('reader-surah-latin-title').innerText = `Surah ${meta.name}`;
       document.getElementById('reader-surah-meaning').innerText = `"${meta.meaning}"`;
       document.getElementById('reader-surah-type').innerText = meta.type;
       document.getElementById('reader-surah-verses-count').innerText = `${meta.verses} Ayat`;
 
-      // Bismillah visibility (Surah At-Tawbah has no Bismillah)
       const bismillahBanner = document.getElementById('reader-bismillah-banner');
       if (surahNumber === 9) {
         bismillahBanner.classList.add('hidden');
@@ -1537,25 +1343,24 @@ Tadabbur: ${quote.reflection}`,
         bismillahBanner.classList.remove('hidden');
       }
 
-      // Show loader
+      saveLastRead(surahNumber, 1);
+
+      // Check In-Memory Cache first
+      if (surahMemoryCache[surahNumber]) {
+        currentLoadedSurah = surahMemoryCache[surahNumber];
+        renderAyahsList(currentLoadedSurah.ayahs, surahNumber);
+        return;
+      }
+
       const loader = document.getElementById('reader-loading');
       const ayahsContainer = document.getElementById('reader-ayahs-container');
       loader.classList.remove('hidden');
       ayahsContainer.innerHTML = '';
 
-      // Save Last Read Surah
-      saveLastRead(surahNumber, 1);
-
       try {
-        // Attempt Fetch from Equran.id / Alquran.cloud API
         let surahDetail = null;
 
-        // Check if pre-cached sample exists for instant offline loading
-        if (SAMPLE_SURAHS[surahNumber]) {
-          surahDetail = SAMPLE_SURAHS[surahNumber];
-        }
-
-        // Try live API fetch
+        // Try API 1: equran.id
         const res = await fetch(`https://equran.id/api/v2/surat/${surahNumber}`).catch(() => null);
         if (res && res.ok) {
           const jsonRes = await res.json();
@@ -1578,7 +1383,7 @@ Tadabbur: ${quote.reflection}`,
           }
         }
 
-        // Fallback to AlQuran.cloud API if needed
+        // Try API 2: alquran.cloud fallback
         if (!surahDetail) {
           const fallbackRes = await fetch(`https://api.alquran.cloud/v1/surah/${surahNumber}/editions/quran-uthmani,ms.basmeih,ar.alafasy`).catch(() => null);
           if (fallbackRes && fallbackRes.ok) {
@@ -1607,26 +1412,15 @@ Tadabbur: ${quote.reflection}`,
           }
         }
 
-        currentLoadedSurah = surahDetail;
-        loader.classList.add('hidden');
-
-        if (surahDetail && surahDetail.ayahs) {
+        if (surahDetail) {
+          surahMemoryCache[surahNumber] = surahDetail; // Cache permanently
+          currentLoadedSurah = surahDetail;
+          loader.classList.add('hidden');
           renderAyahsList(surahDetail.ayahs, surahNumber);
-        } else {
-          ayahsContainer.innerHTML = `
-            <div class="glass-card p-8 rounded-3xl text-center space-y-3">
-              <i class="fa-solid fa-wifi text-3xl text-gold-400"></i>
-              <p class="text-base font-bold text-slate-200">Gagal Memuatkan Ayat Dalam Talian</p>
-              <p class="text-xs text-slate-400">Sila pastikan sambungan internet anda aktif untuk memuatkan keseluruhan 114 surah berserta audio qari.</p>
-              <button onclick="openSurah(${surahNumber})" class="px-4 py-2 rounded-xl gold-gradient-btn text-xs font-bold mt-2">
-                Cuba Semula
-              </button>
-            </div>
-          `;
         }
       } catch (err) {
         loader.classList.add('hidden');
-        console.error("Error loading surah:", err);
+        console.error(err);
       }
     }
 
@@ -1636,10 +1430,7 @@ Tadabbur: ${quote.reflection}`,
 
       container.innerHTML = ayahs.map((ayah, idx) => `
         <div id="ayah-card-${ayah.number}" class="ayah-card glass-card p-5 sm:p-7 rounded-3xl border border-gold-500/20 space-y-4 transition-all hover:border-gold-500/40">
-          
-          <!-- Top Ayah Action Toolbar -->
           <div class="flex items-center justify-between pb-3 border-b border-emerald-900/60">
-            <!-- Ayah Number Floral Badge -->
             <div class="flex items-center gap-2">
               <span class="w-8 h-8 rounded-full bg-emerald-900/80 border border-gold-500/40 text-gold-400 text-xs font-bold flex items-center justify-center">
                 ${ayah.number}
@@ -1647,7 +1438,6 @@ Tadabbur: ${quote.reflection}`,
               <span class="text-xs text-slate-400 font-medium">Ayat ${ayah.number} / ${meta ? meta.verses : ayahs.length}</span>
             </div>
 
-            <!-- Action Buttons -->
             <div class="flex items-center gap-1.5">
               <button onclick="playSingleAyahAudio(${idx})" title="Dengar Ayat Ini" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center text-xs">
                 <i class="fa-solid fa-play"></i>
@@ -1655,7 +1445,7 @@ Tadabbur: ${quote.reflection}`,
               <button onclick="saveBookmark(${surahNumber}, ${ayah.number})" title="Tandakan Ayat" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-slate-300 hover:text-gold-400 flex items-center justify-center text-xs">
                 <i class="fa-solid fa-bookmark"></i>
               </button>
-              <button onclick="copyAyahText(${surahNumber}, ${ayah.number})" title="Salin Teks" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-slate-300 hover:text-gold-400 flex items-center justify-center text-xs">
+              <button onclick="copyAyahText(${surahNumber}, ${ayah.number})" title="Salin" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-slate-300 hover:text-gold-400 flex items-center justify-center text-xs">
                 <i class="fa-solid fa-copy"></i>
               </button>
               <button onclick="shareAyahText(${surahNumber}, ${ayah.number})" title="Kongsi" class="w-8 h-8 rounded-xl bg-emerald-950 border border-gold-500/30 text-slate-300 hover:text-gold-400 flex items-center justify-center text-xs">
@@ -1664,23 +1454,19 @@ Tadabbur: ${quote.reflection}`,
             </div>
           </div>
 
-          <!-- Arabic Text with Custom Font Size -->
           <div class="text-right py-2">
             <p class="arabic-text font-quran text-gold-300 font-bold leading-loose select-text" style="font-size: ${arabicFontSize}px">
               ${ayah.arabic}
             </p>
           </div>
 
-          <!-- Latin Transliteration -->
           <div class="latin-text ${showLatin ? '' : 'hidden'} text-xs sm:text-sm text-emerald-300/90 font-medium">
             ${ayah.latin}
           </div>
 
-          <!-- Malay Translation -->
           <div class="translation-text ${showTranslation ? '' : 'hidden'} text-xs sm:text-sm text-slate-200 leading-relaxed border-l-2 border-gold-500/50 pl-3">
             ${ayah.translation}
           </div>
-
         </div>
       `).join('');
     }
@@ -1709,28 +1495,22 @@ Tadabbur: ${quote.reflection}`,
         el.classList.add('ayah-active');
         setTimeout(() => el.classList.remove('ayah-active'), 2500);
       } else {
-        showToast(`Ayat ${num} tidak ditemui dalam surah ini.`);
+        showToast(`Ayat ${num} tidak ditemui.`);
       }
     }
 
     // ==========================================
-    // AUDIO RECITATION CONTROLLER
+    // AUDIO RECITATION
     // ==========================================
     function playSingleAyahAudio(ayahIndex) {
       if (!currentLoadedSurah || !currentLoadedSurah.ayahs) return;
       currentPlayingAyahIndex = ayahIndex;
 
       const ayah = currentLoadedSurah.ayahs[ayahIndex];
-      const audioUrl = getAyahAudioUrl(currentLoadedSurah.number, ayah.number, ayah.audio);
+      const audioUrl = ayah.audio || `https://cdn.islamic.network/quran/audio/128/${currentReciter}/${currentLoadedSurah.number}_${ayah.number}.mp3`;
 
       highlightAyahCard(ayah.number);
       openAudioPlayer(currentLoadedSurah.name, ayah.number, audioUrl);
-    }
-
-    function getAyahAudioUrl(surahNum, ayahNum, directAudio) {
-      if (directAudio) return directAudio;
-      // Default cdn format
-      return `https://cdn.islamic.network/quran/audio/128/${currentReciter}/${surahNum}_${ayahNum}.mp3`;
     }
 
     function openAudioPlayer(surahName, ayahNum, audioUrl) {
@@ -1745,7 +1525,7 @@ Tadabbur: ${quote.reflection}`,
       fullSurahAudioObject.play().then(() => {
         isFullSurahPlaying = true;
         document.getElementById('audio-main-play-icon').className = 'fa-solid fa-pause';
-      }).catch(e => console.log('Audio playback note:', e));
+      }).catch(() => {});
 
       fullSurahAudioObject.onended = () => {
         playNextAyah();
@@ -1831,20 +1611,104 @@ Tadabbur: ${quote.reflection}`,
     }
 
     // ==========================================
-    // SETTINGS & CUSTOMIZATION
+    // KHATAM TRACKER LOGIC
     // ==========================================
-    function openSettingsModal() {
-      document.getElementById('settings-modal').classList.remove('hidden');
+    function renderKhatamJuzGrid() {
+      const container = document.getElementById('khatam-juz-grid');
+      if (!container) return;
+
+      let htmlContent = '';
+      for (let i = 1; i <= 30; i++) {
+        const isDone = completedJuzList.includes(i);
+        htmlContent += `
+          <button onclick="toggleJuzCompleted(${i})" class="p-3 rounded-2xl border text-center transition-all ${isDone ? 'bg-gradient-to-br from-emerald-600 to-emerald-900 border-gold-400 text-gold-300 shadow-md scale-[1.02]' : 'bg-midnight/80 border-gold-500/20 text-slate-300 hover:border-gold-500/40'}">
+            <span class="block text-xs font-bold">Juz ${i}</span>
+            <i class="fa-solid ${isDone ? 'fa-circle-check text-gold-300' : 'fa-circle text-slate-600'} text-xs mt-1"></i>
+          </button>
+        `;
+      }
+      container.innerHTML = htmlContent;
     }
-    function closeSettingsModal() {
-      document.getElementById('settings-modal').classList.add('hidden');
+
+    function toggleJuzCompleted(juzNum) {
+      if (completedJuzList.includes(juzNum)) {
+        completedJuzList = completedJuzList.filter(j => j !== juzNum);
+      } else {
+        completedJuzList.push(juzNum);
+      }
+      localStorage.setItem('faquran_khatam_juz', JSON.stringify(completedJuzList));
+      renderKhatamJuzGrid();
+      updateKhatamUI();
     }
-    function openAboutModal() {
-      document.getElementById('about-modal').classList.remove('hidden');
+
+    function updateKhatamUI() {
+      const completedCount = completedJuzList.length;
+      const pct = Math.round((completedCount / 30) * 100);
+
+      const countEl = document.getElementById('khatam-juz-completed');
+      const pctEl = document.getElementById('khatam-percentage');
+      const remEl = document.getElementById('khatam-remaining-juz');
+      const fillEl = document.getElementById('khatam-progress-bar-fill');
+
+      if (countEl) countEl.innerText = completedCount;
+      if (pctEl) pctEl.innerText = pct + '%';
+      if (remEl) remEl.innerText = 30 - completedCount;
+      if (fillEl) fillEl.style.width = pct + '%';
     }
-    function closeAboutModal() {
-      document.getElementById('about-modal').classList.add('hidden');
+
+    function resetKhatamTracker() {
+      completedJuzList = [];
+      localStorage.setItem('faquran_khatam_juz', JSON.stringify(completedJuzList));
+      renderKhatamJuzGrid();
+      updateKhatamUI();
+      showToast('Tracker Khatam telah diset semula.');
     }
+
+    // ==========================================
+    // HADITHS & AL-MATHURAT RENDERING
+    // ==========================================
+    function renderHadiths() {
+      const container = document.getElementById('hadiths-list-container');
+      if (!container) return;
+      container.innerHTML = HADITHS_DATA.map(h => `
+        <div class="glass-card p-6 rounded-3xl border border-gold-500/25 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full bg-gold-500/15 border border-gold-500/30 text-xs font-bold text-gold-300">
+              Hadis ${h.no}: ${h.title}
+            </span>
+            <span class="text-xs text-slate-400">Riwayat: ${h.narrator}</span>
+          </div>
+          <p class="font-quran text-2xl text-gold-300 font-bold text-right leading-loose select-text">${h.arabic}</p>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed border-l-2 border-gold-500/50 pl-3">"${h.translation}"</p>
+          <div class="p-3 rounded-2xl bg-emerald-950/60 text-xs text-emerald-200/90">
+            <strong class="text-gold-300">Pengajaran:</strong> ${h.lesson}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderMathurat() {
+      const container = document.getElementById('mathurat-list-container');
+      if (!container) return;
+      container.innerHTML = MATHURAT_DATA.map(m => `
+        <div class="glass-card p-6 rounded-3xl border border-gold-500/25 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-gold-300 text-sm sm:text-base">${m.title}</h3>
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-950 border border-gold-500/30 text-[11px] text-gold-400">${m.repeat}</span>
+          </div>
+          <p class="font-quran text-2xl text-gold-300 font-bold text-right leading-loose select-text">${m.arabic}</p>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed border-l-2 border-gold-500/50 pl-3">"${m.translation}"</p>
+        </div>
+      `).join('');
+    }
+
+    // ==========================================
+    // SETTINGS, PRAYER & TASBIH HANDLERS
+    // ==========================================
+    function openSettingsModal() { document.getElementById('settings-modal').classList.remove('hidden'); }
+    function closeSettingsModal() { document.getElementById('settings-modal').classList.add('hidden'); }
+    function openAboutModal() { document.getElementById('about-modal').classList.remove('hidden'); }
+    function closeAboutModal() { document.getElementById('about-modal').classList.add('hidden'); }
 
     function changeArabicFontSize(val) {
       arabicFontSize = val;
@@ -1872,9 +1736,6 @@ Tadabbur: ${quote.reflection}`,
       document.getElementById('toggle-translation-checkbox').checked = showTranslation;
     }
 
-    // ==========================================
-    // PRAYER TIMES CALCULATION & ZONE SELECTOR
-    // ==========================================
     function initPrayerTimes() {
       updatePrayerSchedule(currentSelectedZone);
       setInterval(updatePrayerCountdown, 1000);
@@ -1884,31 +1745,21 @@ Tadabbur: ${quote.reflection}`,
     function changePrayerZone(zoneCode) {
       currentSelectedZone = zoneCode;
       const select = document.getElementById('prayer-zone-select');
-      const label = select.options[select.selectedIndex].text;
-      document.getElementById('current-zone-label').innerText = label;
+      document.getElementById('current-zone-label').innerText = select.options[select.selectedIndex].text;
       updatePrayerSchedule(zoneCode);
     }
 
     function updatePrayerSchedule(zone) {
-      // Standard Malaysian Prayer Timing Baselines with accurate zone offsets
       const prayerOffsets = {
         'WLY01': { subuh: '06:05', syuruk: '07:18', zohor: '13:22', asar: '16:35', maghrib: '19:28', isyak: '20:38' },
-        'WLY02': { subuh: '05:30', syuruk: '06:45', zohor: '12:45', asar: '15:55', maghrib: '18:50', isyak: '20:00' },
-        'SGR01': { subuh: '06:05', syuruk: '07:18', zohor: '13:22', asar: '16:36', maghrib: '19:28', isyak: '20:39' },
         'NGS02': { subuh: '06:04', syuruk: '07:17', zohor: '13:21', asar: '16:34', maghrib: '19:27', isyak: '20:37' },
+        'SGR01': { subuh: '06:05', syuruk: '07:18', zohor: '13:22', asar: '16:36', maghrib: '19:28', isyak: '20:39' },
         'JHR02': { subuh: '05:58', syuruk: '07:11', zohor: '13:16', asar: '16:29', maghrib: '19:21', isyak: '20:31' },
         'PNG01': { subuh: '06:08', syuruk: '07:22', zohor: '13:26', asar: '16:40', maghrib: '19:32', isyak: '20:43' },
-        'KTN01': { subuh: '05:58', syuruk: '07:13', zohor: '13:17', asar: '16:31', maghrib: '19:23', isyak: '20:34' },
-        'SBH01': { subuh: '05:15', syuruk: '06:28', zohor: '12:30', asar: '15:40', maghrib: '18:33', isyak: '19:43' },
-        'SWK01': { subuh: '05:35', syuruk: '06:48', zohor: '12:51', asar: '16:02', maghrib: '18:54', isyak: '20:04' },
-        'JKT': { subuh: '04:45', syuruk: '06:00', zohor: '12:05', asar: '15:22', maghrib: '18:08', isyak: '19:18' },
-        'SGP': { subuh: '05:57', syuruk: '07:10', zohor: '13:15', asar: '16:28', maghrib: '19:20', isyak: '20:30' },
       };
-
       const times = prayerOffsets[zone] || prayerOffsets['WLY01'];
       prayerTimesCache = times;
 
-      // Update UI Home & Prayer Tab
       document.getElementById('time-subuh').innerText = times.subuh;
       document.getElementById('time-syuruk').innerText = times.syuruk;
       document.getElementById('time-zohor').innerText = times.zohor;
@@ -1926,7 +1777,6 @@ Tadabbur: ${quote.reflection}`,
 
     function updatePrayerCountdown() {
       if (!prayerTimesCache || !prayerTimesCache.subuh) return;
-
       const now = new Date();
       const prayers = [
         { name: 'Subuh', time: prayerTimesCache.subuh },
@@ -1936,7 +1786,6 @@ Tadabbur: ${quote.reflection}`,
         { name: 'Maghrib', time: prayerTimesCache.maghrib },
         { name: 'Isyak', time: prayerTimesCache.isyak }
       ];
-
       let nextPrayer = null;
       let targetTime = null;
 
@@ -1944,15 +1793,8 @@ Tadabbur: ${quote.reflection}`,
         const [h, m] = p.time.split(':').map(Number);
         const pDate = new Date(now);
         pDate.setHours(h, m, 0, 0);
-
-        if (pDate > now) {
-          nextPrayer = p;
-          targetTime = pDate;
-          break;
-        }
+        if (pDate > now) { nextPrayer = p; targetTime = pDate; break; }
       }
-
-      // If all passed today, next is Subuh tomorrow
       if (!nextPrayer) {
         nextPrayer = prayers[0];
         const [h, m] = nextPrayer.time.split(':').map(Number);
@@ -1965,12 +1807,10 @@ Tadabbur: ${quote.reflection}`,
       const hours = Math.floor(diffSec / 3600);
       const mins = Math.floor((diffSec % 3600) / 60);
       const secs = diffSec % 60;
-
       const timerStr = `${String(hours).padStart(2, '0')}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
 
       const nextNameEl = document.getElementById('next-prayer-name');
       const nextTimerEl = document.getElementById('next-prayer-timer');
-
       if (nextNameEl) nextNameEl.innerText = nextPrayer.name;
       if (nextTimerEl) nextTimerEl.innerText = timerStr;
     }
@@ -1984,32 +1824,18 @@ Tadabbur: ${quote.reflection}`,
       }
     }
 
-    // ==========================================
-    // TASBIH DIGITAL WITH AUDIO CLICK & VIBRATION
-    // ==========================================
     function incrementTasbih() {
       tasbihCount++;
       tasbihTotal++;
-
-      // Trigger Web Audio Click
-      if (tasbihSoundEnabled) {
-        playTasbihClickSound();
-      }
-
-      // Trigger haptic vibration if supported
-      if ('vibrate' in navigator) {
-        navigator.vibrate(35);
-      }
+      if (tasbihSoundEnabled) playTasbihClickSound();
+      if ('vibrate' in navigator) navigator.vibrate(35);
 
       if (tasbihTarget > 0 && tasbihCount >= tasbihTarget) {
         tasbihLaps++;
         tasbihCount = 0;
-        if ('vibrate' in navigator) {
-          navigator.vibrate([100, 50, 100]);
-        }
+        if ('vibrate' in navigator) navigator.vibrate([100, 50, 100]);
         showToast(`Alhamdulillah! Sasaran ${tasbihTarget} kali tercapai.`);
       }
-
       saveTasbihState();
       updateTasbihUI();
     }
@@ -2041,11 +1867,8 @@ Tadabbur: ${quote.reflection}`,
         'AllahuAkbar': { ar: 'اللَّهُ أَكْبَرُ', id: 'Allah Maha Besar' },
         'LaIlahaIllallah': { ar: 'لَا إِلَٰهَ إِلَّا اللَّهُ', id: 'Tiada Tuhan selain Allah' },
         'Astaghfirullah': { ar: 'أَسْتَغْفِرُ اللَّهَ', id: 'Aku memohon ampun kepada Allah' },
-        'Salawat': { ar: 'اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ', id: 'Selawat ke atas Nabi Muhammad s.a.w.' },
-        'Hauqalah': { ar: 'لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ', id: 'Tiada daya dan kekuatan melainkan dengan pertolongan Allah' },
-        'SubhanallahWabihamdihi': { ar: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ', id: 'Maha Suci Allah dan dengan segala puji-Nya' }
+        'Salawat': { ar: 'اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ', id: 'Selawat ke atas Nabi Muhammad s.a.w.' }
       };
-
       const p = presets[name] || presets['Subhanallah'];
       document.getElementById('tasbih-arabic-display').innerText = p.ar;
       document.getElementById('tasbih-meaning-display').innerText = `"${p.id}"`;
@@ -2053,8 +1876,7 @@ Tadabbur: ${quote.reflection}`,
 
     function toggleTasbihSound() {
       tasbihSoundEnabled = !tasbihSoundEnabled;
-      const btn = document.getElementById('tasbih-sound-btn');
-      btn.innerHTML = `<i class="fa-solid fa-volume-${tasbihSoundEnabled ? 'high' : 'xmark'}"></i> Bunyi: ${tasbihSoundEnabled ? 'ON' : 'OFF'}`;
+      document.getElementById('tasbih-sound-btn').innerHTML = `<i class="fa-solid fa-volume-${tasbihSoundEnabled ? 'high' : 'xmark'}"></i> Bunyi: ${tasbihSoundEnabled ? 'ON' : 'OFF'}`;
     }
 
     function playTasbihClickSound() {
@@ -2062,17 +1884,13 @@ Tadabbur: ${quote.reflection}`,
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         const osc = audioCtx.createOscillator();
         const gain = audioCtx.createGain();
-
         osc.type = 'sine';
         osc.frequency.setValueAtTime(800, audioCtx.currentTime);
         osc.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + 0.04);
-
         gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
         gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.04);
-
         osc.connect(gain);
         gain.connect(audioCtx.destination);
-
         osc.start();
         osc.stop(audioCtx.currentTime + 0.04);
       } catch (e) {}
@@ -2092,17 +1910,12 @@ Tadabbur: ${quote.reflection}`,
       document.getElementById('tasbih-target-label').innerText = tasbihTarget === 0 ? 'Sasaran: Bebas' : `Sasaran: ${tasbihTarget}`;
     }
 
-    // ==========================================
-    // ASMAUL HUSNA & DUAS
-    // ==========================================
     function renderAsmaulHusna(list) {
       const container = document.getElementById('asmaul-grid-container');
       if (!container) return;
       container.innerHTML = list.map(item => `
         <div class="glass-card p-4 rounded-2xl border border-gold-500/20 text-center hover:scale-[1.02] hover:border-gold-400 transition-all shadow-md">
-          <span class="w-7 h-7 rounded-full bg-emerald-950 border border-gold-500/40 text-gold-400 text-xs font-bold inline-flex items-center justify-center mb-1">
-            ${item.no}
-          </span>
+          <span class="w-7 h-7 rounded-full bg-emerald-950 border border-gold-500/40 text-gold-400 text-xs font-bold inline-flex items-center justify-center mb-1">${item.no}</span>
           <p class="font-quran text-2xl text-gold-300 font-bold my-1">${item.arabic}</p>
           <h4 class="text-sm font-bold text-slate-100">${item.latin}</h4>
           <p class="text-xs text-emerald-300/80 mt-0.5">${item.meaning}</p>
@@ -2120,12 +1933,8 @@ Tadabbur: ${quote.reflection}`,
       const container = document.getElementById('duas-list-container');
       if (!container) return;
       container.innerHTML = DAILY_DUAS.map(d => `
-        <div class="glass-card p-6 sm:p-7 rounded-3xl border border-gold-500/25 space-y-3">
-          <div class="flex items-center justify-between">
-            <h3 class="font-bold text-gold-300 text-base sm:text-lg flex items-center gap-2">
-              <i class="fa-solid fa-star text-xs text-gold-400"></i> ${d.title}
-            </h3>
-          </div>
+        <div class="glass-card p-6 rounded-3xl border border-gold-500/25 space-y-3">
+          <h3 class="font-bold text-gold-300 text-base sm:text-lg flex items-center gap-2"><i class="fa-solid fa-star text-xs text-gold-400"></i> ${d.title}</h3>
           <p class="font-quran text-2xl sm:text-3xl text-gold-300 font-bold text-right leading-loose select-text">${d.arabic}</p>
           <p class="text-xs sm:text-sm text-emerald-300/90 font-medium">${d.latin}</p>
           <p class="text-xs sm:text-sm text-slate-200 leading-relaxed border-l-2 border-gold-500/50 pl-3">"${d.translation}"</p>
@@ -2133,9 +1942,6 @@ Tadabbur: ${quote.reflection}`,
       `).join('');
     }
 
-    // ==========================================
-    // BOOKMARKS & LAST READ
-    // ==========================================
     function saveBookmark(surahNum, ayahNum) {
       const meta = SURAHS_DATA.find(s => s.number === surahNum);
       const item = {
@@ -2145,11 +1951,10 @@ Tadabbur: ${quote.reflection}`,
         ayahNumber: ayahNum,
         timestamp: new Date().toLocaleDateString('ms-MY')
       };
-
       savedBookmarks.unshift(item);
       localStorage.setItem('faquran_bookmarks', JSON.stringify(savedBookmarks));
       renderBookmarks();
-      showToast(`Ayat ${ayahNum} (Surah ${item.surahName}) berjaya disimpan ke penanda!`);
+      showToast(`Ayat ${ayahNum} (${item.surahName}) berjaya disimpan!`);
     }
 
     function deleteBookmark(id) {
@@ -2162,35 +1967,19 @@ Tadabbur: ${quote.reflection}`,
     function renderBookmarks() {
       const container = document.getElementById('bookmarks-list-container');
       if (!container) return;
-
       if (savedBookmarks.length === 0) {
-        container.innerHTML = `
-          <div class="glass-card p-8 rounded-2xl text-center text-slate-400 text-xs">
-            <i class="fa-solid fa-bookmark text-2xl mb-2 text-slate-500"></i>
-            <p>Belum ada penanda buku disimpan. Tekan butang penanda pada mana-mana ayat untuk menyimpan.</p>
-          </div>
-        `;
+        container.innerHTML = `<div class="glass-card p-8 rounded-2xl text-center text-slate-400 text-xs">Belum ada penanda buku disimpan.</div>`;
         return;
       }
-
       container.innerHTML = savedBookmarks.map(b => `
         <div class="glass-card p-4 rounded-2xl border border-gold-500/20 flex items-center justify-between gap-3">
           <div class="flex items-center gap-3 cursor-pointer" onclick="openSurah(${b.surahNumber})">
-            <div class="w-10 h-10 rounded-xl bg-emerald-900 border border-gold-500/30 text-gold-400 font-bold flex items-center justify-center text-sm">
-              ${b.surahNumber}
-            </div>
-            <div>
-              <h4 class="font-bold text-slate-100 text-sm hover:text-gold-300">${b.surahName} : Ayat ${b.ayahNumber}</h4>
-              <p class="text-[11px] text-slate-400">Ditanda pada: ${b.timestamp}</p>
-            </div>
+            <div class="w-10 h-10 rounded-xl bg-emerald-900 border border-gold-500/30 text-gold-400 font-bold flex items-center justify-center text-sm">${b.surahNumber}</div>
+            <div><h4 class="font-bold text-slate-100 text-sm hover:text-gold-300">${b.surahName} : Ayat ${b.ayahNumber}</h4><p class="text-[11px] text-slate-400">${b.timestamp}</p></div>
           </div>
           <div class="flex items-center gap-2">
-            <button onclick="openSurah(${b.surahNumber})" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500/20">
-              Buka
-            </button>
-            <button onclick="deleteBookmark(${b.id})" class="w-8 h-8 rounded-xl bg-red-950/60 border border-red-500/30 text-red-300 text-xs hover:bg-red-900">
-              <i class="fa-solid fa-trash-can"></i>
-            </button>
+            <button onclick="openSurah(${b.surahNumber})" class="px-3 py-1.5 rounded-xl bg-emerald-950 border border-gold-500/30 text-xs text-gold-300">Buka</button>
+            <button onclick="deleteBookmark(${b.id})" class="w-8 h-8 rounded-xl bg-red-950/60 border border-red-500/30 text-red-300 text-xs"><i class="fa-solid fa-trash-can"></i></button>
           </div>
         </div>
       `).join('');
@@ -2204,78 +1993,47 @@ Tadabbur: ${quote.reflection}`,
       updateLastReadCardUI();
     }
 
-    function resumeLastRead() {
-      openSurah(lastReadSurahNumber);
-    }
+    function resumeLastRead() { openSurah(lastReadSurahNumber); }
 
     function updateLastReadCardUI() {
       const meta = SURAHS_DATA.find(s => s.number === lastReadSurahNumber) || SURAHS_DATA[0];
       const titleEl = document.getElementById('last-read-surah-title');
-      if (titleEl) {
-        titleEl.innerText = `Surah ${meta.name} : Ayat ${lastReadAyahNumber}`;
-      }
+      if (titleEl) titleEl.innerText = `Surah ${meta.name} : Ayat ${lastReadAyahNumber}`;
     }
 
     function copyAyahText(surahNum, ayahNum) {
       if (!currentLoadedSurah || !currentLoadedSurah.ayahs) return;
       const ayah = currentLoadedSurah.ayahs.find(a => a.number === ayahNum);
       if (!ayah) return;
-
-      const text = `${ayah.arabic}
-
-"${ayah.translation}"
-(Surah ${currentLoadedSurah.name} : ${ayahNum})
-
-— FaQuran by Fakrul`;
-      navigator.clipboard.writeText(text).then(() => showToast('Ayat Al-Quran dan terjemahan telah disalin!'));
+      const text = `${ayah.arabic}\n\n"${ayah.translation}"\n(Surah ${currentLoadedSurah.name} : ${ayahNum})\n\n— FaQuran by Fakrul`;
+      navigator.clipboard.writeText(text).then(() => showToast('Ayat Al-Quran telah disalin!'));
     }
 
     function shareAyahText(surahNum, ayahNum) {
       if (!currentLoadedSurah || !currentLoadedSurah.ayahs) return;
       const ayah = currentLoadedSurah.ayahs.find(a => a.number === ayahNum);
       if (!ayah) return;
-
-      const text = `${ayah.arabic}
-
-"${ayah.translation}"
-(Surah ${currentLoadedSurah.name} : ${ayahNum})
-
-— FaQuran by Fakrul`;
+      const text = `${ayah.arabic}\n\n"${ayah.translation}"\n(Surah ${currentLoadedSurah.name} : ${ayahNum})\n\n— FaQuran by Fakrul`;
       if (navigator.share) {
-        navigator.share({
-          title: `Surah ${currentLoadedSurah.name} : ${ayahNum}`,
-          text: text,
-          url: 'https://quran.fakrulafif.com'
-        }).catch(() => {});
-      } else {
-        copyAyahText(surahNum, ayahNum);
-      }
+        navigator.share({ title: `Surah ${currentLoadedSurah.name} : ${ayahNum}`, text: text, url: 'https://quran.fakrulafif.com' }).catch(() => {});
+      } else { copyAyahText(surahNum, ayahNum); }
     }
 
-    // ==========================================
-    // TOAST NOTIFICATION
-    // ==========================================
     function showToast(msg) {
       const existing = document.getElementById('faquran-toast');
       if (existing) existing.remove();
-
       const toast = document.createElement('div');
       toast.id = 'faquran-toast';
       toast.className = 'fixed top-20 right-4 z-50 px-4 py-2.5 rounded-2xl bg-emerald-950/95 border border-gold-400/60 text-gold-300 text-xs font-semibold shadow-2xl backdrop-blur-xl flex items-center gap-2 animate-bounce';
       toast.innerHTML = `<i class="fa-solid fa-circle-check text-gold-400"></i> ${msg}`;
-
       document.body.appendChild(toast);
       setTimeout(() => toast.remove(), 3500);
     }
 
-    // ==========================================
-    // PARTICLE BACKGROUND CANVAS ANIMATION
-    // ==========================================
     function initParticleBackground() {
       const canvas = document.getElementById('particles-canvas');
       if (!canvas) return;
       const ctx = canvas.getContext('2d');
-
       let width = (canvas.width = window.innerWidth);
       let height = (canvas.height = window.innerHeight);
 
@@ -2299,23 +2057,19 @@ Tadabbur: ${quote.reflection}`,
 
       function animate() {
         ctx.clearRect(0, 0, width, height);
-
         for (let p of particles) {
           p.x += p.vx;
           p.y += p.vy;
-
           if (p.x < 0) p.x = width;
           if (p.x > width) p.x = 0;
           if (p.y < 0) p.y = height;
           if (p.y > height) p.y = 0;
-
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
           ctx.fillStyle = p.color;
           ctx.globalAlpha = p.alpha;
           ctx.fill();
         }
-
         requestAnimationFrame(animate);
       }
       animate();
