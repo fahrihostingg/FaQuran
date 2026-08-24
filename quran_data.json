@@ -2110,5 +2110,97 @@
       "date": "10 Zulhijjah",
       "desc": "Hari Raya Korban memperingati keikhlasan Nabi Ibrahim dan Nabi Ismail a.s."
     }
+  ],
+  "prophets_duas": [
+    {
+      "prophet": "Nabi Adam a.s.",
+      "purpose": "Doa Pengakuan Dosa & Memohon Keampunan",
+      "arabic": "رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+      "latin": "Rabbana zhalamna anfusana wa illam taghfir lana wa tarhamna lanakunanna minal-khasirin.",
+      "translation": "Wahai Tuhan kami, kami telah menzalimi diri kami sendiri, dan jika Engkau tidak mengampuni kami dan memberi rahmat kepada kami, nescaya kami termasuk orang-orang yang rugi.",
+      "source": "Surah Al-A'raf (7:23)"
+    },
+    {
+      "prophet": "Nabi Yunus a.s.",
+      "purpose": "Doa Pelepasan Kesempitan & Kesulitan Hidup",
+      "arabic": "لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+      "latin": "La ilaha illa anta subhanaka inni kuntu minazh-zhalimin.",
+      "translation": "Tiada Tuhan selain Engkau, Maha Suci Engkau, sesungguhnya aku adalah termasuk orang-orang yang zalim.",
+      "source": "Surah Al-Anbiya' (21:87)"
+    },
+    {
+      "prophet": "Nabi Ibrahim a.s.",
+      "purpose": "Doa Keteguhan Mendirikan Solat & Zuriat Soleh",
+      "arabic": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
+      "latin": "Rabbij'alni muqimas-salati wa min dzurriyyati, Rabbana wa taqabbal du'a.",
+      "translation": "Wahai Tuhanku, jadikanlah aku dan anak cucuku orang-orang yang tetap mendirikan solat, wahai Tuhan kami, perkenankanlah doaku.",
+      "source": "Surah Ibrahim (14:40)"
+    },
+    {
+      "prophet": "Nabi Musa a.s.",
+      "purpose": "Doa Memohon Kebaikan & Kurniaan Rezeki",
+      "arabic": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+      "latin": "Rabbi inni lima anzalta ilayya min khairin faqir.",
+      "translation": "Wahai Tuhanku, sesungguhnya aku sangat memerlukan sebarang kebaikan yang Engkau turunkan kepadaku.",
+      "source": "Surah Al-Qasas (28:24)"
+    },
+    {
+      "prophet": "Nabi Ayyub a.s.",
+      "purpose": "Doa Memohon Kesembuhan Penyakit & Penderitaan",
+      "arabic": "أَنِّي مَسَّنِيَ الضُّرُّ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ",
+      "latin": "Anni massaniyad-dhurru wa anta arhamur-rahimin.",
+      "translation": "Sesungguhnya aku telah ditimpa penyakit, dan Engkaulah Tuhan Yang Maha Penyayang di antara semua yang penyayang.",
+      "source": "Surah Al-Anbiya' (21:83)"
+    },
+    {
+      "prophet": "Nabi Zakaria a.s.",
+      "purpose": "Doa Memohon Zuriat Keturunan yang Baik",
+      "arabic": "رَبِّ هَبْ لِي مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ الدُّعَاءِ",
+      "latin": "Rabbi hab li mil-ladunka dzurriyyatan thayyibah, innaka sami'ud-du'a.",
+      "translation": "Wahai Tuhanku, kurniakanlah kepadaku dari sisi-Mu zuriat keturunan yang baik, sesungguhnya Engkau Maha Mendengar doa.",
+      "source": "Surah Ali 'Imran (3:38)"
+    }
+  ],
+  "solat_sunat": [
+    {
+      "name": "Solat Sunat Tahajjud",
+      "rakaat": "2 Rakaat (atau lebih)",
+      "time": "Sepertiga malam terakhir selepas bangun tidur",
+      "niat": "أُصَلِّي سُنَّةَ التَّهَجُّدِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+      "niat_latin": "Usalli sunnatat-tahajjudi rak'ataini lillahi Ta'ala.",
+      "fadhilat": "Mendapat kedudukan terpuji (Maqaman Mahmuda), doa mustajab dan ketenangan jiwa yang luar biasa."
+    },
+    {
+      "name": "Solat Sunat Dhuha",
+      "rakaat": "2 hingga 8 Rakaat",
+      "time": "20 minit selepas Syuruk sehingga sebelum Zohor",
+      "niat": "أُصَلِّي سُنَّةَ الضُّحَى رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+      "niat_latin": "Usalli sunnatad-dhuha rak'ataini lillahi Ta'ala.",
+      "fadhilat": "Sebagai sedekah bagi setiap sendi tubuh, meluaskan pintu rezeki dan mencukupkan keperluan harian."
+    },
+    {
+      "name": "Solat Sunat Taubat",
+      "rakaat": "2 Rakaat",
+      "time": "Bila-bila masa (terutama waktu malam)",
+      "niat": "أُصَلِّي سُنَّةَ التَّوْبَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+      "niat_latin": "Usalli sunnatat-taubati rak'ataini lillahi Ta'ala.",
+      "fadhilat": "Membersihkan jiwa dari noda dosa, memohon keampunan Allah dengan penuh penyesalan dan azam baharu."
+    },
+    {
+      "name": "Solat Sunat Hajat",
+      "rakaat": "2 Rakaat",
+      "time": "Bila-bila masa ketika mempunyai hajat khusus",
+      "niat": "أُصَلِّي سُنَّةَ الْحَاجَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+      "niat_latin": "Usalli sunnatal-hajati rak'ataini lillahi Ta'ala.",
+      "fadhilat": "Memohon pertolongan dan kemudahan daripada Allah SWT bagi mencapai hajat kebaikan dunia dan akhirat."
+    },
+    {
+      "name": "Solat Sunat Witir",
+      "rakaat": "1, 3, atau 5 Rakaat (Ganjil)",
+      "time": "Selepas solat Isyak sehingga sebelum Subuh",
+      "niat": "أُصَلِّي سُنَّةَ الْوِتْرِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى / رَكْعَةً لِلَّهِ تَعَالَى",
+      "niat_latin": "Usalli sunnatal-witri rak'ataini / rak'atan lillahi Ta'ala.",
+      "fadhilat": "Penutup ibadah solat malam yang sangat dicintai oleh Allah SWT."
+    }
   ]
 }
