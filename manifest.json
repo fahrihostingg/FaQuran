@@ -1,0 +1,21 @@
+{
+  "name": "FaQuran \u2022 Al-Quran Digital & Nasihat Kehidupan",
+  "short_name": "FaQuran",
+  "description": "Aplikasi Al-Quran Digital, Tadabbur Kehidupan, Waktu Solat dan Tasbih Digital oleh Fakrul",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#031410",
+  "theme_color": "#064e3b",
+  "icons": [
+    {
+      "src": "src/images/quran128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "src/images/quran512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

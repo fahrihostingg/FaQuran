@@ -1,0 +1,1970 @@
+{
+  "surahs": [
+    {
+      "number": 1,
+      "name": "Al-Fatihah",
+      "arabic": "الفاتحة",
+      "meaning": "Pembukaan",
+      "verses": 7,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 2,
+      "name": "Al-Baqarah",
+      "arabic": "البقرة",
+      "meaning": "Lembu Betina",
+      "verses": 286,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 3,
+      "name": "Ali 'Imran",
+      "arabic": "آل عمران",
+      "meaning": "Keluarga Imran",
+      "verses": 200,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 4,
+      "name": "An-Nisa'",
+      "arabic": "النساء",
+      "meaning": "Wanita",
+      "verses": 176,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 5,
+      "name": "Al-Ma'idah",
+      "arabic": "المائدة",
+      "meaning": "Hidangan",
+      "verses": 120,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 6,
+      "name": "Al-An'am",
+      "arabic": "الأنعام",
+      "meaning": "Binatang Ternakan",
+      "verses": 165,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 7,
+      "name": "Al-A'raf",
+      "arabic": "الأعراف",
+      "meaning": "Tempat Tertinggi",
+      "verses": 206,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 8,
+      "name": "Al-Anfal",
+      "arabic": "الأنفال",
+      "meaning": "Harta Rampasan Perang",
+      "verses": 75,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 9,
+      "name": "At-Taubah",
+      "arabic": "التوبة",
+      "meaning": "Pengampunan / Taubat",
+      "verses": 129,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 10,
+      "name": "Yunus",
+      "arabic": "يونس",
+      "meaning": "Nabi Yunus a.s.",
+      "verses": 109,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 11,
+      "name": "Hud",
+      "arabic": "هود",
+      "meaning": "Nabi Hud a.s.",
+      "verses": 123,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 12,
+      "name": "Yusuf",
+      "arabic": "يوسف",
+      "meaning": "Nabi Yusuf a.s.",
+      "verses": 111,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 13,
+      "name": "Ar-Ra'd",
+      "arabic": "الرعد",
+      "meaning": "Guruh",
+      "verses": 43,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 14,
+      "name": "Ibrahim",
+      "arabic": "إبراهيم",
+      "meaning": "Nabi Ibrahim a.s.",
+      "verses": 52,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 15,
+      "name": "Al-Hijr",
+      "arabic": "الحجر",
+      "meaning": "Kawasan Berbatu",
+      "verses": 99,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 16,
+      "name": "An-Nahl",
+      "arabic": "النحل",
+      "meaning": "Lebah",
+      "verses": 128,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 17,
+      "name": "Al-Isra'",
+      "arabic": "الإسراء",
+      "meaning": "Perjalanan Malam",
+      "verses": 111,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 18,
+      "name": "Al-Kahf",
+      "arabic": "الكهف",
+      "meaning": "Gua",
+      "verses": 110,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 19,
+      "name": "Maryam",
+      "arabic": "مريم",
+      "meaning": "Siti Maryam",
+      "verses": 98,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 20,
+      "name": "Taha",
+      "arabic": "طه",
+      "meaning": "Taha",
+      "verses": 135,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 21,
+      "name": "Al-Anbiya'",
+      "arabic": "الأنبياء",
+      "meaning": "Para Nabi",
+      "verses": 112,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 22,
+      "name": "Al-Hajj",
+      "arabic": "الحج",
+      "meaning": "Ibadah Haji",
+      "verses": 78,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 23,
+      "name": "Al-Mu'minun",
+      "arabic": "المؤمنون",
+      "meaning": "Golongan Beriman",
+      "verses": 118,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 24,
+      "name": "An-Nur",
+      "arabic": "النور",
+      "meaning": "Cahaya",
+      "verses": 64,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 25,
+      "name": "Al-Furqan",
+      "arabic": "الفرقان",
+      "meaning": "Pembeda Benar & Salah",
+      "verses": 77,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 26,
+      "name": "Asy-Syu'ara'",
+      "arabic": "الشعراء",
+      "meaning": "Para Penyair",
+      "verses": 227,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 27,
+      "name": "An-Naml",
+      "arabic": "النمل",
+      "meaning": "Semut",
+      "verses": 93,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 28,
+      "name": "Al-Qasas",
+      "arabic": "القصص",
+      "meaning": "Kisah-Kisah",
+      "verses": 88,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 29,
+      "name": "Al-'Ankabut",
+      "arabic": "العنكبوت",
+      "meaning": "Labah-Labah",
+      "verses": 69,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 30,
+      "name": "Ar-Rum",
+      "arabic": "الروم",
+      "meaning": "Bangsa Rom",
+      "verses": 60,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 31,
+      "name": "Luqman",
+      "arabic": "لقمان",
+      "meaning": "Luqman",
+      "verses": 34,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 32,
+      "name": "As-Sajdah",
+      "arabic": "السجدة",
+      "meaning": "Sujud",
+      "verses": 30,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 33,
+      "name": "Al-Ahzab",
+      "arabic": "الأحزاب",
+      "meaning": "Golongan Bersekutu",
+      "verses": 73,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 34,
+      "name": "Saba'",
+      "arabic": "سبإ",
+      "meaning": "Kaum Saba'",
+      "verses": 54,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 35,
+      "name": "Fatir",
+      "arabic": "فاطر",
+      "meaning": "Pencipta",
+      "verses": 45,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 36,
+      "name": "Yasin",
+      "arabic": "يس",
+      "meaning": "Yasin",
+      "verses": 83,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 37,
+      "name": "As-Saffat",
+      "arabic": "الصافات",
+      "meaning": "Barisan Bersaf-saf",
+      "verses": 182,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 38,
+      "name": "Sad",
+      "arabic": "ص",
+      "meaning": "Sad",
+      "verses": 88,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 39,
+      "name": "Az-Zumar",
+      "arabic": "الزمر",
+      "meaning": "Rombongan",
+      "verses": 75,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 40,
+      "name": "Ghafir",
+      "arabic": "غافر",
+      "meaning": "Maha Pengampun",
+      "verses": 85,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 41,
+      "name": "Fussilat",
+      "arabic": "فصلت",
+      "meaning": "Dijelaskan",
+      "verses": 54,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 42,
+      "name": "Asy-Syura",
+      "arabic": "الشورى",
+      "meaning": "Musyawarah",
+      "verses": 53,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 43,
+      "name": "Az-Zukhruf",
+      "arabic": "الزخرف",
+      "meaning": "Perhiasan",
+      "verses": 89,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 44,
+      "name": "Ad-Dukhan",
+      "arabic": "الدخان",
+      "meaning": "Kabut / Asap",
+      "verses": 59,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 45,
+      "name": "Al-Jasiyah",
+      "arabic": "الجاثية",
+      "meaning": "Yang Berlutut",
+      "verses": 37,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 46,
+      "name": "Al-Ahqaf",
+      "arabic": "الأحقاف",
+      "meaning": "Bukit Pasir",
+      "verses": 35,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 47,
+      "name": "Muhammad",
+      "arabic": "محمد",
+      "meaning": "Nabi Muhammad s.a.w.",
+      "verses": 38,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 48,
+      "name": "Al-Fath",
+      "arabic": "الفتح",
+      "meaning": "Kemenangan",
+      "verses": 29,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 49,
+      "name": "Al-Hujurat",
+      "arabic": "الحجرات",
+      "meaning": "Bilik-Bilik Kediaman",
+      "verses": 18,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 50,
+      "name": "Qaf",
+      "arabic": "ق",
+      "meaning": "Qaf",
+      "verses": 45,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 51,
+      "name": "Az-Zariyat",
+      "arabic": "الذاريات",
+      "meaning": "Angin Menerbangkan",
+      "verses": 60,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 52,
+      "name": "At-Tur",
+      "arabic": "الطور",
+      "meaning": "Bukit Tursina",
+      "verses": 49,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 53,
+      "name": "An-Najm",
+      "arabic": "النجم",
+      "meaning": "Bintang",
+      "verses": 62,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 54,
+      "name": "Al-Qamar",
+      "arabic": "القمر",
+      "meaning": "Bulan",
+      "verses": 55,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 55,
+      "name": "Ar-Rahman",
+      "arabic": "الرحمن",
+      "meaning": "Maha Pemurah",
+      "verses": 78,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 56,
+      "name": "Al-Waqi'ah",
+      "arabic": "الواقعة",
+      "meaning": "Hari Kiamat",
+      "verses": 96,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 57,
+      "name": "Al-Hadid",
+      "arabic": "الحديد",
+      "meaning": "Besi",
+      "verses": 29,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 58,
+      "name": "Al-Mujadilah",
+      "arabic": "المجادلة",
+      "meaning": "Wanita Mengadu",
+      "verses": 22,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 59,
+      "name": "Al-Hasyr",
+      "arabic": "الحشر",
+      "meaning": "Pengusiran / Himpunan",
+      "verses": 24,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 60,
+      "name": "Al-Mumtahanah",
+      "arabic": "الممتحنة",
+      "meaning": "Wanita yang Diuji",
+      "verses": 13,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 61,
+      "name": "As-Saff",
+      "arabic": "الصف",
+      "meaning": "Barisan",
+      "verses": 14,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 62,
+      "name": "Al-Jumu'ah",
+      "arabic": "الجمعة",
+      "meaning": "Hari Jumaat",
+      "verses": 11,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 63,
+      "name": "Al-Munafiqun",
+      "arabic": "المنافقون",
+      "meaning": "Golongan Munafik",
+      "verses": 11,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 64,
+      "name": "At-Taghabun",
+      "arabic": "التغابن",
+      "meaning": "Hari Penyesalan",
+      "verses": 18,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 65,
+      "name": "At-Talaq",
+      "arabic": "الطلاق",
+      "meaning": "Penceraian / Talak",
+      "verses": 12,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 66,
+      "name": "At-Tahrim",
+      "arabic": "التحريم",
+      "meaning": "Pengharaman",
+      "verses": 12,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 67,
+      "name": "Al-Mulk",
+      "arabic": "الملك",
+      "meaning": "Kerajaan / Kekuasaan",
+      "verses": 30,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 68,
+      "name": "Al-Qalam",
+      "arabic": "القلم",
+      "meaning": "Pena",
+      "verses": 52,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 69,
+      "name": "Al-Haqqah",
+      "arabic": "الحاقة",
+      "meaning": "Hari Kiamat yang Pasti",
+      "verses": 52,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 70,
+      "name": "Al-Ma'arij",
+      "arabic": "المعارج",
+      "meaning": "Tempat-Tempat Naik",
+      "verses": 44,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 71,
+      "name": "Nuh",
+      "arabic": "نوح",
+      "meaning": "Nabi Nuh a.s.",
+      "verses": 28,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 72,
+      "name": "Al-Jinn",
+      "arabic": "الجن",
+      "meaning": "Golongan Jin",
+      "verses": 28,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 73,
+      "name": "Al-Muzzammil",
+      "arabic": "المزمل",
+      "meaning": "Orang Berselimut",
+      "verses": 20,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 74,
+      "name": "Al-Muddassir",
+      "arabic": "المدثر",
+      "meaning": "Orang Berkemul",
+      "verses": 56,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 75,
+      "name": "Al-Qiyamah",
+      "arabic": "القيامة",
+      "meaning": "Hari Kebangkitan",
+      "verses": 40,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 76,
+      "name": "Al-Insan",
+      "arabic": "الإنسان",
+      "meaning": "Manusia",
+      "verses": 31,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 77,
+      "name": "Al-Mursalat",
+      "arabic": "المرسلات",
+      "meaning": "Malaikat yang Diutus",
+      "verses": 50,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 78,
+      "name": "An-Naba'",
+      "arabic": "النبإ",
+      "meaning": "Berita Besar",
+      "verses": 40,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 79,
+      "name": "An-Nazi'at",
+      "arabic": "النازعات",
+      "meaning": "Malaikat Pencabut Nyawa",
+      "verses": 46,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 80,
+      "name": "'Abasa",
+      "arabic": "عبس",
+      "meaning": "Bermuka Masam",
+      "verses": 42,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 81,
+      "name": "At-Takwir",
+      "arabic": "التكوير",
+      "meaning": "Menggulung Matahari",
+      "verses": 29,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 82,
+      "name": "Al-Infitar",
+      "arabic": "الانفطار",
+      "meaning": "Terbelah",
+      "verses": 19,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 83,
+      "name": "Al-Mutaffifin",
+      "arabic": "المطففين",
+      "meaning": "Orang yang Curang",
+      "verses": 36,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 84,
+      "name": "Al-Insyiqaq",
+      "arabic": "الانشقاق",
+      "meaning": "Terbelah Dua",
+      "verses": 25,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 85,
+      "name": "Al-Buruj",
+      "arabic": "البروج",
+      "meaning": "Gugusan Bintang",
+      "verses": 22,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 86,
+      "name": "At-Tariq",
+      "arabic": "الطارق",
+      "meaning": "Bintang Penembus Malam",
+      "verses": 17,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 87,
+      "name": "Al-A'la",
+      "arabic": "الأعلى",
+      "meaning": "Maha Tinggi",
+      "verses": 19,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 88,
+      "name": "Al-Ghasyiyah",
+      "arabic": "الغاشية",
+      "meaning": "Peristiwa Dahsyat",
+      "verses": 26,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 89,
+      "name": "Al-Fajr",
+      "arabic": "الفجر",
+      "meaning": "Waktu Fajar",
+      "verses": 30,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 90,
+      "name": "Al-Balad",
+      "arabic": "البلد",
+      "meaning": "Negeri Makkah",
+      "verses": 20,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 91,
+      "name": "Asy-Syams",
+      "arabic": "الشمس",
+      "meaning": "Matahari",
+      "verses": 15,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 92,
+      "name": "Al-Lail",
+      "arabic": "الليل",
+      "meaning": "Malam",
+      "verses": 21,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 93,
+      "name": "Ad-Duha",
+      "arabic": "الضحى",
+      "meaning": "Waktu Dhuha",
+      "verses": 11,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 94,
+      "name": "Asy-Syarh",
+      "arabic": "الشرح",
+      "meaning": "Kelapangan Dada",
+      "verses": 8,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 95,
+      "name": "At-Tin",
+      "arabic": "التين",
+      "meaning": "Buah Tin",
+      "verses": 8,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 96,
+      "name": "Al-'Alaq",
+      "arabic": "العلق",
+      "meaning": "Segumpal Darah",
+      "verses": 19,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 97,
+      "name": "Al-Qadr",
+      "arabic": "القدر",
+      "meaning": "Malam Kemuliaan",
+      "verses": 5,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 98,
+      "name": "Al-Bayyinah",
+      "arabic": "البينة",
+      "meaning": "Bukti yang Nyata",
+      "verses": 8,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 99,
+      "name": "Az-Zalzalah",
+      "arabic": "الزلزلة",
+      "meaning": "Gegaran Gempa",
+      "verses": 8,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 100,
+      "name": "Al-'Adiyat",
+      "arabic": "العاديات",
+      "meaning": "Kuda Perang Berlari Kencang",
+      "verses": 11,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 101,
+      "name": "Al-Qari'ah",
+      "arabic": "القارعة",
+      "meaning": "Hari Kiamat",
+      "verses": 11,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 102,
+      "name": "At-Takasur",
+      "arabic": "التكاثر",
+      "meaning": "Bermegah-megahan",
+      "verses": 8,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 103,
+      "name": "Al-'Asr",
+      "arabic": "العصر",
+      "meaning": "Masa / Demi Masa",
+      "verses": 3,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 104,
+      "name": "Al-Humazah",
+      "arabic": "الهمزة",
+      "meaning": "Pengumpat & Pencela",
+      "verses": 9,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 105,
+      "name": "Al-Fil",
+      "arabic": "الفيل",
+      "meaning": "Tentera Bergajah",
+      "verses": 5,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 106,
+      "name": "Quraisy",
+      "arabic": "قريش",
+      "meaning": "Kaum Quraisy",
+      "verses": 4,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 107,
+      "name": "Al-Ma'un",
+      "arabic": "الماعون",
+      "meaning": "Bantuan Berguna",
+      "verses": 7,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 108,
+      "name": "Al-Kausar",
+      "arabic": "الكوثر",
+      "meaning": "Nikmat yang Melimpah",
+      "verses": 3,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 109,
+      "name": "Al-Kafirun",
+      "arabic": "الكافرون",
+      "meaning": "Golongan Kafir",
+      "verses": 6,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 110,
+      "name": "An-Nasr",
+      "arabic": "النصر",
+      "meaning": "Pertolongan",
+      "verses": 3,
+      "type": "Madaniyah"
+    },
+    {
+      "number": 111,
+      "name": "Al-Lahab",
+      "arabic": "المسد",
+      "meaning": "Gejolak Api / Tali Sabut",
+      "verses": 5,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 112,
+      "name": "Al-Ikhlas",
+      "arabic": "الإخلاص",
+      "meaning": "Kemurnian Keesaan Allah",
+      "verses": 4,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 113,
+      "name": "Al-Falaq",
+      "arabic": "الفلق",
+      "meaning": "Waktu Subuh",
+      "verses": 5,
+      "type": "Makkiyah"
+    },
+    {
+      "number": 114,
+      "name": "An-Nas",
+      "arabic": "الناس",
+      "meaning": "Umat Manusia",
+      "verses": 6,
+      "type": "Makkiyah"
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "theme": "Ujian & Kekuatan Jiwa",
+      "arabic": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+      "text": "Allah tidak membebani seseorang melainkan sesuai dengan kesanggupannya.",
+      "source": "Surah Al-Baqarah (2:286)",
+      "reflection": "Setiap ujian dan kepayahan yang hadir dalam hidupmu telah diukur oleh Allah. Kamu mampu melaluinya dengan pertolongan-Nya."
+    },
+    {
+      "id": 2,
+      "theme": "Harapan & Kemudahan",
+      "arabic": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا • إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "text": "Maka sesungguhnya bersama kesulitan ada kemudahan, sesungguhnya bersama kesulitan ada kemudahan.",
+      "source": "Surah Asy-Syarh (94:5-6)",
+      "reflection": "Pintu kemudahan sentiasa terbuka rapat di sisi setiap kesukaran. Jangan berputus asa, fajar kegembiraan pasti menyinsing."
+    },
+    {
+      "id": 3,
+      "theme": "Ketenangan Hati",
+      "arabic": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+      "text": "Ingatlah, hanya dengan mengingati Allah hati akan menjadi tenang dan tenteram.",
+      "source": "Surah Ar-Ra'd (13:28)",
+      "reflection": "Ketenangan hakiki bukan dicari pada kemewahan dunia, tetapi pada basahnya lidah dan sucinya jiwa mengingati Allah."
+    },
+    {
+      "id": 4,
+      "theme": "Kekuatan Iman",
+      "arabic": "وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنْتُمُ الْأَعْلَوْنَ إِنْ كُنْتُمْ مُؤْمِنِينَ",
+      "text": "Janganlah kamu bersikap lemah, dan janganlah pula kamu bersedih hati, padahal kamulah orang-orang yang paling tinggi darjatnya jika kamu beriman.",
+      "source": "Surah Ali 'Imran (3:139)",
+      "reflection": "Kuatkan semangatmu dalam melangkah. Keimananmu kepada Allah adalah darjat kemuliaan yang paling agung."
+    },
+    {
+      "id": 5,
+      "theme": "Hikmah Takdir",
+      "arabic": "وَعَسَىٰ أَن تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَّكُمْ ۖ وَعَسَىٰ أَن تُحِبُّوا شَيْئًا وَهُوَ شَرٌّ لَّكُمْ",
+      "text": "Boleh jadi kamu membenci sesuatu padahal ia amat baik bagimu, dan boleh jadi kamu menyukai sesuatu padahal ia amat buruk bagimu; Allah mengetahui, sedang kamu tidak mengetahui.",
+      "source": "Surah Al-Baqarah (2:216)",
+      "reflection": "Bersangka baiklah dengan setiap aturan Ilahi. Apa yang ditakdirkan untukmu adalah yang terbaik menurut ilmu-Nya yang maha luas."
+    },
+    {
+      "id": 6,
+      "theme": "Takwa & Rezeki",
+      "arabic": "وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا • وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ",
+      "text": "Sesiapa yang bertakwa kepada Allah nescaya Dia akan mengadakan baginya jalan keluar, dan memberinya rezeki dari arah yang tidak disangka-sangkanya.",
+      "source": "Surah At-Talaq (65:2-3)",
+      "reflection": "Peliharalah hubunganmu dengan Allah melalui ketakwaan, maka Dia akan membuka segala pintu rezeki dan penyelesaian bagi setiap kebuntuan."
+    },
+    {
+      "id": 7,
+      "theme": "Kesyukuran Nikmat",
+      "arabic": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِي لَشَدِيدٌ",
+      "text": "Sesungguhnya jika kamu bersyukur, pasti Kami akan menambah nikmat kepadamu, dan jika kamu mengingkari, sesungguhnya azab-Ku sangat pedih.",
+      "source": "Surah Ibrahim (14:7)",
+      "reflection": "Syukur adalah kunci kelimpahan berkat. Hargai setiap nafas, kesihatan, dan rezeki yang dikurniakan hari ini."
+    },
+    {
+      "id": 8,
+      "theme": "Pintu Taubat & Keampunan",
+      "arabic": "قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنفُسِهِمْ لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ",
+      "text": "Katakanlah: Wahai hamba-hamba-Ku yang melampaui batas terhadap diri mereka sendiri! Janganlah kamu berputus asa dari rahmat Allah. Sesungguhnya Allah mengampuni dosa-dosa semuanya.",
+      "source": "Surah Az-Zumar (39:53)",
+      "reflection": "Sebesar mana pun kesilapan lalumu, pintu keampunan Allah sentiasa terbentang luas untuk hamba-Nya yang kembali bersujud."
+    },
+    {
+      "id": 9,
+      "theme": "Hubungan & Zikir",
+      "arabic": "فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ",
+      "text": "Ingatlah kepada-Ku, nescaya Aku akan ingat kepadamu, dan bersyukurlah kepada-Ku, dan janganlah kamu ingkar.",
+      "source": "Surah Al-Baqarah (2:152)",
+      "reflection": "Apabila kamu mengingati Allah dalam kesunyian mahupun keramaian, Allah Yang Maha Pengasih akan memeliharamu sepanjang masa."
+    },
+    {
+      "id": 10,
+      "theme": "Kasih Sayang Allah",
+      "arabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ • وَلَلْآخِرَةُ خَيْرٌ لَّكَ مِنَ الْأُولَىٰ",
+      "text": "Tuhanmu tiada meninggalkan kamu dan tiada pula benci kepadamu. Dan sesungguhnya hari kemudian itu lebih baik bagimu daripada yang sekarang.",
+      "source": "Surah Ad-Duha (93:3-4)",
+      "reflection": "Saat kamu merasa sunyi dan dipinggirkan, ketahuilah bahawa Allah tidak pernah sesaat pun mengabaikanmu."
+    },
+    {
+      "id": 11,
+      "theme": "Sabar & Solat",
+      "arabic": "وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ وَإِنَّهَا لَكَبِيرَةٌ إِلَّا عَلَى الْخَاشِعِينَ",
+      "text": "Dan mintalah pertolongan kepada Allah dengan sabar dan mengerjakan solat; dan sesungguhnya solat itu amat berat kecuali bagi orang-orang yang khusyuk.",
+      "source": "Surah Al-Baqarah (2:45)",
+      "reflection": "Jadikan sujud sebagai tempat mencurahkan segala keluh kesahmu, dan jadikan sabar sebagai tongkat perjuangan hidupmu."
+    },
+    {
+      "id": 12,
+      "theme": "Hakikat Kehidupan",
+      "arabic": "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا",
+      "text": "Dialah yang menciptakan mati dan hidup, untuk menguji kamu, siapakah di antara kamu yang lebih baik amalnya.",
+      "source": "Surah Al-Mulk (67:2)",
+      "reflection": "Dunia ini hanyalah tempat persinggahan dan ujian. Hiasilah harimu dengan kebaikan dan amal soleh yang berkekalan ke akhirat."
+    },
+    {
+      "id": 13,
+      "theme": "Nasihat Luqman Al-Hakim",
+      "arabic": "يَا بُنَيَّ أَقِمِ الصَّلَاةَ وَأْمُرْ بِالْمَعْرُوفِ وَانْهَ عَنِ الْمُنكَرِ وَاصْبِرْ عَلَىٰ مَا أَصَابَكَ",
+      "text": "Wahai anak kesayanganku, dirikanlah solat, dan suruhlah berbuat kebaikan, serta laranglah daripada kemungkaran, dan bersabarlah atas apa jua musibah yang menimpamu.",
+      "source": "Surah Luqman (31:17)",
+      "reflection": "Tiang kehidupan yang kukuh bermula dari solat yang terjaga, hati yang menyeru kebaikan, dan jiwa yang kental bersabar."
+    },
+    {
+      "id": 14,
+      "theme": "Doa Penyejuk Hati",
+      "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+      "text": "Wahai Tuhan kami, anugerahkanlah kepada kami pasangan dan zuriat keturunan kami sebagai penyejuk mata (hati), dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa.",
+      "source": "Surah Al-Furqan (25:74)",
+      "reflection": "Keluarga yang soleh dan saling mencintai kerana Allah adalah nikmat syurga dunia yang paling manis."
+    },
+    {
+      "id": 15,
+      "theme": "Peringatan Waktu & Kematian",
+      "arabic": "كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۖ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ الْقِيَامَةِ",
+      "text": "Tiap-tiap yang bernyawa akan merasai mati, dan bahawasanya pada hari kiamat sahajalah akan disempurnakan balasan kamu.",
+      "source": "Surah Ali 'Imran (3:185)",
+      "reflection": "Setiap detik yang berlalu mendekatkan kita kepada negeri abadi. Manfaatkan usia ini dengan memperbanyakkan bekal akhirat."
+    },
+    {
+      "id": 16,
+      "theme": "Mutiara Hadis 5 Perkara",
+      "arabic": "اغْتَنِمْ خَمْسًا قَبْلَ خَمْسٍ: شَبَابَكَ قَبْلَ هَرَمِكَ، وَصِحَّتَكَ قَبْلَ سَقَمِكَ",
+      "text": "Rebutlah lima perkara sebelum datang lima perkara: Waktu mudamu sebelum tuamu, sihatmu sebelum sakitmu, kayamu sebelum miskinmu, lapangmu sebelum sibukmu, dan hidupmu sebelum matimu.",
+      "source": "Hadis Riwayat Al-Hakim & Al-Baihaqi",
+      "reflection": "Hargai nikmat peluang yang masih ada hari ini sebelum ia ditarik kembali oleh takdir."
+    },
+    {
+      "id": 17,
+      "theme": "Tawakkal Kepada Allah",
+      "arabic": "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+      "text": "Dan sesiapa yang bertawakkal kepada Allah, maka cukuplah Allah baginya.",
+      "source": "Surah At-Talaq (65:3)",
+      "reflection": "Setelah segala usaha dan ikhtiar dijalankan, serahkanlah penghujungnya kepada Allah. Hati akan tenang dan tidak gundah."
+    },
+    {
+      "id": 18,
+      "theme": "Kebaikan & Sedekah",
+      "arabic": "مَّثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ",
+      "text": "Bandingan orang-orang yang membelanjakan hartanya pada jalan Allah, adalah sama seperti sebiji benih yang menumbuhkan tujuh tangkai, pada tiap-tiap tangkai itu mengandungi seratus biji.",
+      "source": "Surah Al-Baqarah (2:261)",
+      "reflection": "Harta yang disedekahkan tidak akan berkurang, bahkan menjadi pohon pahala yang rendang dan berbuah di akhirat."
+    },
+    {
+      "id": 19,
+      "theme": "Pesanan Hasan Al-Basri",
+      "arabic": "يَا ابْنَ آدَمَ إِنَّمَا أَنْتَ أَيَّامٌ، كُلَّمَا ذَهَبَ يَوْمٌ ذَهَبَ بَعْضُكَ",
+      "text": "Wahai anak Adam, sesungguhnya engkau hanyalah himpunan hari-hari. Setiap kali berlalunya satu hari, maka lenyaplah sebahagian daripada dirimu.",
+      "source": "Kalam Hikmah Hasan Al-Basri",
+      "reflection": "Setiap matahari terbit adalah peluang baharu untuk bertaubat, beramal, dan memperbaiki diri menjadi insan yang diredhai Allah."
+    },
+    {
+      "id": 20,
+      "theme": "Kedekatan Allah SWT",
+      "arabic": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ",
+      "text": "Dan apabila hamba-hamba-Ku bertanya kepadamu tentang Aku, maka (jawablah) sesungguhnya Aku adalah amat dekat. Aku memperkenankan doa orang yang berdoa apabila dia memohon kepada-Ku.",
+      "source": "Surah Al-Baqarah (2:186)",
+      "reflection": "Allah sentiasa mendengar bisikan hatimu di keheningan malam. Berdoalah dengan penuh keyakinan dan pengharapan."
+    }
+  ],
+  "sample_surahs": {
+    "1": {
+      "number": 1,
+      "name": "Al-Fatihah",
+      "arabic": "الفاتحة",
+      "meaning": "Pembukaan",
+      "verses": 7,
+      "type": "Makkiyah",
+      "bismillah": true,
+      "ayahs": [
+        {
+          "number": 1,
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+          "latin": "Bismillāhir-raḥmānir-raḥīm",
+          "translation": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3"
+        },
+        {
+          "number": 2,
+          "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "latin": "Al-ḥamdu lillāhi rabbil-'ālamīn",
+          "translation": "Segala puji bagi Allah, Tuhan seluruh alam.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2.mp3"
+        },
+        {
+          "number": 3,
+          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
+          "latin": "Ar-raḥmānir-raḥīm",
+          "translation": "Yang Maha Pengasih, Maha Penyayang.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3.mp3"
+        },
+        {
+          "number": 4,
+          "arabic": "مَالِكِ يَوْمِ الدِّينِ",
+          "latin": "Māliki yaumid-dīn",
+          "translation": "Pemilik hari pembalasan.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4.mp3"
+        },
+        {
+          "number": 5,
+          "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+          "latin": "Iyyāka na'budu wa iyyāka nasta'īn",
+          "translation": "Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami memohon pertolongan.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5.mp3"
+        },
+        {
+          "number": 6,
+          "arabic": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+          "latin": "Ihdinaṣ-ṣirāṭal-mustaqīm",
+          "translation": "Tunjukilah kami jalan yang lurus,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6.mp3"
+        },
+        {
+          "number": 7,
+          "arabic": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+          "latin": "Ṣirāṭallażīna an'amta 'alaihim gairil-magḍūbi 'alaihim wa laḍ-ḍāllīn",
+          "translation": "(iaitu) jalan orang-orang yang telah Engkau kurniakan nikmat kepada mereka, bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/7.mp3"
+        }
+      ]
+    },
+    "112": {
+      "number": 112,
+      "name": "Al-Ikhlas",
+      "arabic": "الإخلاص",
+      "meaning": "Kemurnian Keesaan Allah",
+      "verses": 4,
+      "type": "Makkiyah",
+      "bismillah": true,
+      "ayahs": [
+        {
+          "number": 1,
+          "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+          "latin": "Qul huwallāhu aḥad",
+          "translation": "Katakanlah (wahai Muhammad): 'Dialah Allah, Yang Maha Esa.'",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6222.mp3"
+        },
+        {
+          "number": 2,
+          "arabic": "اللَّهُ الصَّمَدُ",
+          "latin": "Allāhuṣ-ṣamad",
+          "translation": "Allah adalah Tuhan yang bergantung kepada-Nya segala sesuatu.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6223.mp3"
+        },
+        {
+          "number": 3,
+          "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+          "latin": "Lam yalid wa lam yūlad",
+          "translation": "Dia tiada beranak dan tidak pula diperanakkan,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6224.mp3"
+        },
+        {
+          "number": 4,
+          "arabic": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+          "latin": "Wa lam yakul lahū kufuwan aḥad",
+          "translation": "Dan tidak ada seorang pun yang setara dengan Dia.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6225.mp3"
+        }
+      ]
+    },
+    "113": {
+      "number": 113,
+      "name": "Al-Falaq",
+      "arabic": "الفلق",
+      "meaning": "Waktu Subuh",
+      "verses": 5,
+      "type": "Makkiyah",
+      "bismillah": true,
+      "ayahs": [
+        {
+          "number": 1,
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+          "latin": "Qul a'ūżu birabbil-falaq",
+          "translation": "Katakanlah: 'Aku berlindung kepada Tuhan yang menguasai waktu subuh,'",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6226.mp3"
+        },
+        {
+          "number": 2,
+          "arabic": "مِن شَرِّ مَا خَلَقَ",
+          "latin": "Min syarri mā khalaq",
+          "translation": "Dari kejahatan makhluk-Nya,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6227.mp3"
+        },
+        {
+          "number": 3,
+          "arabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "latin": "Wa min syarri gāsiqin iżā waqab",
+          "translation": "Dan dari kejahatan malam apabila telah gelap gelita,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6228.mp3"
+        },
+        {
+          "number": 4,
+          "arabic": "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+          "latin": "Wa min syarrin-naffāṡāti fil-'uqad",
+          "translation": "Dan dari kejahatan wanita-wanita tukang sihir yang menghembus pada buhul-buhul,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6229.mp3"
+        },
+        {
+          "number": 5,
+          "arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "latin": "Wa min syarri ḥāsidin iżā ḥasad",
+          "translation": "Dan dari kejahatan orang yang dengki apabila dia mendengki.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6230.mp3"
+        }
+      ]
+    },
+    "114": {
+      "number": 114,
+      "name": "An-Nas",
+      "arabic": "الناس",
+      "meaning": "Umat Manusia",
+      "verses": 6,
+      "type": "Makkiyah",
+      "bismillah": true,
+      "ayahs": [
+        {
+          "number": 1,
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "latin": "Qul a'ūżu birabbin-nās",
+          "translation": "Katakanlah: 'Aku berlindung kepada Tuhan (yang memelihara dan menguasai) manusia,'",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6231.mp3"
+        },
+        {
+          "number": 2,
+          "arabic": "مَلِكِ النَّاسِ",
+          "latin": "Malikin-nās",
+          "translation": "Raja manusia,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6232.mp3"
+        },
+        {
+          "number": 3,
+          "arabic": "إِلَٰهِ النَّاسِ",
+          "latin": "Ilāhin-nās",
+          "translation": "Sembahan manusia,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6233.mp3"
+        },
+        {
+          "number": 4,
+          "arabic": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
+          "latin": "Min syarril-waswāsil-khannās",
+          "translation": "Dari kejahatan (bisikan) syaitan yang biasa bersembunyi,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6234.mp3"
+        },
+        {
+          "number": 5,
+          "arabic": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
+          "latin": "Allażī yuwaswisu fī ṣudūrin-nās",
+          "translation": "Yang membisikkan (kejahatan) ke dalam dada manusia,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6235.mp3"
+        },
+        {
+          "number": 6,
+          "arabic": "مِنَ الْجِنَّةِ وَالنَّاسِ",
+          "latin": "Minal-jinnati wan-nās",
+          "translation": "Dari (golongan) jin dan manusia.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6236.mp3"
+        }
+      ]
+    },
+    "103": {
+      "number": 103,
+      "name": "Al-'Asr",
+      "arabic": "العصر",
+      "meaning": "Masa / Demi Masa",
+      "verses": 3,
+      "type": "Makkiyah",
+      "bismillah": true,
+      "ayahs": [
+        {
+          "number": 1,
+          "arabic": "وَالْعَصْرِ",
+          "latin": "Wal-'aṣr",
+          "translation": "Demi masa.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6177.mp3"
+        },
+        {
+          "number": 2,
+          "arabic": "إِنَّ الْإِنسَانَ لَفِي خُسْرٍ",
+          "latin": "Innal-insāna lafī khusr",
+          "translation": "Sesungguhnya manusia itu benar-benar dalam kerugian,",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6178.mp3"
+        },
+        {
+          "number": 3,
+          "arabic": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
+          "latin": "Illallażīna āmanū wa 'amiluṣ-ṣāliḥāti wa tawāṣau bil-ḥaqqi wa tawāṣau biṣ-ṣabr",
+          "translation": "Kecuali orang-orang yang beriman dan mengerjakan amal soleh serta saling menasihati untuk kebenaran dan saling menasihati untuk kesabaran.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6179.mp3"
+        }
+      ]
+    },
+    "108": {
+      "number": 108,
+      "name": "Al-Kausar",
+      "arabic": "الكوثر",
+      "meaning": "Nikmat yang Melimpah",
+      "verses": 3,
+      "type": "Makkiyah",
+      "bismillah": true,
+      "ayahs": [
+        {
+          "number": 1,
+          "arabic": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
+          "latin": "Innā a'ṭainākal-kauṡar",
+          "translation": "Sesungguhnya Kami telah mengurniakan kepadamu (wahai Muhammad) nikmat yang sangat banyak.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6205.mp3"
+        },
+        {
+          "number": 2,
+          "arabic": "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
+          "latin": "Faṣalli lirabbika wan-ḥar",
+          "translation": "Maka dirikanlah solat kerana Tuhanmu dan berkorbanlah.",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6206.mp3"
+        },
+        {
+          "number": 3,
+          "arabic": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+          "latin": "Inna syāni'aka huwal-abtar",
+          "translation": "Sesungguhnya orang yang membencimu dialah yang terputus (dari rahmat Allah).",
+          "audio": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6207.mp3"
+        }
+      ]
+    }
+  },
+  "asmaul_husna": [
+    {
+      "no": 1,
+      "arabic": "الرَّحْمَنُ",
+      "latin": "Ar-Rahman",
+      "meaning": "Maha Pengasih"
+    },
+    {
+      "no": 2,
+      "arabic": "الرَّحِيمُ",
+      "latin": "Ar-Rahim",
+      "meaning": "Maha Penyayang"
+    },
+    {
+      "no": 3,
+      "arabic": "الْمَلِكُ",
+      "latin": "Al-Malik",
+      "meaning": "Maha Menguasai / Merajai"
+    },
+    {
+      "no": 4,
+      "arabic": "الْقُدُّوسُ",
+      "latin": "Al-Quddus",
+      "meaning": "Maha Suci"
+    },
+    {
+      "no": 5,
+      "arabic": "السَّلَامُ",
+      "latin": "As-Salam",
+      "meaning": "Maha Memberi Kesejahteraan"
+    },
+    {
+      "no": 6,
+      "arabic": "الْمُؤْمِنُ",
+      "latin": "Al-Mu'min",
+      "meaning": "Maha Memberi Keamanan"
+    },
+    {
+      "no": 7,
+      "arabic": "الْمُهَيْمِنُ",
+      "latin": "Al-Muhaimin",
+      "meaning": "Maha Memelihara"
+    },
+    {
+      "no": 8,
+      "arabic": "الْعَزِيزُ",
+      "latin": "Al-Aziz",
+      "meaning": "Maha Perkasa"
+    },
+    {
+      "no": 9,
+      "arabic": "الْجَبَّارُ",
+      "latin": "Al-Jabbar",
+      "meaning": "Maha Memaksa / Gagah"
+    },
+    {
+      "no": 10,
+      "arabic": "الْمُتَكَبِّرُ",
+      "latin": "Al-Mutakabbir",
+      "meaning": "Maha Memiliki Kebesaran"
+    },
+    {
+      "no": 11,
+      "arabic": "الْخَالِقُ",
+      "latin": "Al-Khaliq",
+      "meaning": "Maha Pencipta"
+    },
+    {
+      "no": 12,
+      "arabic": "الْبَارِئُ",
+      "latin": "Al-Bari'",
+      "meaning": "Maha Mengadakan dari Tiada"
+    },
+    {
+      "no": 13,
+      "arabic": "الْمُصَوِّرُ",
+      "latin": "Al-Musawwir",
+      "meaning": "Maha Membentuk Rupa"
+    },
+    {
+      "no": 14,
+      "arabic": "الْغَفَّارُ",
+      "latin": "Al-Ghaffar",
+      "meaning": "Maha Pengampun"
+    },
+    {
+      "no": 15,
+      "arabic": "الْقَهَّارُ",
+      "latin": "Al-Qahhar",
+      "meaning": "Maha Menundukkan"
+    },
+    {
+      "no": 16,
+      "arabic": "الْوَهَّابُ",
+      "latin": "Al-Wahhab",
+      "meaning": "Maha Pemberi Kurnia"
+    },
+    {
+      "no": 17,
+      "arabic": "الرَّزَّاقُ",
+      "latin": "Ar-Razzaq",
+      "meaning": "Maha Pemberi Rezeki"
+    },
+    {
+      "no": 18,
+      "arabic": "الْفَتَّاحُ",
+      "latin": "Al-Fattah",
+      "meaning": "Maha Membuka Rahmat"
+    },
+    {
+      "no": 19,
+      "arabic": "الْعَلِيمُ",
+      "latin": "Al-Alim",
+      "meaning": "Maha Mengetahui"
+    },
+    {
+      "no": 20,
+      "arabic": "الْقَابِضُ",
+      "latin": "Al-Qabidh",
+      "meaning": "Maha Menyempitkan Rezeki"
+    },
+    {
+      "no": 21,
+      "arabic": "الْبَاسِطُ",
+      "latin": "Al-Basit",
+      "meaning": "Maha Melapangkan Rezeki"
+    },
+    {
+      "no": 22,
+      "arabic": "الْخَافِضُ",
+      "latin": "Al-Khafidz",
+      "meaning": "Maha Merendahkan"
+    },
+    {
+      "no": 23,
+      "arabic": "الرَّافِعُ",
+      "latin": "Ar-Rafi'",
+      "meaning": "Maha Meninggikan"
+    },
+    {
+      "no": 24,
+      "arabic": "الْمُعِزُّ",
+      "latin": "Al-Mu'izz",
+      "meaning": "Maha Memuliakan"
+    },
+    {
+      "no": 25,
+      "arabic": "الْمُذِلُّ",
+      "latin": "Al-Mudzill",
+      "meaning": "Maha Menghinakan"
+    },
+    {
+      "no": 26,
+      "arabic": "السَّمِيعُ",
+      "latin": "As-Sami'",
+      "meaning": "Maha Mendengar"
+    },
+    {
+      "no": 27,
+      "arabic": "الْبَصِيرُ",
+      "latin": "Al-Basir",
+      "meaning": "Maha Melihat"
+    },
+    {
+      "no": 28,
+      "arabic": "الْحَكَمُ",
+      "latin": "Al-Hakam",
+      "meaning": "Maha Menetapkan Hukum"
+    },
+    {
+      "no": 29,
+      "arabic": "الْعَدْلُ",
+      "latin": "Al-Adl",
+      "meaning": "Maha Adil"
+    },
+    {
+      "no": 30,
+      "arabic": "اللَّطِيفُ",
+      "latin": "Al-Latif",
+      "meaning": "Maha Lembut & Halus"
+    },
+    {
+      "no": 31,
+      "arabic": "الْخَبِيرُ",
+      "latin": "Al-Khabir",
+      "meaning": "Maha Mengetahui Rahsia"
+    },
+    {
+      "no": 32,
+      "arabic": "الْحَلِيمُ",
+      "latin": "Al-Halim",
+      "meaning": "Maha Penyantun"
+    },
+    {
+      "no": 33,
+      "arabic": "الْعَظِيمُ",
+      "latin": "Al-Azim",
+      "meaning": "Maha Agung"
+    },
+    {
+      "no": 34,
+      "arabic": "الْغَفُورُ",
+      "latin": "Al-Ghafur",
+      "meaning": "Maha Pengampun"
+    },
+    {
+      "no": 35,
+      "arabic": "الشَّكُورُ",
+      "latin": "Asy-Syakur",
+      "meaning": "Maha Menghargai Syukur"
+    },
+    {
+      "no": 36,
+      "arabic": "الْعَلِيُّ",
+      "latin": "Al-Aliyy",
+      "meaning": "Maha Tinggi"
+    },
+    {
+      "no": 37,
+      "arabic": "الْكَبِيرُ",
+      "latin": "Al-Kabir",
+      "meaning": "Maha Besar"
+    },
+    {
+      "no": 38,
+      "arabic": "الْحَفِيظُ",
+      "latin": "Al-Hafiz",
+      "meaning": "Maha Memelihara"
+    },
+    {
+      "no": 39,
+      "arabic": "الْمُقِيتُ",
+      "latin": "Al-Muqit",
+      "meaning": "Maha Memberi Kecukupan"
+    },
+    {
+      "no": 40,
+      "arabic": "الْحَسِيبُ",
+      "latin": "Al-Hasib",
+      "meaning": "Maha Menghitung Hisab"
+    },
+    {
+      "no": 41,
+      "arabic": "الْجَلِيلُ",
+      "latin": "Al-Jalil",
+      "meaning": "Maha Mulia & Luhur"
+    },
+    {
+      "no": 42,
+      "arabic": "الْكَرِيمُ",
+      "latin": "Al-Karim",
+      "meaning": "Maha Pemurah"
+    },
+    {
+      "no": 43,
+      "arabic": "الرَّقِيبُ",
+      "latin": "Ar-Raqib",
+      "meaning": "Maha Mengawasi"
+    },
+    {
+      "no": 44,
+      "arabic": "الْمُجِيبُ",
+      "latin": "Al-Mujib",
+      "meaning": "Maha Memperkenankan Doa"
+    },
+    {
+      "no": 45,
+      "arabic": "الْوَاسِعُ",
+      "latin": "Al-Wasi'",
+      "meaning": "Maha Luas Rahmat-Nya"
+    },
+    {
+      "no": 46,
+      "arabic": "الْحَكِيمُ",
+      "latin": "Al-Hakim",
+      "meaning": "Maha Bijaksana"
+    },
+    {
+      "no": 47,
+      "arabic": "الْوَدُودُ",
+      "latin": "Al-Wadud",
+      "meaning": "Maha Mengasihi"
+    },
+    {
+      "no": 48,
+      "arabic": "الْمَجِيدُ",
+      "latin": "Al-Majid",
+      "meaning": "Maha Mulia"
+    },
+    {
+      "no": 49,
+      "arabic": "الْبَاعِثُ",
+      "latin": "Al-Ba'ith",
+      "meaning": "Maha Membangkitkan"
+    },
+    {
+      "no": 50,
+      "arabic": "الشَّهِيدُ",
+      "latin": "Asy-Syahid",
+      "meaning": "Maha Menyaksikan"
+    },
+    {
+      "no": 51,
+      "arabic": "الْحَقُّ",
+      "latin": "Al-Haqq",
+      "meaning": "Maha Benar"
+    },
+    {
+      "no": 52,
+      "arabic": "الْوَكِيلُ",
+      "latin": "Al-Wakil",
+      "meaning": "Maha Memelihara / Pelindung"
+    },
+    {
+      "no": 53,
+      "arabic": "الْقَوِيُّ",
+      "latin": "Al-Qawiyy",
+      "meaning": "Maha Kuat"
+    },
+    {
+      "no": 54,
+      "arabic": "الْمَتِينُ",
+      "latin": "Al-Matin",
+      "meaning": "Maha Kukuh"
+    },
+    {
+      "no": 55,
+      "arabic": "الْوَلِيُّ",
+      "latin": "Al-Waliyy",
+      "meaning": "Maha Melindungi"
+    },
+    {
+      "no": 56,
+      "arabic": "الْحَمِيدُ",
+      "latin": "Al-Hamid",
+      "meaning": "Maha Terpuji"
+    },
+    {
+      "no": 57,
+      "arabic": "الْمُحْصِي",
+      "latin": "Al-Muhsi",
+      "meaning": "Maha Menghitung"
+    },
+    {
+      "no": 58,
+      "arabic": "الْمُبْدِئُ",
+      "latin": "Al-Mubdi'",
+      "meaning": "Maha Memulai Penciptaan"
+    },
+    {
+      "no": 59,
+      "arabic": "الْمُعِيدُ",
+      "latin": "Al-Mu'id",
+      "meaning": "Maha Mengembalikan Kehidupan"
+    },
+    {
+      "no": 60,
+      "arabic": "الْمُحْيِي",
+      "latin": "Al-Muhyi",
+      "meaning": "Maha Menghidupkan"
+    },
+    {
+      "no": 61,
+      "arabic": "الْمُمِيتُ",
+      "latin": "Al-Mumit",
+      "meaning": "Maha Mematikan"
+    },
+    {
+      "no": 62,
+      "arabic": "الْحَيُّ",
+      "latin": "Al-Hayy",
+      "meaning": "Maha Hidup Abadi"
+    },
+    {
+      "no": 63,
+      "arabic": "الْقَيُّومُ",
+      "latin": "Al-Qayyum",
+      "meaning": "Maha Berdiri Sendiri"
+    },
+    {
+      "no": 64,
+      "arabic": "الْوَاجِدُ",
+      "latin": "Al-Wajid",
+      "meaning": "Maha Menemukan"
+    },
+    {
+      "no": 65,
+      "arabic": "الْمَاجِدُ",
+      "latin": "Al-Majid",
+      "meaning": "Maha Mulia & Pemurah"
+    },
+    {
+      "no": 66,
+      "arabic": "الْوَاحِدُ",
+      "latin": "Al-Wahid",
+      "meaning": "Maha Esa / Tunggal"
+    },
+    {
+      "no": 67,
+      "arabic": "الْأَحَدُ",
+      "latin": "Al-Ahad",
+      "meaning": "Maha Satu"
+    },
+    {
+      "no": 68,
+      "arabic": "الصَّمَدُ",
+      "latin": "As-Samad",
+      "meaning": "Maha Tempat Bergantung"
+    },
+    {
+      "no": 69,
+      "arabic": "الْقَادِرُ",
+      "latin": "Al-Qadir",
+      "meaning": "Maha Kuasa"
+    },
+    {
+      "no": 70,
+      "arabic": "الْمُقْتَدِرُ",
+      "latin": "Al-Muqtadir",
+      "meaning": "Maha Menentukan Kuasa"
+    },
+    {
+      "no": 71,
+      "arabic": "الْمُقَدِّمُ",
+      "latin": "Al-Muqaddim",
+      "meaning": "Maha Mendahulukan"
+    },
+    {
+      "no": 72,
+      "arabic": "الْمُؤَخِّرُ",
+      "latin": "Al-Mu'akhkhir",
+      "meaning": "Maha Mengakhirkan"
+    },
+    {
+      "no": 73,
+      "arabic": "الْأَوَّلُ",
+      "latin": "Al-Awwal",
+      "meaning": "Maha Awal"
+    },
+    {
+      "no": 74,
+      "arabic": "الْآخِرُ",
+      "latin": "Al-Akhir",
+      "meaning": "Maha Akhir"
+    },
+    {
+      "no": 75,
+      "arabic": "الظَّاهِرُ",
+      "latin": "Az-Zahir",
+      "meaning": "Maha Nyata"
+    },
+    {
+      "no": 76,
+      "arabic": "الْبَاطِنُ",
+      "latin": "Al-Batin",
+      "meaning": "Maha Tersembunyi"
+    },
+    {
+      "no": 77,
+      "arabic": "الْوَالِي",
+      "latin": "Al-Wali",
+      "meaning": "Maha Memerintah"
+    },
+    {
+      "no": 78,
+      "arabic": "الْمُتَعَالِي",
+      "latin": "Al-Muta'ali",
+      "meaning": "Maha Tinggi & Suci"
+    },
+    {
+      "no": 79,
+      "arabic": "الْبَرُّ",
+      "latin": "Al-Barr",
+      "meaning": "Maha Melimpahkan Kebaikan"
+    },
+    {
+      "no": 80,
+      "arabic": "التَّوَّابُ",
+      "latin": "At-Tawwab",
+      "meaning": "Maha Menerima Taubat"
+    },
+    {
+      "no": 81,
+      "arabic": "الْمُنْتَقِمُ",
+      "latin": "Al-Muntaqim",
+      "meaning": "Maha Menghukum Kezaliman"
+    },
+    {
+      "no": 82,
+      "arabic": "الْعَفُوُّ",
+      "latin": "Al-Afuww",
+      "meaning": "Maha Pemaaf"
+    },
+    {
+      "no": 83,
+      "arabic": "الرَّؤُوفُ",
+      "latin": "Ar-Ra'uf",
+      "meaning": "Maha Pengasih & Pengasuh"
+    },
+    {
+      "no": 84,
+      "arabic": "مَالِكُ الْمُلْكِ",
+      "latin": "Malikul-Mulk",
+      "meaning": "Pemilik Segala Kekuasaan"
+    },
+    {
+      "no": 85,
+      "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
+      "latin": "Dzul-Jalali wal-Ikram",
+      "meaning": "Pemilik Keagungan & Kemuliaan"
+    },
+    {
+      "no": 86,
+      "arabic": "الْمُقْسِطُ",
+      "latin": "Al-Muqsit",
+      "meaning": "Maha Saksama"
+    },
+    {
+      "no": 87,
+      "arabic": "الْجَامِعُ",
+      "latin": "Al-Jami'",
+      "meaning": "Maha Menghimpunkan"
+    },
+    {
+      "no": 88,
+      "arabic": "الْغَنِيُّ",
+      "latin": "Al-Ghaniyy",
+      "meaning": "Maha Kaya Raya"
+    },
+    {
+      "no": 89,
+      "arabic": "الْمُغْنِي",
+      "latin": "Al-Mughni",
+      "meaning": "Maha Memberi Kekayaan"
+    },
+    {
+      "no": 90,
+      "arabic": "الْمَانِعُ",
+      "latin": "Al-Mani'",
+      "meaning": "Maha Mencegah / Melindungi"
+    },
+    {
+      "no": 91,
+      "arabic": "الضَّارُّ",
+      "latin": "Ad-Dharr",
+      "meaning": "Maha Mendatangkan Kemudaratan"
+    },
+    {
+      "no": 92,
+      "arabic": "النَّافِعُ",
+      "latin": "An-Nafi'",
+      "meaning": "Maha Memberi Manfaat"
+    },
+    {
+      "no": 93,
+      "arabic": "النُّورُ",
+      "latin": "An-Nur",
+      "meaning": "Maha Bercahaya"
+    },
+    {
+      "no": 94,
+      "arabic": "الْهَادِي",
+      "latin": "Al-Hadi",
+      "meaning": "Maha Memberi Petunjuk"
+    },
+    {
+      "no": 95,
+      "arabic": "الْبَدِيعُ",
+      "latin": "Al-Badi'",
+      "meaning": "Maha Pencipta Keindahan Unik"
+    },
+    {
+      "no": 96,
+      "arabic": "الْبَاقِي",
+      "latin": "Al-Baqi",
+      "meaning": "Maha Kekal Abadi"
+    },
+    {
+      "no": 97,
+      "arabic": "الْوَارِثُ",
+      "latin": "Al-Warith",
+      "meaning": "Maha Mewarisi Semesta"
+    },
+    {
+      "no": 98,
+      "arabic": "الرَّشِيدُ",
+      "latin": "Ar-Rasyid",
+      "meaning": "Maha Pandai & Membimbing"
+    },
+    {
+      "no": 99,
+      "arabic": "الصَّبُورُ",
+      "latin": "As-Sabur",
+      "meaning": "Maha Penyabar"
+    }
+  ],
+  "daily_duas": [
+    {
+      "title": "Doa Khatam Al-Quran",
+      "arabic": "اللَّهُمَّ ارْحَمْنَا بِالقُرْآنِ، وَاجْعَلْهُ لَنَا إِمَامًا وَنُورًا وَهُدًى وَرَحْمَةً، اللَّهُمَّ ذَكِّرْنَا مِنْهُ مَا نَسِينَا، وَعَلِّمْنَا مِنْهُ مَا جَهِلْنَا، وَارْزُقْنَا تِلاوَتَهُ آنَاءَ اللَّيْلِ وَأَطْرَافَ النَّهَارِ، وَاجْعَلْهُ لَنَا حُجَّةً يَا رَبَّ العَالَمِينَ",
+      "latin": "Allahummarhamna bil-Qur'an, waj'alhu lana imaman wa nuran wa hudan wa rahmah. Allahumma dzakkirna minhu ma nasina, wa 'allimna minhu ma jahilna, warzuqna tilawatahu ana-allaili wa athrafan-nahar, waj'alhu lana hujjatan ya Rabbal 'alamin.",
+      "translation": "Ya Allah, rahmatilah kami dengan Al-Quran. Jadikanlah ia bagi kami sebagai pemimpin, cahaya, petunjuk dan rahmat. Ya Allah, ingatkanlah kami apa yang kami lupa daripadanya, ajarkanlah kami apa yang kami jahil daripadanya, dan kurniakanlah kami membacanya sepanjang malam dan siang hari, serta jadikanlah ia sebagai hujah pembela bagi kami, wahai Tuhan sekalian alam."
+    },
+    {
+      "title": "Sayyidul Istighfar (Penghulu Istighfar)",
+      "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+      "latin": "Allahumma anta Rabbi la ilaha illa anta, khalaqtani wa ana 'abduka, wa ana 'ala 'ahdika wa wa'dika mastatha'tu, a'udzu bika min syarri ma shana'tu, abu'u laka bini'matika 'alayya, wa abu'u bidzanbi faghfir li fa innahu la yaghfirudz-dzunuba illa anta.",
+      "translation": "Ya Allah, Engkau adalah Tuhanku, tiada Tuhan yang berhak disembah selain Engkau. Engkaulah yang menciptakanku dan aku adalah hamba-Mu. Aku berada dalam perjanjian dan janji-Mu sekadar kemampuanku. Aku berlindung kepada-Mu daripada kejahatan yang telah aku lakukan. Aku mengakui nikmat-Mu kepadaku dan aku mengakui dosaku, maka ampunilah daku, sesungguhnya tiada yang mengampuni dosa-dosa melainkan Engkau."
+    },
+    {
+      "title": "Doa Kebaikan Dunia & Akhirat",
+      "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "latin": "Rabbana atina fid-dunya hasanah wa fil-akhirati hasanah wa qina 'adzaban-nar.",
+      "translation": "Wahai Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami daripada azab api neraka."
+    },
+    {
+      "title": "Doa Memohon Kelapangan Hati & Urusan",
+      "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي • وَيَسِّرْ لِي أَمْرِي • وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي • يَفْقَهُوا قَوْلِي",
+      "latin": "Rabbisyrah li sadri, wa yassir li amri, wahlul 'uqdatam mil-lisani, yafqahu qauli.",
+      "translation": "Wahai Tuhanku, lapangkanlah bagiku dadaku, dan mudahkanlah bagiku urusanku, dan lepaskanlah kekakuan daripada lidahku, supaya mereka memahami perkataanku."
+    },
+    {
+      "title": "Doa Perlindungan Pagi & Petang",
+      "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+      "latin": "Bismillahilladzi la yadhurru ma'asmihi syai'un fil-ardhi wa la fis-sama'i wa huwas-sami'ul 'alim.",
+      "translation": "Dengan nama Allah yang dengan nama-Nya tidak ada sesuatu pun di bumi dan di langit yang dapat mendatangkan kemudaratan, dan Dia Maha Mendengar lagi Maha Mengetahui."
+    }
+  ]
+}
